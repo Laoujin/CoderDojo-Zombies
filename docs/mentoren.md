@@ -4,7 +4,7 @@ Tips en oplossingen voor veelvoorkomende problemen.
 
 ## Meerdere Python versies
 
-**Probleem:** `ModuleNotFoundError: No module named 'friendly'` terwijl je `pip install` al hebt gedaan.
+**Probleem:** `ModuleNotFoundError: No module named 'friendly_traceback'` terwijl je `pip install` al hebt gedaan.
 
 **Oorzaak:** Er zijn meerdere Python versies geinstalleerd. Packages worden per versie geinstalleerd.
 
@@ -38,12 +38,6 @@ Tips en oplossingen voor veelvoorkomende problemen.
 winget uninstall Python.Python.3.13
 winget install Python.Python.3.12
 ```
-
-## friendly-traceback werkt niet
-
-**Probleem:** Errors verschijnen nog steeds in het Engels/technisch.
-
-**Check:** Staat `import friendly; friendly.install()` bovenaan het bestand?
 
 ## VS Code extensies
 
