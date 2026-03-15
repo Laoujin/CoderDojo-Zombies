@@ -34,8 +34,9 @@ pip install -r requirements.txt
 
 ## 5. Download de Code
 
-1. Download dit project als ZIP, of clone met git
-2. Open de folder in VS Code: File → Open Folder
+1. [Download het project als ZIP](https://github.com/Laoujin/CoderDojo-Zombies/archive/refs/heads/master.zip)
+2. Pak de ZIP uit
+3. Open de folder in VS Code: File → Open Folder
 
 ## 6. Run je eerste programma
 
