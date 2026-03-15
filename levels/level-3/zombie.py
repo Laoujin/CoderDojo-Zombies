@@ -8,7 +8,6 @@ os.system('cls' if os.name == 'nt' else 'clear')
 levens = 3
 inventory = []
 zombie_types = ["langzame zombie", "snelle zombie", "sterke zombie"]
-zombie_geluiden = ["GRAAAAAH!", "BRAAAAINS!", "UGHHHH...", "GRRRR!"]
 
 print("🧟‍♂️💀 WELKOM BIJ ZOMBIE APOCALYPSE 💀🧟‍♂️")
 print("Je hebt drie levens")
@@ -24,12 +23,10 @@ while levens > 0:
 
     # Random zombie verschijnt
     zombie = random.choice(zombie_types)
-    geluid = random.choice(zombie_geluiden)
 
     print("🌫️ Het is donker... je hoort gegrom...")
     time.sleep(1)
     print(f"🧟‍♂️ Een {zombie} komt op je af!")
-    print(f"   '{geluid}'")
     print()
 
     actie = input("⚡ Wat doe je? (rennen / vechten / zoeken) ➜ ")
