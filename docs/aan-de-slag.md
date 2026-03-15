@@ -4,10 +4,11 @@ Volg deze stappen om te beginnen met programmeren.
 
 ## 1. Installeer Python
 
-1. Ga naar [python.org](https://www.python.org/downloads/)
-2. Download Python (kies de nieuwste versie)
+1. Ga naar [python.org/downloads/release/python-3129](https://www.python.org/downloads/release/python-3129/)
+2. Download Python **3.12** (niet nieuwer - pygame werkt nog niet met 3.13+)
 3. **Belangrijk:** Vink aan "Add Python to PATH" tijdens installatie!
 4. Klik op "Install Now"
+5. Check je versie: `python --version` moet `3.12.x` tonen
 
 ## 2. Installeer VS Code
 

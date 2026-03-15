@@ -25,6 +25,8 @@ docs/             # Website content
 
 ## Setup
 
+**Let op:** Python 3.12 is vereist (pygame werkt nog niet met 3.13+). Check met `python --version`.
+
 ```bash
 # Installeer dependencies
 pip install -r requirements.txt

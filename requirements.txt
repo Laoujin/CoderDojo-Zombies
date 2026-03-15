@@ -1,5 +1,2 @@
 friendly-traceback
-
-# pgzero - install later when doing graphical levels
-# Requires Python 3.12 or earlier (pygame has no 3.14 wheel yet)
-# pip install pgzero
+pgzero
