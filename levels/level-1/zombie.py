@@ -14,7 +14,7 @@ print()
 
 actie = input("⚡ Wat doe je? (rennen / vechten) ➜ ")
 
-if actie == "rennen"
+if actie == "rennen":
     print("🏃‍♂️ Je probeert weg te sprinten...")
     time.sleep(1)
 
