@@ -1,5 +1,5 @@
-import friendly
-friendly.install()
+import friendly_traceback
+friendly_traceback.install()
 
 import random
 import time
