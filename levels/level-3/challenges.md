@@ -41,7 +41,7 @@ Voeg een "sterke zombie" toe die moeilijker te verslaan is
 
 ### Wapen Bonus
 
-De honkbalknuppel maakt vechten makkelijker (vooral tegen sterke zombies!)
+De honkbalknuppel maakt vechten makkelijker
 
 **Hint:** Check `if "honkbalknuppel" in inventory:` en geef een betere kans
 
