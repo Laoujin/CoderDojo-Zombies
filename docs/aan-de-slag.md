@@ -28,6 +28,12 @@ In VS Code:
 Open een terminal (in VS Code: Terminal → New Terminal) en typ:
 
 ```bash
+pip install -r requirements.txt
+```
+
+Of handmatig:
+
+```bash
 pip install friendly-traceback pgzero
 ```
 
