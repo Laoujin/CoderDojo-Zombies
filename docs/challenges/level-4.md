@@ -1,6 +1,6 @@
 # Level 4 Challenges
 
-## Makkelijk
+## Opwarmer
 
 ### Status Verbeteren
 
@@ -44,7 +44,7 @@ Verplaats de medkit-logica naar een eigen functie
 
 ---
 
-## Medium
+## Pittig
 
 ### Functie met Parameter
 
@@ -100,7 +100,7 @@ Maak een `bereken_score()` functie die bonuspunten geeft voor moeilijke zombies
 
 ---
 
-## Moeilijk
+## Boss
 
 ### Help Functie
 

@@ -1,6 +1,6 @@
 # Level 3 Challenges
 
-## Makkelijk
+## Opwarmer
 
 ### Meer Geluiden
 
@@ -18,7 +18,7 @@ Laat de zombie altijd iets vallen als je wint
 
 ---
 
-## Medium
+## Pittig
 
 ### Locaties
 
@@ -44,7 +44,7 @@ Voeg willekeurige events toe tussen rondes
 
 ---
 
-## Moeilijk
+## Boss
 
 ### Crafting
 

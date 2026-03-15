@@ -1,6 +1,6 @@
 # Level 1 Challenges
 
-## Makkelijk
+## Opwarmer
 
 ### Eigen Verhaal
 
@@ -10,7 +10,7 @@ Verander alle teksten naar je eigen zombie verhaal
 
 ---
 
-## Medium
+## Pittig
 
 ### Verstoppen
 
@@ -20,7 +20,7 @@ Voeg een derde optie toe: "verstoppen"
 
 ---
 
-## Moeilijk
+## Boss
 
 ### Praten
 

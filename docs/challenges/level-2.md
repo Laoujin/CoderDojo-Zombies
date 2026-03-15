@@ -1,6 +1,6 @@
 # Level 2 Challenges
 
-## Makkelijk
+## Opwarmer
 
 ### Game Over Bericht
 
@@ -21,7 +21,35 @@ Voeg een speciaal bericht toe als je dood gaat
 
 ---
 
-## Medium
+## Pittig
+
+### Score Systeem
+
+Voeg een score toe die omhoog gaat per overwonnen zombie
+
+**Hint:** Maak `score = 0` aan het begin, en `score += 10` als je wint
+
+??? note "Spieken"
+    ```python
+    levens = 3
+    score = 0
+
+    while levens > 0:
+        print(f"Levens: {levens} | Score: {score}")
+
+        # ... bestaande code ...
+
+        # Bij winnen:
+        if kans >= 2:
+            print("Je verslaat de zombie!")
+            score += 10
+
+    print(f"Eindscore: {score}")
+    ```
+
+---
+
+## Boss
 
 ### Wapen Zoeken
 
@@ -75,32 +103,4 @@ Het wapen verhoogt je winkans bij vechten
         else:
             print("De zombie bijt je...")
             levens = levens - 1
-    ```
-
----
-
-## Moeilijk
-
-### Score Systeem
-
-Voeg een score toe die omhoog gaat per overwonnen zombie
-
-**Hint:** Maak `score = 0` aan het begin, en `score += 10` als je wint
-
-??? note "Spieken"
-    ```python
-    levens = 3
-    score = 0
-
-    while levens > 0:
-        print(f"Levens: {levens} | Score: {score}")
-
-        # ... bestaande code ...
-
-        # Bij winnen:
-        if kans >= 2:
-            print("Je verslaat de zombie!")
-            score += 10
-
-    print(f"Eindscore: {score}")
     ```
