@@ -2,23 +2,19 @@
 
 ## Opwarmer
 
-### Meer Geluiden
+### Zombie Geluiden
 
-Voeg meer zombie geluiden toe aan de lijst
+Laat de zombie een geluid maken als hij verschijnt
 
-**Hint:** Pas de `zombie_geluiden` lijst aan
+**Hint:** Maak een lijst `zombie_geluiden = ["GRAAH!", "BRAINS!", ...]` en gebruik `random.choice()`
 
 ??? note "Spieken"
     ```python
-    zombie_geluiden = [
-        "GRAAAAAH!",
-        "BRAAAAINS!",
-        "UGHHHH...",
-        "GRRRR!",
-        "MMMMMM...",
-        "HUNGRYYYY!",
-        "*kwijlt*"
-    ]
+    zombie_geluiden = ["GRAAAAAH!", "BRAAAAINS!", "UGHHHH...", "GRRRR!"]
+
+    # Bij zombie encounter:
+    geluid = random.choice(zombie_geluiden)
+    print(f"De zombie gromt: {geluid}")
     ```
 
 ---
