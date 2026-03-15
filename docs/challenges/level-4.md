@@ -54,3 +54,39 @@ Pas `vecht()` aan en voeg andere wapens toe als mogelijke inventory.
 
 ## Boss
 
+### Zombie HP
+
+Geef zombies meerdere levens zodat je ze vaker moet raken
+
+**Hint:** Voeg `"hp": 2` toe aan de zombie dictionary in `maak_zombie()`. Bij vechten: `zombie["hp"] -= 1` en check of hp 0 is.
+
+??? note "Spieken"
+    ```python
+    def maak_zombie():
+        types = ["langzame zombie", "snelle zombie", "sterke zombie"]
+
+        zombie_type = random.choice(types)
+
+        # Sterke zombies hebben meer HP
+        if zombie_type == "sterke zombie":
+            hp = 3
+        else:
+            hp = 2
+
+        return {
+            "type": zombie_type,
+            "naam": random.choice(["Gerrit", "Jan", "Pansen"]),
+            "hp": hp
+        }
+
+    # In main(), bij vechten:
+    if vecht(zombie, heeft_wapen):
+        zombie["hp"] -= 1
+        if zombie["hp"] <= 0:
+            print(f"{zombie['naam']} is verslagen!")
+            score += 10
+        else:
+            print(f"{zombie['naam']} heeft nog {zombie['hp']} HP!")
+            # Zombie valt opnieuw aan in dezelfde ronde
+    ```
+

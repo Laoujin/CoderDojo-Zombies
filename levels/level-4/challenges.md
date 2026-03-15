@@ -22,3 +22,9 @@ Pas `vecht()` aan en voeg andere wapens toe als mogelijke inventory.
 
 ## Boss
 
+### Zombie HP
+
+Geef zombies meerdere levens zodat je ze vaker moet raken
+
+**Hint:** Voeg `"hp": 2` toe aan de zombie dictionary in `maak_zombie()`. Bij vechten: `zombie["hp"] -= 1` en check of hp 0 is.
+
