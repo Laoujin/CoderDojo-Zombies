@@ -67,3 +67,44 @@ Laat de zombie soms een item droppen als je wint
 
 ## Boss
 
+### Sterke Zombie
+
+Voeg een "sterke zombie" toe die moeilijker te verslaan is
+
+**Hint:** Voeg "sterke zombie" toe aan de lijst en check `if zombie == "sterke zombie":` bij vechten
+
+??? note "Spieken"
+    ```python
+    zombie_types = ["normale zombie", "snelle zombie", "sterke zombie"]
+
+    # Bij vechten:
+    if zombie == "sterke zombie":
+        kans = random.randint(1, 4)  # 1 op 4 kans om te winnen
+    else:
+        kans = random.randint(1, 2)  # 1 op 2 kans
+    ```
+
+---
+
+### Wapen Bonus
+
+De honkbalknuppel maakt vechten makkelijker (vooral tegen sterke zombies!)
+
+**Hint:** Check `if "honkbalknuppel" in inventory:` en geef een betere kans
+
+??? note "Spieken"
+    ```python
+    heeft_wapen = "honkbalknuppel" in inventory
+
+    if zombie == "sterke zombie":
+        if heeft_wapen:
+            kans = random.randint(1, 2)  # 1 op 2 met wapen
+        else:
+            kans = random.randint(1, 4)  # 1 op 4 zonder
+    else:
+        if heeft_wapen:
+            kans = random.randint(1, 3)  # 2 op 3 met wapen
+        else:
+            kans = random.randint(1, 2)  # 1 op 2 zonder
+    ```
+

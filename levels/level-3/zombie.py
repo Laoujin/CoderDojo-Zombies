@@ -8,7 +8,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 levens = 3
 ronde = 0
 inventory = []
-zombie_types = ["normale zombie", "snelle zombie", "sterke zombie"]
+zombie_types = ["normale zombie", "snelle zombie"]
 
 print("🧟‍♂️💀 WELKOM BIJ ZOMBIE APOCALYPSE 💀🧟‍♂️")
 print("Overleef 5 rondes om te winnen!")
@@ -54,22 +54,9 @@ while levens > 0 and ronde < 5:
         print("⚔️ Je maakt je klaar om te vechten...")
         time.sleep(1)
 
-        # Check voor wapen in inventory
-        heeft_wapen = "honkbalknuppel" in inventory
+        kans = random.randint(1, 2)  # 1 op 2 kans
 
-        # Sterke zombie is moeilijker te verslaan
-        if zombie == "sterke zombie":
-            if heeft_wapen:
-                kans = random.randint(1, 2)  # 1 op 2 met wapen
-            else:
-                kans = random.randint(1, 4)  # 1 op 4 zonder
-        else:
-            if heeft_wapen:
-                kans = random.randint(1, 3)  # 2 op 3 met wapen
-            else:
-                kans = random.randint(1, 2)  # 1 op 2 zonder
-
-        if kans >= 2 or (kans == 1 and heeft_wapen):
+        if kans == 1:
             print("💥 Je verslaat de zombie!")
         else:
             print("🧟‍♂️ De zombie bijt je...")

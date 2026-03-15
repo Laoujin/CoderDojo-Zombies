@@ -31,3 +31,17 @@ Laat de zombie soms een item droppen als je wint
 
 ## Boss
 
+### Sterke Zombie
+
+Voeg een "sterke zombie" toe die moeilijker te verslaan is
+
+**Hint:** Voeg "sterke zombie" toe aan de lijst en check `if zombie == "sterke zombie":` bij vechten
+
+---
+
+### Wapen Bonus
+
+De honkbalknuppel maakt vechten makkelijker (vooral tegen sterke zombies!)
+
+**Hint:** Check `if "honkbalknuppel" in inventory:` en geef een betere kans
+
