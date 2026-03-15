@@ -1,26 +1,50 @@
-Zombies
-=======
+# CoderDojo Zombie Apocalypse
 
-Hedy
-----
+Leer Python programmeren met een zombie spel!
 
-Browser based only. After lesson 17+ it's pretty much Python.
+## Voor mentoren
 
-Meeting CoderDojo:  
-Should we invest in [Hedy](https://hedy.org/)?
+Dit is een curriculum voor CoderDojo om kinderen (8-16 jaar) Python te leren. Het project bevat:
 
-```hedy
-antwoord = 0
-zolang antwoord != 25
-    antwoord = vraag 'Wat is 5 keer 5?'
-print 'Je hebt een correct antwoord gegeven'
+- **4 text-based levels** met oplopende moeilijkheid
+- **Challenge cards** voor extra oefeningen
+- **MkDocs website** met alle instructies
+- **Printbare kaarten** voor in de sessie
+
+## Structuur
+
+```
+levels/           # Python code per level
+├── level-1/      # if/elif/else
+├── level-2/      # while loops
+├── level-3/      # lijsten
+└── level-4/      # functies
+
+docs/             # Website content
 ```
 
-Pygame Zero
------------
+## Setup
 
-```sh
-cd PygameZero
-pip install pgzero
-pgzrun zombie1_pgzero.py
+```bash
+# Installeer dependencies
+pip install friendly-traceback pgzero mkdocs mkdocs-material
+
+# Start de website lokaal
+mkdocs serve
+
+# Deploy naar GitHub Pages
+mkdocs gh-deploy
 ```
+
+## Levels
+
+| Level | Concept | Files |
+|-------|---------|-------|
+| 1 | if/elif/else | `levels/level-1/` |
+| 2 | while, variabelen | `levels/level-2/` |
+| 3 | lijsten, random | `levels/level-3/` |
+| 4 | functies | `levels/level-4/` |
+
+## Licentie
+
+MIT - Vrij te gebruiken voor CoderDojo's en andere educatieve doeleinden.
