@@ -6,16 +6,19 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 # === VARIABELEN ===
 levens = 3
+ronde = 0
 inventory = []
 zombie_types = ["langzame zombie", "snelle zombie", "sterke zombie"]
 
 print("🧟‍♂️💀 WELKOM BIJ ZOMBIE APOCALYPSE 💀🧟‍♂️")
-print("Je hebt drie levens")
+print("Overleef 5 rondes om te winnen!")
 print()
 
 # === GAME LOOP ===
-while levens > 0:
+while levens > 0 and ronde < 5:
+    ronde += 1
     # Toon status
+    print(f"--- Ronde {ronde}/5 ---")
     print(f"❤️ Levens: {levens}")
     if inventory:
         print(f"🎒 Inventory: {inventory}")
@@ -111,7 +114,7 @@ while levens > 0:
     print()
 
 print("🎬 THE END 🎬")
-if levens > 0:
-    print("🏆 Je hebt overleefd!")
+if ronde >= 5 and levens > 0:
+    print("🏆 Je hebt alle 5 rondes overleefd! Je wint!")
 else:
     print("💀 Game over...")
