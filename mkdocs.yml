@@ -35,10 +35,10 @@ nav:
     - Level 3 - Lijsten: levels/level-3/uitleg.md
     - Level 4 - Functies: levels/level-4/uitleg.md
   - Challenges:
-    - Level 1: levels/level-1/challenges.md
-    - Level 2: levels/level-2/challenges.md
-    - Level 3: levels/level-3/challenges.md
-    - Level 4: levels/level-4/challenges.md
+    - Level 1: challenges/level-1.md
+    - Level 2: challenges/level-2.md
+    - Level 3: challenges/level-3.md
+    - Level 4: challenges/level-4.md
   - Cheatsheet: cheatsheet.md
 
 extra_css:
