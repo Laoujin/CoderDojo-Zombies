@@ -1,1 +1,7 @@
 .claude/settings.local.json
+
+# MkDocs build output
+site/
+
+# Auto-generated from levels/ (source of truth is levels/level-*/**.md)
+docs/levels/

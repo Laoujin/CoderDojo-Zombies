@@ -27,12 +27,17 @@ docs/             # Website content
 
 ```bash
 # Installeer dependencies
-pip install friendly-traceback pgzero mkdocs mkdocs-material
+pip install -r requirements.txt
+pip install mkdocs mkdocs-material
+
+# Sync level docs naar docs/ (nodig voor MkDocs)
+cp levels/level-*/*.md docs/levels/level-*/  # Linux/Mac
+# Of maak docs/levels/ folders aan en kopieer handmatig op Windows
 
 # Start de website lokaal
 mkdocs serve
 
-# Deploy naar GitHub Pages
+# Deploy naar GitHub Pages (automatisch via GitHub Actions)
 mkdocs gh-deploy
 ```
 

@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - 'docs/**'
+      - 'levels/**/*.md'
       - 'mkdocs.yml'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
@@ -19,6 +20,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Sync level docs to docs/levels/
+        run: |
+          mkdir -p docs/levels/level-{1,2,3,4}
+          cp levels/level-1/*.md docs/levels/level-1/
+          cp levels/level-2/*.md docs/levels/level-2/
+          cp levels/level-3/*.md docs/levels/level-3/
+          cp levels/level-4/*.md docs/levels/level-4/
 
       - name: Setup Python
         uses: actions/setup-python@v5
