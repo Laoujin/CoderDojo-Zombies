@@ -198,13 +198,30 @@ Dezelfde `challenges.md` per level
 
 ### Verstoppen
 Voeg een derde optie toe: "verstoppen"
+
 **Hint:** Gebruik `elif actie == "verstoppen":`
+
+??? note "Spieken"
+    ```python
+    elif actie == "verstoppen":
+        print("🙈 Je verstopt je achter een auto...")
+        kans = random.randint(1, 3)
+        if kans == 1:
+            print("De zombie ziet je niet! Je bent veilig.")
+        else:
+            print("De zombie ruikt je...")
+    ```
 
 ---
 
 ### Eigen Verhaal
 Verander alle teksten naar je eigen zombie verhaal
+
 **Hint:** Pas de strings aan in de `print()` statements
+
+??? note "Spieken"
+    Geen code nodig - verander gewoon de tekst tussen aanhalingstekens!
+    Bijvoorbeeld: `print("👻 Een geest verschijnt...")`
 
 ---
 
@@ -212,7 +229,18 @@ Verander alle teksten naar je eigen zombie verhaal
 
 ### Zombie Naam
 De zombie heeft een naam (kies random uit een lijst)
+
 **Hint:** Maak een lijst: `namen = ["Gerrit", "Zombie-Jan", "Ransen"]`
+
+??? note "Spieken"
+    ```python
+    import random
+
+    namen = ["Gerrit", "Zombie-Jan", "Ransen", "Pansen"]
+    zombie_naam = random.choice(namen)
+
+    print(f"🧟 {zombie_naam} de zombie komt op je af!")
+    ```
 
 ---
 
@@ -222,15 +250,44 @@ De zombie heeft een naam (kies random uit een lijst)
 
 ### Wapen Zoeken
 Voeg een "zoeken" actie toe om een wapen te vinden
+
 **Hint:** Maak een variabele `heeft_wapen = False` aan het begin
+
+??? note "Spieken"
+    ```python
+    heeft_wapen = False
+
+    # In de while loop:
+    elif actie == "zoeken":
+        if not heeft_wapen:
+            print("🔍 Je zoekt rond...")
+            print("⚔️ Je vindt een honkbalknuppel!")
+            heeft_wapen = True
+        else:
+            print("Je hebt al een wapen!")
+
+    # Bij vechten, check het wapen:
+    elif actie == "vechten":
+        if heeft_wapen:
+            kans = random.randint(1, 3)  # 2/3 kans
+        else:
+            kans = random.randint(1, 2)  # 1/2 kans
+    ```
 ```
+
+### Spieken (oplossingen)
+
+- **Website:** MkDocs `??? note "Spieken"` admonitions — inklapbaar, standaard dicht
+- **Kaarten:** QR code op de kaart linkt naar de challenge op de website (waar de oplossing staat)
+- **Eén bron:** Alles in dezelfde `challenges.md` — geen dubbel onderhoud
 
 ### Print oplossing
 
 CSS print stylesheet die:
 - Elke `###` heading = nieuwe kaart
 - Moeilijkheid als kleur/badge (groen/oranje/rood)
-- Hints op achterkant (of inklapbaar)
+- Hint zichtbaar op de kaart
+- QR code naar website (voor spieken)
 - 4 kaarten per A4
 
 ### Workflow
