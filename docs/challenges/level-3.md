@@ -19,6 +19,31 @@ Laat de zombie een geluid maken als hij verschijnt
 
 ---
 
+### Items Verbeteren
+
+Pas de medkit en energie bar aan: medkit geeft 3 levens, energie bar geeft 1 leven
+
+**Hint:** Check welk item je gebruikt met `if ... in inventory` en pas `levens +=` aan
+
+??? note "Spieken"
+    ```python
+    if "medkit" in inventory:
+        gebruik = input("Medkit gebruiken? (+3 levens) (ja/nee) ")
+        if gebruik == "ja":
+            inventory.remove("medkit")
+            levens += 3
+            print("+3 levens!")
+
+    if "energie bar" in inventory:
+        gebruik = input("Energie bar gebruiken? (+1 leven) (ja/nee) ")
+        if gebruik == "ja":
+            inventory.remove("energie bar")
+            levens += 1
+            print("+1 leven!")
+    ```
+
+---
+
 ## Pittig
 
 ### Zombie Drops

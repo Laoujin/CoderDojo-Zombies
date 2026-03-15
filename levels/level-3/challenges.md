@@ -10,6 +10,14 @@ Laat de zombie een geluid maken wanneer hij verschijnt
 
 ---
 
+### Items Verbeteren
+
+Pas de medkit en energie bar aan: medkit geeft 3 levens, energie bar geeft 1 leven
+
+**Hint:** Check welk item je gebruikt met `if ... in inventory` en pas `levens +=` aan
+
+---
+
 ## Pittig
 
 ### Zombie Drops
