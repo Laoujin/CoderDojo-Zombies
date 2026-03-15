@@ -49,9 +49,18 @@ UITDAGING → Kies een challenge card (15+ min)
 |--------------|-----------|
 | Makkelijk | Voeg een derde optie toe: "verstoppen" |
 | Makkelijk | Verander de teksten (maak je eigen verhaal) |
-| Medium | Voeg een wapen toe dat je winkans verhoogt |
 | Medium | De zombie heeft een naam (random uit lijst) |
 | Moeilijk | Voeg een "praten" optie toe met eigen logica |
+
+### Voorbeeld challenges Level 2
+
+| Moeilijkheid | Challenge |
+|--------------|-----------|
+| Makkelijk | Verander het aantal levens naar 5 |
+| Makkelijk | Voeg een "game over" bericht toe als je dood bent |
+| Medium | Voeg een "zoeken" actie toe om een wapen te vinden |
+| Medium | Het wapen verhoogt je winkans bij vechten |
+| Moeilijk | Voeg een score toe die omhoog gaat per overwonnen zombie |
 
 ---
 
@@ -201,9 +210,19 @@ Verander alle teksten naar je eigen zombie verhaal
 
 ## Medium
 
-### Wapen
-Voeg een wapen toe dat je winkans verhoogt
-**Hint:** Maak een variabele `heeft_wapen = True`
+### Zombie Naam
+De zombie heeft een naam (kies random uit een lijst)
+**Hint:** Maak een lijst: `namen = ["Gerrit", "Zombie-Jan", "Ransen"]`
+
+---
+
+# Level 2 Challenges
+
+## Medium
+
+### Wapen Zoeken
+Voeg een "zoeken" actie toe om een wapen te vinden
+**Hint:** Maak een variabele `heeft_wapen = False` aan het begin
 ```
 
 ### Print oplossing
