@@ -38,13 +38,9 @@ mkdocs gh-deploy
 
 ## Levels
 
-| Level | Concept | Files |
-|-------|---------|-------|
-| 1 | if/elif/else | `levels/level-1/` |
-| 2 | while, variabelen | `levels/level-2/` |
-| 3 | lijsten, random | `levels/level-3/` |
-| 4 | functies | `levels/level-4/` |
-
-## Licentie
-
-MIT - Vrij te gebruiken voor CoderDojo's en andere educatieve doeleinden.
+| Level | Concept           | Files             |
+|-------|-------------------|-------------------|
+| 1     | if/elif/else      | `levels/level-1/` |
+| 2     | while, variabelen | `levels/level-2/` |
+| 3     | lijsten, random   | `levels/level-3/` |
+| 4     | functies          | `levels/level-4/` |
