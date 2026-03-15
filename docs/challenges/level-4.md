@@ -63,15 +63,15 @@ Geef zombies meerdere levens zodat je ze vaker moet raken
 ??? note "Spieken"
     ```python
     def maak_zombie():
-        types = ["langzame zombie", "snelle zombie", "sterke zombie"]
+        # Elk type heeft een naam en HP
+        types = [
+            ("baby zombie", 1),
+            ("langzame zombie", 2),
+            ("snelle zombie", 2),
+            ("sterke zombie", 3),
+        ]
 
-        zombie_type = random.choice(types)
-
-        # Sterke zombies hebben meer HP
-        if zombie_type == "sterke zombie":
-            hp = 3
-        else:
-            hp = 2
+        zombie_type, hp = random.choice(types)
 
         return {
             "type": zombie_type,
