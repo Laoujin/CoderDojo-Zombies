@@ -64,12 +64,6 @@ Dit is een patroon dat je vaak ziet. `main()` is waar je programma start.
 2. Type `help` om de help functie te zien
 3. Let op hoe het spel hetzelfde werkt, maar de code is anders georganiseerd
 
-## LEES
-
-- Hoeveel functies zijn er?
-- Welke functie maakt een nieuwe zombie?
-- Welke functie geeft True of False terug?
-
 ## PROBEER
 
-Voeg een extra print statement toe in de `toon_help()` functie met een nieuwe tip.
+Voeg een extra print statement toe in de `toon_help()` functie met een nieuwe tip en maak die actie ook mogelijk.

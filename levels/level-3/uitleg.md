@@ -29,7 +29,6 @@ zombie = random.choice(zombie_types)
 inventory.append("honkbalknuppel")
 ```
 
-`.append()` voegt iets toe aan het einde van de lijst.
 
 ### Checken of iets in een lijst zit
 
@@ -46,7 +45,6 @@ if "honkbalknuppel" in inventory:
 inventory.remove("medkit")
 ```
 
-`.remove()` haalt het eerste gevonden item weg.
 
 ## BEKIJK
 

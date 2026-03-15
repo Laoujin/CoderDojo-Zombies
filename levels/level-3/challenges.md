@@ -44,4 +44,3 @@ Voeg een "sterke zombie" toe die moeilijker te verslaan is
 De honkbalknuppel maakt vechten makkelijker
 
 **Hint:** Check `if "honkbalknuppel" in inventory:` en geef een betere kans
-
