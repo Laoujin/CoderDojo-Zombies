@@ -32,12 +32,6 @@ Open een terminal (in VS Code: Terminal → New Terminal) en typ:
 pip install -r requirements.txt
 ```
 
-Of handmatig:
-
-```bash
-pip install friendly-traceback pgzero
-```
-
 ## 5. Download de Code
 
 1. Download dit project als ZIP, of clone met git
