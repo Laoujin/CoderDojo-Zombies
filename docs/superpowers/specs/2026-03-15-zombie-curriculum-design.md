@@ -62,6 +62,70 @@ UITDAGING → Kies een challenge card (15+ min)
 | Medium | Het wapen verhoogt je winkans bij vechten |
 | Moeilijk | Voeg een score toe die omhoog gaat per overwonnen zombie |
 
+### Level 3: Base code bevat
+
+- **Inventory systeem** — lege lijst aan het begin, items vinden en tonen
+- **Zombie types** — lijst met types, random keuze per ronde
+
+```python
+inventory = []
+zombie_types = ["snelle zombie", "sterke zombie", "langzame zombie"]
+
+# Voorbeeld: item toevoegen
+inventory.append("honkbalknuppel")
+
+# Voorbeeld: random zombie
+zombie = random.choice(zombie_types)
+print(f"Een {zombie} komt op je af!")
+```
+
+### Voorbeeld challenges Level 3
+
+| Moeilijkheid | Challenge |
+|--------------|-----------|
+| Makkelijk | Random zombie geluiden: "GRAAH", "BRAINS", "UGHH" |
+| Makkelijk | Zombie laat een item vallen als je wint |
+| Medium | Locaties: straat → ziekenhuis → supermarkt |
+| Medium | Elk zombie type heeft andere winkans |
+| Medium | Random events: "Je vindt een medkit" / "Je struikelt" |
+| Moeilijk | Crafting: combineer 2 items tot iets beters |
+| Moeilijk | Shop: ruil items met een NPC |
+
+### Level 4: Base code bevat
+
+- **Functies voor acties** — `def vecht():`, `def ren_weg():`, `def toon_inventory():`
+- **Hoofd game loop roept functies aan**
+
+```python
+def toon_status():
+    print(f"Levens: {levens}")
+    print(f"Inventory: {inventory}")
+
+def vecht(heeft_wapen):
+    if heeft_wapen:
+        kans = random.randint(1, 3)
+    else:
+        kans = random.randint(1, 2)
+    return kans >= 2  # True = gewonnen
+
+# In de game loop:
+toon_status()
+if actie == "vechten":
+    if vecht(heeft_wapen):
+        print("Je wint!")
+```
+
+### Voorbeeld challenges Level 4
+
+| Moeilijkheid | Challenge |
+|--------------|-----------|
+| Makkelijk | Maak `toon_status()` die levens en inventory toont |
+| Makkelijk | Verplaats elke actie naar een eigen functie |
+| Medium | Functie met parameter: `vecht(wapen_type)` |
+| Medium | Functie die waarde teruggeeft: `def bereken_kans():` |
+| Moeilijk | Voeg een `help()` functie toe die alle opties uitlegt |
+| Moeilijk | Maak een `nieuwe_zombie()` functie die random type + naam genereert |
+
 ---
 
 ## 3. Level Progression (Pygame Zero)
