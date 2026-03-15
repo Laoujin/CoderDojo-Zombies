@@ -58,6 +58,47 @@ if __name__ == "__main__":
 
 Dit is een patroon dat je vaak ziet. `main()` is waar je programma start.
 
+### Bestanden lezen en schrijven (File I/O)
+
+Je kan gegevens opslaan in een bestand zodat ze bewaard blijven.
+
+**Schrijven naar een bestand:**
+
+```python
+with open("highscores.txt", "a") as f:
+    f.write(f"{naam},{score}\n")
+```
+
+- `open()` opent een bestand
+- `"a"` betekent "append" - toevoegen aan het einde
+- `"w"` zou "write" zijn - alles overschrijven
+- `with` zorgt dat het bestand netjes wordt gesloten
+- `f.write()` schrijft tekst naar het bestand
+- `\n` is een nieuwe regel
+
+**Lezen uit een bestand:**
+
+```python
+with open("highscores.txt", "r") as f:
+    for line in f:
+        print(line)
+```
+
+- `"r"` betekent "read" - lezen
+- `for line in f` leest regel voor regel
+
+**Bestand bestaat niet?**
+
+```python
+try:
+    with open("highscores.txt", "r") as f:
+        # lees bestand
+except FileNotFoundError:
+    print("Bestand bestaat nog niet!")
+```
+
+`try/except` vangt fouten op zodat je programma niet crasht.
+
 ## BEKIJK
 
 1. Run `zombie.py`
