@@ -125,6 +125,43 @@ def toon_help():
     print()
 
 
+def laad_highscores():
+    """Laad highscores uit bestand."""
+    try:
+        with open("highscores.txt", "r") as f:
+            scores = []
+            for line in f:
+                if "," in line:
+                    naam, score = line.strip().split(",")
+                    scores.append((naam, int(score)))
+            return scores
+    except FileNotFoundError:
+        return []
+
+
+def sla_score_op(naam, score):
+    """Sla een score op in het bestand."""
+    with open("highscores.txt", "a") as f:
+        f.write(f"{naam},{score}\n")
+
+
+def toon_highscores():
+    """Toon de top 5 highscores."""
+    scores = laad_highscores()
+    if not scores:
+        print("Nog geen highscores!")
+        return
+
+    # Sorteer op score (hoogste eerst)
+    scores.sort(key=lambda x: x[1], reverse=True)
+
+    print()
+    print("=== HIGHSCORES ===")
+    for i, (naam, score) in enumerate(scores[:5], 1):
+        print(f"  {i}. {naam}: {score}")
+    print("==================")
+
+
 # === MAIN GAME ===
 
 def main():
@@ -133,7 +170,10 @@ def main():
     inventory = []
 
     print("🧟‍♂️💀 WELKOM BIJ ZOMBIE APOCALYPSE 💀🧟‍♂️")
-    print("Type 'help' voor alle opties")
+    toon_highscores()
+    print()
+    naam = input("Wat is je naam? ➜ ").strip() or "Anoniem"
+    print(f"Welkom {naam}! Type 'help' voor alle opties")
 
     while levens > 0:
         toon_status(levens, score, inventory)
@@ -190,6 +230,11 @@ def main():
         print("👍 Goed gedaan!")
     else:
         print("💀 Probeer het nog eens...")
+
+    # Sla score op
+    sla_score_op(naam, score)
+    print(f"Score opgeslagen voor {naam}!")
+    toon_highscores()
 
 
 # Start het spel
