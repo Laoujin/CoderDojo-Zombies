@@ -1,0 +1,44 @@
+site_name: Zombie Apocalypse
+site_description: Leer Python programmeren met een zombie spel!
+site_url: https://yourusername.github.io/CoderDojo-Zombies/
+
+theme:
+  name: material
+  language: nl
+  palette:
+    scheme: slate
+    primary: red
+    accent: orange
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.sections
+    - navigation.expand
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Aan de Slag: aan-de-slag.md
+  - Levels:
+    - Level 1 - Keuzes: levels/level-1/uitleg.md
+    - Level 2 - Loops: levels/level-2/uitleg.md
+    - Level 3 - Lijsten: levels/level-3/uitleg.md
+    - Level 4 - Functies: levels/level-4/uitleg.md
+  - Challenges:
+    - Level 1: levels/level-1/challenges.md
+    - Level 2: levels/level-2/challenges.md
+    - Level 3: levels/level-3/challenges.md
+    - Level 4: levels/level-4/challenges.md
+  - Cheatsheet: cheatsheet.md
+
+extra_css:
+  - stylesheets/print-cards.css
