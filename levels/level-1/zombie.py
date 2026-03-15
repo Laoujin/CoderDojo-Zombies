@@ -1,6 +1,3 @@
-import friendly_traceback
-friendly_traceback.install()
-
 import os
 import random
 import time
