@@ -75,7 +75,7 @@ Geef zombies meerdere levens zodat je ze vaker moet raken
 
         return {
             "type": zombie_type,
-            "naam": random.choice(["Gerrit", "Jan", "Pansen"]),
+            "naam": random.choice(["Gerrit", "Jan", "Koen"]),
             "hp": hp
         }
 

@@ -28,3 +28,13 @@ Geef zombies meerdere levens zodat je ze vaker moet raken
 
 **Hint:** Voeg `"hp": 2` toe aan de zombie dictionary in `maak_zombie()`. Bij vechten: `zombie["hp"] -= 1` en check of hp 0 is.
 
+    ```python
+    types = [
+        ("baby zombie", 1),
+        ("langzame zombie", 2),
+        ("snelle zombie", 2),
+        ("sterke zombie", 3),
+    ]
+
+    zombie_type, hp = random.choice(types)
+    ```
