@@ -2,6 +2,20 @@
 
 ## Makkelijk
 
+### Eigen Verhaal
+
+Verander alle teksten naar je eigen zombie verhaal
+
+**Hint:** Pas de strings aan in de `print()` statements
+
+??? note "Spieken"
+    Geen code nodig - verander gewoon de tekst tussen aanhalingstekens!
+    Bijvoorbeeld: `print("Een geest verschijnt...")`
+
+---
+
+## Medium
+
 ### Verstoppen
 
 Voeg een derde optie toe: "verstoppen"
@@ -17,38 +31,6 @@ Voeg een derde optie toe: "verstoppen"
             print("De zombie ziet je niet! Je bent veilig.")
         else:
             print("De zombie ruikt je...")
-    ```
-
----
-
-### Eigen Verhaal
-
-Verander alle teksten naar je eigen zombie verhaal
-
-**Hint:** Pas de strings aan in de `print()` statements
-
-??? note "Spieken"
-    Geen code nodig - verander gewoon de tekst tussen aanhalingstekens!
-    Bijvoorbeeld: `print("Een geest verschijnt...")`
-
----
-
-## Medium
-
-### Zombie Naam
-
-De zombie heeft een naam (kies random uit een lijst)
-
-**Hint:** Maak een lijst: `namen = ["Gerrit", "Zombie-Jan", "Ransen"]` en gebruik `random.choice()`
-
-??? note "Spieken"
-    ```python
-    import random
-
-    namen = ["Gerrit", "Zombie-Jan", "Ransen", "Pansen"]
-    zombie_naam = random.choice(namen)
-
-    print(f"{zombie_naam} de zombie komt op je af!")
     ```
 
 ---

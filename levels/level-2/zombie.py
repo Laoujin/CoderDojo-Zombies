@@ -28,7 +28,7 @@ while levens > 0:
         else:
             print("😱 De zombie was sneller!")
             print("🩸 Hij grijpt je arm... Je verliest een leven")
-            levens -= 1
+            levens = levens - 1
 
     elif actie == "vechten":
         print("⚔️ Je maakt je klaar om te vechten...")
@@ -39,7 +39,7 @@ while levens > 0:
             print("💥🧟‍♂️ BOEM! Je verslaat de zombie als een held!")
         else:
             print("🧟‍♂️💢 De zombie bijt je...")
-            levens -= 1
+            levens = levens - 1
 
     else:
         print("🤦 Zombies twijfelen niet...")

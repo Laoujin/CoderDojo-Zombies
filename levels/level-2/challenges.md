@@ -2,14 +2,6 @@
 
 ## Makkelijk
 
-### Meer Levens
-
-Verander het aantal levens naar 5
-
-**Hint:** Zoek de regel `levens = 3` en pas het aan
-
----
-
 ### Game Over Bericht
 
 Voeg een speciaal bericht toe als je dood gaat

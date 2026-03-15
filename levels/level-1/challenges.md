@@ -2,29 +2,21 @@
 
 ## Makkelijk
 
-### Verstoppen
-
-Voeg een derde optie toe: "verstoppen"
-
-**Hint:** Gebruik `elif actie == "verstoppen":`
-
----
-
 ### Eigen Verhaal
 
 Verander alle teksten naar je eigen zombie verhaal
 
-**Hint:** Pas de strings aan in de `print()` statements
+**Hint:** Pas de strings aan in de `print()` statements, of voeg er extra toe!
 
 ---
 
 ## Medium
 
-### Zombie Naam
+### Verstoppen
 
-De zombie heeft een naam (kies random uit een lijst)
+Voeg een derde optie toe: "verstoppen"
 
-**Hint:** Maak een lijst: `namen = ["Gerrit", "Zombie-Jan", "Ransen"]` en gebruik `random.choice()`
+**Hint:** Gebruik `elif actie == "verstoppen":`
 
 ---
 

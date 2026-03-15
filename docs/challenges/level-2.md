@@ -2,19 +2,6 @@
 
 ## Makkelijk
 
-### Meer Levens
-
-Verander het aantal levens naar 5
-
-**Hint:** Zoek de regel `levens = 3` en pas het aan
-
-??? note "Spieken"
-    ```python
-    levens = 5
-    ```
-
----
-
 ### Game Over Bericht
 
 Voeg een speciaal bericht toe als je dood gaat
@@ -26,9 +13,8 @@ Voeg een speciaal bericht toe als je dood gaat
     while levens > 0:
         # ... bestaande code ...
 
-    if levens == 0:
-        print("GAME OVER")
-        print("De zombies hebben gewonnen...")
+    print("GAME OVER")
+    print("De zombies hebben gewonnen...")
 
     print("THE END")
     ```
@@ -88,7 +74,7 @@ Het wapen verhoogt je winkans bij vechten
             print("Je verslaat de zombie!")
         else:
             print("De zombie bijt je...")
-            levens -= 1
+            levens = levens - 1
     ```
 
 ---
