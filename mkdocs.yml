@@ -28,6 +28,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Aan de Slag: aan-de-slag.md
+  - Voor Mentoren: mentoren.md
   - Levels:
     - Level 1 - Keuzes: levels/level-1/uitleg.md
     - Level 2 - Loops: levels/level-2/uitleg.md
