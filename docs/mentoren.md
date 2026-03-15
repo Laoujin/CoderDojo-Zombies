@@ -46,11 +46,3 @@ Zorg dat deze extensies geinstalleerd zijn:
 - **Python** (Microsoft) - syntax highlighting, debugging
 - **Pylance** (Microsoft) - code completion, type checking
 
-## Kids kunnen niet typen
-
-Sommige kinderen (vooral de jongere) kunnen nog niet goed typen. Tips:
-
-- Laat ze eerst de code bekijken en uitleggen wat er staat
-- Typ samen met ze (jij typt, zij dicteren)
-- Gebruik de challenge cards - minder typen nodig
-- Focus op begrip, niet op typsnelheid
