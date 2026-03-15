@@ -1,5 +1,5 @@
 import friendly_traceback
-friendly_traceback.install()
+friendly_traceback.install(lang='nl')
 
 import os
 import random

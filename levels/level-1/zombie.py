@@ -1,5 +1,5 @@
 import friendly_traceback
-friendly_traceback.install()
+friendly_traceback.install(lang='nl')
 
 import os
 import random
@@ -17,7 +17,7 @@ print()
 
 actie = input("⚡ Wat doe je? (rennen / vechten) ➜ ")
 
-if actie == "rennen":
+if actie == "rennen"
     print("🏃‍♂️ Je probeert weg te sprinten...")
     time.sleep(1)
 
