@@ -17,7 +17,7 @@ resultaat_goed = False
 laatste_actie = ""  # "vechten" of "rennen"
 tijd = 0  # Voor animaties
 
-# Button positions (x, y, width, height)
+# Knop posities (x, y, breedte, hoogte)
 KNOP_VECHTEN = Rect(100, 400, 150, 150)
 KNOP_RENNEN = Rect(550, 400, 150, 150)
 
@@ -31,19 +31,19 @@ def teken_tekst(tekst, center, fontsize, kleur="white"):
 
 def draw():
     if toestand == "spel":
-        # Background with zombie
+        # Achtergrond met zombie
         screen.blit("achtergrond", (0, 0))
 
-        # Hearts (lives)
+        # Hartjes (levens)
         for i in range(levens):
             screen.blit("hart", (20 + i * 50, 20))
 
-        # Get mouse position for hover effects
+        # Haal muispositie op voor hover effecten
         muis_pos = pygame.mouse.get_pos()
         hover_vechten = KNOP_VECHTEN.collidepoint(muis_pos)
         hover_rennen = KNOP_RENNEN.collidepoint(muis_pos)
 
-        # Button VECHTEN - Pulse effect when hovering
+        # Knop VECHTEN - Pulse effect bij hover
         if hover_vechten:
             pulse = 1.0 + 0.08 * math.sin(tijd * 5)
             new_size = int(150 * pulse)
@@ -54,7 +54,7 @@ def draw():
         else:
             screen.blit("knop_vechten", KNOP_VECHTEN.topleft)
 
-        # Button RENNEN - Pulse effect when hovering
+        # Knop RENNEN - Pulse effect bij hover
         if hover_rennen:
             pulse = 1.0 + 0.08 * math.sin(tijd * 5)
             new_size = int(150 * pulse)
@@ -90,7 +90,7 @@ def update(dt):
     global tijd
     tijd += dt
 
-    # Cursor based on hover state
+    # Cursor op basis van hover status
     if toestand == "spel":
         muis_pos = pygame.mouse.get_pos()
         if KNOP_VECHTEN.collidepoint(muis_pos) or KNOP_RENNEN.collidepoint(muis_pos):
@@ -109,7 +109,7 @@ def on_mouse_down(pos):
     if toestand == "spel":
         if KNOP_VECHTEN.collidepoint(pos):
             laatste_actie = "vechten"
-            # Fight: 50/50 chance
+            # Vechten: 50/50 kans
             if random.randint(1, 2) == 1:
                 resultaat_tekst = "Je verslaat de zombie!"
                 resultaat_goed = True
@@ -122,7 +122,7 @@ def on_mouse_down(pos):
 
         elif KNOP_RENNEN.collidepoint(pos):
             laatste_actie = "rennen"
-            # Run: 50/50 chance
+            # Rennen: 50/50 kans
             if random.randint(1, 2) == 1:
                 resultaat_tekst = "Je bent ontsnapt!"
                 resultaat_goed = True
