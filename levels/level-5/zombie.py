@@ -49,3 +49,55 @@ def draw():
     elif toestand == "game_over":
         screen.fill("darkred")
         screen.draw.text("GAME OVER", center=(400, 300), fontsize=60, color="white")
+        screen.draw.text("Klik om opnieuw te spelen", center=(400, 380), fontsize=24, color="gray")
+
+
+def on_mouse_down(pos):
+    global toestand, levens, resultaat_tekst, resultaat_goed, laatste_actie
+
+    if toestand == "spel":
+        if KNOP_VECHTEN.collidepoint(pos):
+            laatste_actie = "vechten"
+            # Fight: 50/50 chance
+            if random.randint(1, 2) == 1:
+                resultaat_tekst = "Je verslaat de zombie!"
+                resultaat_goed = True
+            else:
+                resultaat_tekst = "De zombie bijt je..."
+                resultaat_goed = False
+                levens -= 1
+            toestand = "resultaat"
+            clock.schedule(ga_naar_volgende, 2.0)
+
+        elif KNOP_RENNEN.collidepoint(pos):
+            laatste_actie = "rennen"
+            # Run: 50/50 chance
+            if random.randint(1, 2) == 1:
+                resultaat_tekst = "Je bent ontsnapt!"
+                resultaat_goed = True
+            else:
+                resultaat_tekst = "De zombie was sneller..."
+                resultaat_goed = False
+                levens -= 1
+            toestand = "resultaat"
+            clock.schedule(ga_naar_volgende, 2.0)
+
+    elif toestand == "game_over":
+        reset_game()
+
+
+def ga_naar_volgende():
+    global toestand
+    if levens <= 0:
+        toestand = "game_over"
+    else:
+        toestand = "spel"
+
+
+def reset_game():
+    global toestand, levens, resultaat_tekst, resultaat_goed, laatste_actie
+    toestand = "spel"
+    levens = 3
+    resultaat_tekst = ""
+    resultaat_goed = False
+    laatste_actie = ""
