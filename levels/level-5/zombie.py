@@ -74,7 +74,7 @@ def on_mouse_down(pos):
                 resultaat_goed = False
                 levens -= 1
             toestand = "resultaat"
-            clock.schedule(ga_naar_volgende, 2.0)
+            clock.schedule(ga_naar_volgende, 3.0)
 
         elif KNOP_RENNEN.collidepoint(pos):
             laatste_actie = "rennen"
@@ -87,7 +87,7 @@ def on_mouse_down(pos):
                 resultaat_goed = False
                 levens -= 1
             toestand = "resultaat"
-            clock.schedule(ga_naar_volgende, 2.0)
+            clock.schedule(ga_naar_volgende, 3.0)
 
     elif toestand == "game_over":
         reset_game()
