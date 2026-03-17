@@ -51,7 +51,7 @@ def draw():
                 screen.blit("rennen_succes", (0, 0))
             else:
                 screen.blit("rennen_faal", (0, 0))
-        teken_tekst(resultaat_tekst, center=(400, 300), fontsize=36)
+        teken_tekst(resultaat_tekst, center=(400, 80), fontsize=36)
 
     elif toestand == "game_over":
         screen.blit("game_over", (0, 0))
