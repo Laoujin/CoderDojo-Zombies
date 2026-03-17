@@ -14,18 +14,6 @@ Dit is een curriculum voor CoderDojo om kinderen (8-16 jaar) Python te leren. He
 - **MkDocs website** met alle instructies
 - **Coaches handleiding** met sessie-voorbereiding tips
 
-## Structuur
-
-```
-levels/           # Python code per level
-├── level-1/      # if/elif/else
-├── level-2/      # while loops
-├── level-3/      # lijsten
-└── level-4/      # functies
-
-docs/             # Website content
-```
-
 ## Setup
 
 **Let op:** Python 3.12 is vereist (pygame werkt nog niet met 3.13+). Check met `python --version`.
@@ -54,6 +42,7 @@ mkdocs gh-deploy
 | 2     | while, variabelen | `levels/level-2/` |
 | 3     | lijsten, random   | `levels/level-3/` |
 | 4     | functies          | `levels/level-4/` |
+| 5     | Pygame zero       | `levels/level-5/` |
 
 ## Printbare Uitdagingen Kaarten
 
