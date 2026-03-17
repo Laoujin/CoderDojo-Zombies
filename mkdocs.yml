@@ -1,6 +1,6 @@
 site_name: Zombie Apocalypse
 site_description: Leer Python programmeren met een zombie spel!
-site_url: https://yourusername.github.io/CoderDojo-Zombies/
+site_url: https://laoujin.github.io/CoderDojo-Zombies/
 
 theme:
   name: material
@@ -28,7 +28,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Aan de Slag: aan-de-slag.md
-  - Voor Mentoren: mentoren.md
+  - Voor Coaches: coaches.md
   - Levels:
     - Level 1 - Keuzes: levels/level-1/uitleg.md
     - Level 2 - Loops: levels/level-2/uitleg.md

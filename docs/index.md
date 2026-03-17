@@ -6,18 +6,18 @@ Dit project is gemaakt voor CoderDojo. Je leert stap voor stap programmeren, van
 
 ## Voor wie is dit?
 
-- Kinderen van 8-16 jaar
-- Je hebt Scratch gedaan en wilt "echte" code leren
+- Zombie overlevers tussen 8 en 16 jaar
+- Je hebt Scratch gedaan en wil "echte" code leren
 - Je houdt van games en zombies 🧟
 
 ## Wat ga je leren?
 
-| Level | Concept | Wat je bouwt |
-|-------|---------|--------------|
-| 1 | `if`/`else` | Keuzes maken: rennen of vechten |
-| 2 | `while` loops | Levens systeem, game loop |
-| 3 | Lijsten | Inventory, zombie types |
-| 4 | Functies | Georganiseerde code |
+| Level | Concept       | Wat je bouwt                    |
+|-------|---------------|---------------------------------|
+| 1     | `if`/`else`   | Keuzes maken: rennen of vechten |
+| 2     | `while` loops | Levens systeem, game loop       |
+| 3     | Lijsten       | Inventory, zombie types         |
+| 4     | Functies      | Georganiseerde code             |
 
 ## Hoe werkt het?
 
