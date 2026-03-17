@@ -21,35 +21,35 @@ KNOP_RENNEN = Rect(550, 480, 150, 80)
 
 def draw():
     if toestand == "spel":
-        # Background
-        screen.fill("darkgreen")
-
-        # Title
-        screen.draw.text("ZOMBIE APOCALYPSE", center=(400, 50), fontsize=48, color="red")
-        screen.draw.text("Een zombie komt op je af!", center=(400, 150), fontsize=28, color="white")
+        # Background with zombie
+        screen.blit("achtergrond", (0, 0))
 
         # Hearts (lives)
         for i in range(levens):
-            screen.draw.text("♥", topleft=(20 + i * 50, 20), fontsize=40, color="red")
+            screen.blit("hart", (20 + i * 50, 20))
 
-        # Buttons (placeholder rectangles)
-        screen.draw.filled_rect(KNOP_VECHTEN, "darkred")
-        screen.draw.text("VECHTEN", center=KNOP_VECHTEN.center, fontsize=24, color="white")
-
-        screen.draw.filled_rect(KNOP_RENNEN, "darkblue")
-        screen.draw.text("RENNEN", center=KNOP_RENNEN.center, fontsize=24, color="white")
+        # Buttons
+        screen.blit("knop_vechten", KNOP_VECHTEN.topleft)
+        screen.blit("knop_rennen", KNOP_RENNEN.topleft)
 
     elif toestand == "resultaat":
-        if resultaat_goed:
-            screen.fill("darkgreen")
-        else:
-            screen.fill("darkred")
+        # Kies de juiste afbeelding op basis van actie en resultaat
+        if laatste_actie == "vechten":
+            if resultaat_goed:
+                screen.blit("vechten_succes", (0, 0))
+            else:
+                screen.blit("vechten_faal", (0, 0))
+        else:  # rennen
+            if resultaat_goed:
+                screen.blit("rennen_succes", (0, 0))
+            else:
+                screen.blit("rennen_faal", (0, 0))
         screen.draw.text(resultaat_tekst, center=(400, 300), fontsize=36, color="white")
 
     elif toestand == "game_over":
-        screen.fill("darkred")
-        screen.draw.text("GAME OVER", center=(400, 300), fontsize=60, color="white")
-        screen.draw.text("Klik om opnieuw te spelen", center=(400, 380), fontsize=24, color="gray")
+        screen.blit("game_over", (0, 0))
+        screen.draw.text("GAME OVER", center=(400, 250), fontsize=60, color="white")
+        screen.draw.text("Klik om opnieuw te spelen", center=(400, 350), fontsize=24, color="gray")
 
 
 def on_mouse_down(pos):
