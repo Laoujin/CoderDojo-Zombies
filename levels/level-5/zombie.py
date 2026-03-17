@@ -2,6 +2,7 @@
 # Run met: pgzrun zombie.py
 
 import random
+import math
 import pygame
 
 WIDTH = 800
@@ -14,6 +15,7 @@ levens = 3
 resultaat_tekst = ""
 resultaat_goed = False
 laatste_actie = ""  # "vechten" of "rennen"
+tijd = 0  # Voor animaties
 
 # Button positions (x, y, width, height)
 KNOP_VECHTEN = Rect(100, 400, 150, 150)
@@ -41,17 +43,25 @@ def draw():
         hover_vechten = KNOP_VECHTEN.collidepoint(muis_pos)
         hover_rennen = KNOP_RENNEN.collidepoint(muis_pos)
 
-        # Button VECHTEN - Effect A: yellow glow border when hovering
+        # Button VECHTEN - Pulse effect when hovering
         if hover_vechten:
-            glow_rect = KNOP_VECHTEN.inflate(20, 20)
-            screen.draw.filled_rect(glow_rect, "yellow")
-        screen.blit("knop_vechten", KNOP_VECHTEN.topleft)
+            pulse = 1.0 + 0.08 * math.sin(tijd * 5)
+            new_size = int(150 * pulse)
+            offset = (new_size - 150) // 2
+            img = images.knop_vechten
+            scaled = pygame.transform.scale(img, (new_size, new_size))
+            screen.surface.blit(scaled, (KNOP_VECHTEN.x - offset, KNOP_VECHTEN.y - offset))
+        else:
+            screen.blit("knop_vechten", KNOP_VECHTEN.topleft)
 
-        # Button RENNEN - Effect B: move up and add shadow when hovering
+        # Button RENNEN - Pulse effect when hovering
         if hover_rennen:
-            shadow_rect = KNOP_RENNEN.move(5, 5)
-            screen.draw.filled_rect(shadow_rect, (0, 0, 0, 128))
-            screen.blit("knop_rennen", (KNOP_RENNEN.x, KNOP_RENNEN.y - 10))
+            pulse = 1.0 + 0.08 * math.sin(tijd * 5)
+            new_size = int(150 * pulse)
+            offset = (new_size - 150) // 2
+            img = images.knop_rennen
+            scaled = pygame.transform.scale(img, (new_size, new_size))
+            screen.surface.blit(scaled, (KNOP_RENNEN.x - offset, KNOP_RENNEN.y - offset))
         else:
             screen.blit("knop_rennen", KNOP_RENNEN.topleft)
 
@@ -75,8 +85,12 @@ def draw():
         teken_tekst("Klik om opnieuw te spelen", center=(400, 350), fontsize=24, kleur="gray")
 
 
-def update():
-    """Update cursor based on hover state."""
+def update(dt):
+    """Update tijd en cursor."""
+    global tijd
+    tijd += dt
+
+    # Cursor based on hover state
     if toestand == "spel":
         muis_pos = pygame.mouse.get_pos()
         if KNOP_VECHTEN.collidepoint(muis_pos) or KNOP_RENNEN.collidepoint(muis_pos):
