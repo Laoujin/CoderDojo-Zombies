@@ -1,16 +1,20 @@
 # Zombie Apocalypse - Level 5
-# Run met: pgzrun zombie.py
+# Start met: pgzrun zombie.py
+# Of met F5
 
 import random
 import math
 import pygame
+from pgzero.builtins import Rect, images, clock
+from pgzero.screen import Screen
+screen: Screen
 
 WIDTH = 800
 HEIGHT = 600
 TITLE = "Zombie Apocalypse"
 
-# === GAME STATE ===
-toestand = "spel"  # "spel", "resultaat", "game_over"
+# === GAME STATUS ===
+toestand = "spel"  # "spel", "resultaat" of "game_over"
 levens = 3
 resultaat_tekst = ""
 resultaat_goed = False
