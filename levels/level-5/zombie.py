@@ -19,6 +19,13 @@ KNOP_VECHTEN = Rect(100, 480, 150, 80)
 KNOP_RENNEN = Rect(550, 480, 150, 80)
 
 
+def teken_tekst(tekst, center, fontsize, kleur="white"):
+    """Teken tekst met een schaduw voor betere leesbaarheid."""
+    x, y = center
+    screen.draw.text(tekst, center=(x+2, y+2), fontsize=fontsize, color="black")
+    screen.draw.text(tekst, center=(x, y), fontsize=fontsize, color=kleur)
+
+
 def draw():
     if toestand == "spel":
         # Background with zombie
@@ -44,12 +51,12 @@ def draw():
                 screen.blit("rennen_succes", (0, 0))
             else:
                 screen.blit("rennen_faal", (0, 0))
-        screen.draw.text(resultaat_tekst, center=(400, 300), fontsize=36, color="white")
+        teken_tekst(resultaat_tekst, center=(400, 300), fontsize=36)
 
     elif toestand == "game_over":
         screen.blit("game_over", (0, 0))
-        screen.draw.text("GAME OVER", center=(400, 250), fontsize=60, color="white")
-        screen.draw.text("Klik om opnieuw te spelen", center=(400, 350), fontsize=24, color="gray")
+        teken_tekst("GAME OVER", center=(400, 250), fontsize=60, kleur="red")
+        teken_tekst("Klik om opnieuw te spelen", center=(400, 350), fontsize=24, kleur="gray")
 
 
 def on_mouse_down(pos):
