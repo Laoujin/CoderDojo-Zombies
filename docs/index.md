@@ -26,6 +26,16 @@ Dit project is gemaakt voor CoderDojo. Je leert stap voor stap programmeren, van
 3. **PROBEER** - Maak een kleine aanpassing
 4. **UITDAGING** - Kies een challenge kaart
 
+## Uitdagingen
+
+Elke level heeft uitdagingen in drie moeilijkheden:
+
+| Niveau       | Beschrijving                         |
+|--------------|--------------------------------------|
+| **Opwarmer** | Kleine aanpassingen om op te warmen  |
+| **Pittig**   | Extra dingen toevoegen               |
+| **Boss**     | Grotere uitdagingen voor gevorderden |
+
 ## Begin hier
 
 👉 [Aan de Slag](aan-de-slag.md) - Installeer Python en VS Code

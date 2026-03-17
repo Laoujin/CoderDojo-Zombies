@@ -1,5 +1,7 @@
 # CoderDojo Zombie Game Curriculum — Design Document
 
+> **STATUS: v1 COMPLETED** - All 4 text-based levels implemented and deployed. Pygame Zero levels remain out of scope for v1.
+
 ## 1. Project Overview
 
 **Project naam:** CoderDojo Zombie Game Curriculum
@@ -32,7 +34,7 @@
 | **1** | `if`/`elif`/`else`, `input()`, `print()` | Keuze maken: rennen of vechten | Bestaande Zombie1.py |
 | **2** | `while`, variabelen, state | Levens systeem, game loop | Bestaande Zombie2.py |
 | **3** | `import random`, lijsten | Willekeurige events, zombie types, inventory | Wapens verzamelen, verschillende zombies |
-| **4** | `def` functies | Code organiseren, herbruikbare acties | `def vecht():`, `def toon_inventaris():` |
+| **4** | `def` functies, file I/O | Code organiseren, herbruikbare acties, highscores opslaan | `def vecht():`, `open()`, `try/except` |
 
 ### Per level structuur
 
@@ -47,20 +49,20 @@ UITDAGING → Kies een challenge card (15+ min)
 
 | Moeilijkheid | Challenge |
 |--------------|-----------|
-| Makkelijk | Voeg een derde optie toe: "verstoppen" |
-| Makkelijk | Verander de teksten (maak je eigen verhaal) |
-| Medium | De zombie heeft een naam (random uit lijst) |
-| Moeilijk | Voeg een "praten" optie toe met eigen logica |
+| Opwarmer | Voeg een derde optie toe: "verstoppen" |
+| Opwarmer | Verander de teksten (maak je eigen verhaal) |
+| Pittig | De zombie heeft een naam (random uit lijst) |
+| Boss | Voeg een "praten" optie toe met eigen logica |
 
 ### Voorbeeld challenges Level 2
 
 | Moeilijkheid | Challenge |
 |--------------|-----------|
-| Makkelijk | Verander het aantal levens naar 5 |
-| Makkelijk | Voeg een "game over" bericht toe als je dood bent |
-| Medium | Voeg een "zoeken" actie toe om een wapen te vinden |
-| Medium | Het wapen verhoogt je winkans bij vechten |
-| Moeilijk | Voeg een score toe die omhoog gaat per overwonnen zombie |
+| Opwarmer | Verander het aantal levens naar 5 |
+| Opwarmer | Voeg een "game over" bericht toe als je dood bent |
+| Pittig | Voeg een "zoeken" actie toe om een wapen te vinden |
+| Pittig | Het wapen verhoogt je winkans bij vechten |
+| Boss | Voeg een score toe die omhoog gaat per overwonnen zombie |
 
 ### Level 3: Base code bevat
 
@@ -83,13 +85,11 @@ print(f"Een {zombie} komt op je af!")
 
 | Moeilijkheid | Challenge |
 |--------------|-----------|
-| Makkelijk | Random zombie geluiden: "GRAAH", "BRAINS", "UGHH" |
-| Makkelijk | Zombie laat een item vallen als je wint |
-| Medium | Locaties: straat → ziekenhuis → supermarkt |
-| Medium | Elk zombie type heeft andere winkans |
-| Medium | Random events: "Je vindt een medkit" / "Je struikelt" |
-| Moeilijk | Crafting: combineer 2 items tot iets beters |
-| Moeilijk | Shop: ruil items met een NPC |
+| Opwarmer | Zombie geluiden: laat de zombie een geluid maken |
+| Opwarmer | Items verbeteren: medkit geeft 3 levens, energie bar geeft 1 leven |
+| Pittig | Zombie drops: zombie laat soms een item vallen als je wint |
+| Boss | Sterke zombie: voeg een zombie type toe dat moeilijker te verslaan is |
+| Boss | Wapen bonus: honkbalknuppel maakt vechten makkelijker |
 
 ### Level 4: Base code bevat
 
@@ -119,12 +119,9 @@ if actie == "vechten":
 
 | Moeilijkheid | Challenge |
 |--------------|-----------|
-| Makkelijk | Maak `toon_status()` die levens en inventory toont |
-| Makkelijk | Verplaats elke actie naar een eigen functie |
-| Medium | Functie met parameter: `vecht(wapen_type)` |
-| Medium | Functie die waarde teruggeeft: `def bereken_kans():` |
-| Moeilijk | Voeg een `help()` functie toe die alle opties uitlegt |
-| Moeilijk | Maak een `nieuwe_zombie()` functie die random type + naam genereert |
+| Opwarmer | Status verbeteren: pas `toon_status()` aan om aantal items te tonen |
+| Pittig | Meerdere wapens: pas `vecht()` aan met verschillende wapen types |
+| Boss | Zombie HP: geef zombies meerdere levens zodat je ze vaker moet raken |
 
 ---
 
@@ -220,7 +217,7 @@ Zombie Apocalypse
 1. **Wat leer je?** — nieuw concept in 2-3 zinnen
 2. **De code** — syntax highlighted, copy button
 3. **BEKIJK → LEES → PROBEER** — korte instructies
-4. **Challenges** — tabel met moeilijkheid + beschrijving
+4. **Uitdagingen** — tabel met moeilijkheid + beschrijving
 
 ### Taal
 
@@ -251,14 +248,14 @@ nav:
 
 ### Bron
 
-Dezelfde `challenges.md` per level
+Dezelfde `uitdagingen.md` per level
 
 ### Format in Markdown
 
 ```markdown
-# Level 1 Challenges
+# Level 1 Uitdagingen
 
-## Makkelijk
+## Opwarmer
 
 ### Verstoppen
 Voeg een derde optie toe: "verstoppen"
@@ -289,7 +286,7 @@ Verander alle teksten naar je eigen zombie verhaal
 
 ---
 
-## Medium
+## Pittig
 
 ### Zombie Naam
 De zombie heeft een naam (kies random uit een lijst)
@@ -310,7 +307,7 @@ De zombie heeft een naam (kies random uit een lijst)
 
 # Level 2 Challenges
 
-## Medium
+## Pittig
 
 ### Wapen Zoeken
 Voeg een "zoeken" actie toe om een wapen te vinden
@@ -349,7 +346,7 @@ Voeg een "zoeken" actie toe om een wapen te vinden
 
 CSS print stylesheet die:
 - Elke `###` heading = nieuwe kaart
-- Moeilijkheid als kleur/badge (groen/oranje/rood)
+- Moeilijkheid als kleur/badge (groen=Opwarmer/oranje=Pittig/rood=Boss)
 - Hint zichtbaar op de kaart
 - QR code naar website (voor spieken)
 - 4 kaarten per A4
@@ -396,20 +393,21 @@ CSS print stylesheet die:
 
 ## 8. Scope
 
-### In scope (dit project)
+### Completed (v1)
 
-- 4 text-based levels met werkende code
-- 2 Pygame Zero levels (basis)
-- MkDocs website met alle content
-- Printbare challenge cards (CSS print stylesheet)
-- Nederlandse content
-- Midjourney-gegenereerde images voor Pygame Zero levels
+- ✅ 4 text-based levels met werkende code
+- ✅ MkDocs website met alle content
+- ✅ Printbare challenge cards (CSS print stylesheet)
+- ✅ Nederlandse content
+- ✅ Coaches handleiding
+- ✅ Level 4 bevat ook File I/O (highscores opslaan)
 
 ### Out of scope (mogelijk later)
 
+- Pygame Zero levels (5+) - grafische versie
+- Midjourney-gegenereerde images
 - Progress tracking / login systeem
 - Community features (delen van creaties)
-- Meer dan 6 levels
 - OOP / classes (bewust weggelaten)
 - Andere talen dan Nederlands
 - PDF generator script (CSS print is voldoende voor v1)

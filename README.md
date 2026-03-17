@@ -2,13 +2,16 @@
 
 Leer Python programmeren met een zombie spel!
 
+**Website:** https://laoujin.github.io/CoderDojo-Zombies/
+
 ## Voor mentoren
 
 Dit is een curriculum voor CoderDojo om kinderen (8-16 jaar) Python te leren. Het project bevat:
 
 - **4 text-based levels** met oplopende moeilijkheid
-- **Challenge cards** voor extra oefeningen
+- **Challenge cards** voor extra oefeningen (Opwarmer / Pittig / Boss)
 - **MkDocs website** met alle instructies
+- **Coaches handleiding** met sessie-voorbereiding tips
 - **Printbare kaarten** voor in de sessie
 
 ## Structuur

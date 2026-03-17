@@ -1,5 +1,7 @@
 # Zombie Curriculum Implementation Plan
 
+> **STATUS: COMPLETED** - All text-based levels (1-4) have been implemented and deployed. See "Implementation Notes" at the end for changes made during implementation.
+
 > **For agentic workers:** REQUIRED: Use superpowers:subagent-driven-development (if subagents available) or superpowers:executing-plans to implement this plan. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Create a complete Python learning curriculum for CoderDojo using a zombie game theme, with 4 text-based levels, documentation website, and printable challenge cards.
@@ -20,19 +22,19 @@ CoderDojo-Zombies/
 │   ├── level-1/
 │   │   ├── zombie.py           # Move from Zombie1.py
 │   │   ├── uitleg.md           # Level explanation
-│   │   └── challenges.md       # Challenge cards source
+│   │   └── uitdagingen.md      # Challenge cards source
 │   ├── level-2/
 │   │   ├── zombie.py           # Move from Zombie2.py
 │   │   ├── uitleg.md
-│   │   └── challenges.md
+│   │   └── uitdagingen.md
 │   ├── level-3/
 │   │   ├── zombie.py           # New: inventory + zombie types
 │   │   ├── uitleg.md
-│   │   └── challenges.md
+│   │   └── uitdagingen.md
 │   └── level-4/
-│       ├── zombie.py           # New: functions
+│       ├── zombie.py           # New: functions + I/O
 │       ├── uitleg.md
-│       └── challenges.md
+│       └── uitdagingen.md
 ├── docs/
 │   ├── index.md                # Landing page
 │   ├── aan-de-slag.md          # Getting started guide
@@ -56,14 +58,14 @@ CoderDojo-Zombies/
 - Create: `levels/level-4/` (directory)
 - Create: `docs/stylesheets/` (directory)
 
-- [ ] **Step 1: Create level directories**
+- [x] **Step 1: Create level directories**
 
 ```bash
 mkdir -p levels/level-1 levels/level-2 levels/level-3 levels/level-4
 mkdir -p docs/stylesheets
 ```
 
-- [ ] **Step 2: Verify structure**
+- [x] **Step 2: Verify structure**
 
 ```bash
 ls -la levels/
@@ -71,7 +73,7 @@ ls -la levels/
 
 Expected: 4 directories (level-1 through level-4)
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add levels/ docs/
@@ -162,7 +164,7 @@ git commit -m "Add Level 2: while loops and state"
 
 **Files:**
 - Create: `levels/level-1/uitleg.md`
-- Create: `levels/level-1/challenges.md`
+- Create: `levels/level-1/uitdagingen.md`
 
 - [ ] **Step 1: Create uitleg.md**
 
@@ -227,14 +229,14 @@ Lees de code en beantwoord:
 Verander de tekst "Er komt een zombie op je af!" naar iets anders. Run het spel om je verandering te zien.
 ```
 
-- [ ] **Step 2: Create challenges.md**
+- [ ] **Step 2: Create uitdagingen.md**
 
-Create `levels/level-1/challenges.md`:
+Create `levels/level-1/uitdagingen.md`:
 
 ```markdown
-# Level 1 Challenges
+# Level 1 Uitdagingen
 
-## Makkelijk
+## Opwarmer
 
 ### Verstoppen
 
@@ -267,7 +269,7 @@ Verander alle teksten naar je eigen zombie verhaal
 
 ---
 
-## Medium
+## Pittig
 
 ### Zombie Naam
 
@@ -315,7 +317,7 @@ Voeg een "praten" optie toe met je eigen logica
 - [ ] **Step 3: Commit**
 
 ```bash
-git add levels/level-1/uitleg.md levels/level-1/challenges.md
+git add levels/level-1/uitleg.md levels/level-1/uitdagingen.md
 git commit -m "Add Level 1 documentation and challenges"
 ```
 
@@ -325,7 +327,7 @@ git commit -m "Add Level 1 documentation and challenges"
 
 **Files:**
 - Create: `levels/level-2/uitleg.md`
-- Create: `levels/level-2/challenges.md`
+- Create: `levels/level-2/uitdagingen.md`
 
 - [ ] **Step 1: Create uitleg.md**
 
@@ -383,12 +385,12 @@ Lees de code en beantwoord:
 Verander `levens = 3` naar `levens = 5`. Run het spel - je hebt nu 5 levens!
 ```
 
-- [ ] **Step 2: Create challenges.md**
+- [ ] **Step 2: Create uitdagingen.md**
 
-Create `levels/level-2/challenges.md`:
+Create `levels/level-2/uitdagingen.md`:
 
 ```markdown
-# Level 2 Challenges
+# Level 2 Uitdagingen
 
 ## Makkelijk
 
@@ -513,7 +515,7 @@ Voeg een score toe die omhoog gaat per overwonnen zombie
 - [ ] **Step 3: Commit**
 
 ```bash
-git add levels/level-2/uitleg.md levels/level-2/challenges.md
+git add levels/level-2/uitleg.md levels/level-2/uitdagingen.md
 git commit -m "Add Level 2 documentation and challenges"
 ```
 
@@ -674,7 +676,7 @@ git commit -m "Add Level 3: lists and inventory system"
 
 **Files:**
 - Create: `levels/level-3/uitleg.md`
-- Create: `levels/level-3/challenges.md`
+- Create: `levels/level-3/uitdagingen.md`
 
 - [ ] **Step 1: Create uitleg.md**
 
@@ -748,12 +750,12 @@ inventory.remove("medkit")
 Voeg een nieuw zombie type toe aan de `zombie_types` lijst. Misschien een "baby zombie" die makkelijk te verslaan is?
 ```
 
-- [ ] **Step 2: Create challenges.md**
+- [ ] **Step 2: Create uitdagingen.md**
 
-Create `levels/level-3/challenges.md`:
+Create `levels/level-3/uitdagingen.md`:
 
 ```markdown
-# Level 3 Challenges
+# Level 3 Uitdagingen
 
 ## Makkelijk
 
@@ -1991,7 +1993,9 @@ Open the GitHub Pages URL and verify everything works.
 
 ## Summary
 
-After completing all tasks:
+**STATUS: COMPLETED** (March 2026)
+
+All text-based levels implemented:
 
 - ✅ 4 text-based Python levels with code
 - ✅ Documentation for each level (uitleg.md)
@@ -2006,3 +2010,36 @@ After completing all tasks:
 - Pygame Zero levels (5+)
 - QR code generation for cards
 - Midjourney image assets
+
+---
+
+## Implementation Notes (Post-Completion)
+
+The following changes were made during implementation that differ from the original plan:
+
+### Challenge Tier Naming
+Changed from "Makkelijk / Medium / Moeilijk" to **"Opwarmer / Pittig / Boss"**:
+- Opwarmer (green) = Easy warmup challenges
+- Pittig (orange) = Medium difficulty
+- Boss (red) = Hard challenges
+
+### Level 4: Added File I/O
+Level 4 now includes a section on reading and writing files:
+- `open()` with "r", "w", "a" modes
+- `with` statement for file handling
+- `try/except` for error handling
+- Practical example: saving highscores
+
+### Challenge Structure Simplified
+Original plan had full "Spieken" (peek) code solutions in collapsible sections. Implementation uses simpler format:
+- Challenge title
+- Brief hint
+- No full solution code (encourages kids to try first)
+
+### Additional Challenges Brainstormed
+See `OtherChallenges.md` for ideas not yet integrated into base levels:
+- Zombie winkans (difficulty-based win rates)
+- Random events system
+- Location progression
+- Crafting system
+- NPC trading/shop

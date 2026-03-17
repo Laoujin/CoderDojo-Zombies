@@ -73,7 +73,7 @@
 
 /* Screen styling for card preview */
 @media screen {
-  .challenges-page h3 {
+  .uitdagingen-page h3 {
     border: 2px solid #444;
     border-radius: 8px;
     padding: 1rem;
@@ -81,15 +81,15 @@
     background: #2d2d2d;
   }
 
-  .challenges-page h2 {
+  .uitdagingen-page h2 {
     margin-top: 2rem;
     padding: 0.5rem 1rem;
     border-radius: 4px;
   }
 
   /* Difficulty colors on screen */
-  .challenges-page h2:first-of-type,
-  .challenges-page h2:contains("Makkelijk") {
+  .uitdagingen-page h2:first-of-type,
+  .uitdagingen-page h2:contains("Makkelijk") {
     background: rgba(40, 167, 69, 0.2);
     border-left: 4px solid #28a745;
   }

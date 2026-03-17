@@ -1,4 +1,4 @@
-# Level 2 Challenges
+# Level 2 Uitdagingen
 
 ## Opwarmer
 
