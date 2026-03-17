@@ -22,8 +22,10 @@ levels/level-5/
     ├── knop_vechten.png
     ├── knop_rennen.png
     ├── hart.png
-    ├── resultaat_goed.png
-    ├── resultaat_slecht.png
+    ├── vechten_succes.png
+    ├── vechten_faal.png
+    ├── rennen_succes.png
+    ├── rennen_faal.png
     └── game_over.png
 ```
 
@@ -94,6 +96,7 @@ toestand = "spel"  # "spel", "resultaat", "game_over"
 levens = 3
 resultaat_tekst = ""
 resultaat_goed = False
+laatste_actie = ""  # "vechten" of "rennen"
 
 # Button positions (x, y, width, height)
 KNOP_VECHTEN = Rect(100, 480, 150, 80)
@@ -159,10 +162,11 @@ Add after the `draw()` function:
 
 ```python
 def on_mouse_down(pos):
-    global toestand, levens, resultaat_tekst, resultaat_goed
+    global toestand, levens, resultaat_tekst, resultaat_goed, laatste_actie
 
     if toestand == "spel":
         if KNOP_VECHTEN.collidepoint(pos):
+            laatste_actie = "vechten"
             # Fight: 50/50 chance
             if random.randint(1, 2) == 1:
                 resultaat_tekst = "Je verslaat de zombie!"
@@ -175,6 +179,7 @@ def on_mouse_down(pos):
             clock.schedule(ga_naar_volgende, 2.0)
 
         elif KNOP_RENNEN.collidepoint(pos):
+            laatste_actie = "rennen"
             # Run: 50/50 chance
             if random.randint(1, 2) == 1:
                 resultaat_tekst = "Je bent ontsnapt!"
@@ -204,11 +209,12 @@ def ga_naar_volgende():
 
 
 def reset_game():
-    global toestand, levens, resultaat_tekst, resultaat_goed
+    global toestand, levens, resultaat_tekst, resultaat_goed, laatste_actie
     toestand = "spel"
     levens = 3
     resultaat_tekst = ""
     resultaat_goed = False
+    laatste_actie = ""
 ```
 
 - [ ] **Step 3: Update draw() resultaat state to show result text**
@@ -248,7 +254,7 @@ git commit -m "Level 5: add button clicks and game flow"
 **Files:**
 - Modify: `levels/level-5/zombie.py`
 
-**Prerequisite:** User has created the 7 required images in `levels/level-5/images/`
+**Prerequisite:** User has created the 9 required images in `levels/level-5/images/`
 
 - [ ] **Step 1: Update draw() to use background image in "spel" state**
 
@@ -274,10 +280,17 @@ Replace the `elif toestand == "resultaat":` block:
 
 ```python
     elif toestand == "resultaat":
-        if resultaat_goed:
-            screen.blit("resultaat_goed", (0, 0))
-        else:
-            screen.blit("resultaat_slecht", (0, 0))
+        # Kies de juiste afbeelding op basis van actie en resultaat
+        if laatste_actie == "vechten":
+            if resultaat_goed:
+                screen.blit("vechten_succes", (0, 0))
+            else:
+                screen.blit("vechten_faal", (0, 0))
+        else:  # rennen
+            if resultaat_goed:
+                screen.blit("rennen_succes", (0, 0))
+            else:
+                screen.blit("rennen_faal", (0, 0))
         screen.draw.text(resultaat_tekst, center=(400, 300), fontsize=36, color="white")
 ```
 
@@ -333,10 +346,16 @@ Update the resultaat and game_over blocks to use the helper:
 
 ```python
     elif toestand == "resultaat":
-        if resultaat_goed:
-            screen.blit("resultaat_goed", (0, 0))
-        else:
-            screen.blit("resultaat_slecht", (0, 0))
+        if laatste_actie == "vechten":
+            if resultaat_goed:
+                screen.blit("vechten_succes", (0, 0))
+            else:
+                screen.blit("vechten_faal", (0, 0))
+        else:  # rennen
+            if resultaat_goed:
+                screen.blit("rennen_succes", (0, 0))
+            else:
+                screen.blit("rennen_faal", (0, 0))
         teken_tekst(resultaat_tekst, center=(400, 300), fontsize=36)
 
     elif toestand == "game_over":
@@ -378,6 +397,7 @@ toestand = "spel"  # "spel", "resultaat", "game_over"
 levens = 3
 resultaat_tekst = ""
 resultaat_goed = False
+laatste_actie = ""  # "vechten" of "rennen"
 
 # Button positions (x, y, width, height) - adjust to match your images
 KNOP_VECHTEN = Rect(100, 480, 150, 80)
@@ -405,10 +425,16 @@ def draw():
         screen.blit("knop_rennen", KNOP_RENNEN.topleft)
 
     elif toestand == "resultaat":
-        if resultaat_goed:
-            screen.blit("resultaat_goed", (0, 0))
-        else:
-            screen.blit("resultaat_slecht", (0, 0))
+        if laatste_actie == "vechten":
+            if resultaat_goed:
+                screen.blit("vechten_succes", (0, 0))
+            else:
+                screen.blit("vechten_faal", (0, 0))
+        else:  # rennen
+            if resultaat_goed:
+                screen.blit("rennen_succes", (0, 0))
+            else:
+                screen.blit("rennen_faal", (0, 0))
         teken_tekst(resultaat_tekst, center=(400, 300), fontsize=36)
 
     elif toestand == "game_over":
@@ -418,10 +444,11 @@ def draw():
 
 
 def on_mouse_down(pos):
-    global toestand, levens, resultaat_tekst, resultaat_goed
+    global toestand, levens, resultaat_tekst, resultaat_goed, laatste_actie
 
     if toestand == "spel":
         if KNOP_VECHTEN.collidepoint(pos):
+            laatste_actie = "vechten"
             if random.randint(1, 2) == 1:
                 resultaat_tekst = "Je verslaat de zombie!"
                 resultaat_goed = True
@@ -433,6 +460,7 @@ def on_mouse_down(pos):
             clock.schedule(ga_naar_volgende, 2.0)
 
         elif KNOP_RENNEN.collidepoint(pos):
+            laatste_actie = "rennen"
             if random.randint(1, 2) == 1:
                 resultaat_tekst = "Je bent ontsnapt!"
                 resultaat_goed = True
@@ -456,9 +484,10 @@ def ga_naar_volgende():
 
 
 def reset_game():
-    global toestand, levens, resultaat_tekst, resultaat_goed
+    global toestand, levens, resultaat_tekst, resultaat_goed, laatste_actie
     toestand = "spel"
     levens = 3
     resultaat_tekst = ""
     resultaat_goed = False
+    laatste_actie = ""
 ```

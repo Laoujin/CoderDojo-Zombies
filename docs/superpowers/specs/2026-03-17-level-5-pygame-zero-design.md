@@ -102,8 +102,10 @@ All images go in `levels/level-5/images/` folder.
 | `knop_vechten.png` | ~150x80 | Fight button (weapon icon, themed) |
 | `knop_rennen.png` | ~150x80 | Run button (escape icon, themed) |
 | `hart.png` | ~40x40 | Heart icon for lives display |
-| `resultaat_goed.png` | 800x600 | Success background |
-| `resultaat_slecht.png` | 800x600 | Failure background |
+| `vechten_succes.png` | 800x600 | Fight success - player defeating zombie |
+| `vechten_faal.png` | 800x600 | Fight failure - zombie biting player |
+| `rennen_succes.png` | 800x600 | Run success - player escaping |
+| `rennen_faal.png` | 800x600 | Run failure - zombie catching up |
 | `game_over.png` | 800x600 | Death/game over background |
 
 **Note**: Button dimensions are approximate. Exact hit detection will use `Rect` based on actual image size and position.
