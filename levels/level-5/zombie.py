@@ -2,6 +2,7 @@
 # Run met: pgzrun zombie.py
 
 import random
+import pygame
 
 WIDTH = 800
 HEIGHT = 600
@@ -35,9 +36,24 @@ def draw():
         for i in range(levens):
             screen.blit("hart", (20 + i * 50, 20))
 
-        # Buttons
+        # Get mouse position for hover effects
+        muis_pos = pygame.mouse.get_pos()
+        hover_vechten = KNOP_VECHTEN.collidepoint(muis_pos)
+        hover_rennen = KNOP_RENNEN.collidepoint(muis_pos)
+
+        # Button VECHTEN - Effect A: yellow glow border when hovering
+        if hover_vechten:
+            glow_rect = KNOP_VECHTEN.inflate(20, 20)
+            screen.draw.filled_rect(glow_rect, "yellow")
         screen.blit("knop_vechten", KNOP_VECHTEN.topleft)
-        screen.blit("knop_rennen", KNOP_RENNEN.topleft)
+
+        # Button RENNEN - Effect B: move up and add shadow when hovering
+        if hover_rennen:
+            shadow_rect = KNOP_RENNEN.move(5, 5)
+            screen.draw.filled_rect(shadow_rect, (0, 0, 0, 128))
+            screen.blit("knop_rennen", (KNOP_RENNEN.x, KNOP_RENNEN.y - 10))
+        else:
+            screen.blit("knop_rennen", KNOP_RENNEN.topleft)
 
     elif toestand == "resultaat":
         # Kies de juiste afbeelding op basis van actie en resultaat
@@ -57,6 +73,20 @@ def draw():
         screen.blit("game_over", (0, 0))
         teken_tekst("GAME OVER", center=(400, 250), fontsize=60, kleur="red")
         teken_tekst("Klik om opnieuw te spelen", center=(400, 350), fontsize=24, kleur="gray")
+
+
+def update():
+    """Update cursor based on hover state."""
+    if toestand == "spel":
+        muis_pos = pygame.mouse.get_pos()
+        if KNOP_VECHTEN.collidepoint(muis_pos) or KNOP_RENNEN.collidepoint(muis_pos):
+            pygame.mouse.set_cursor(pygame.SYSTEM_CURSOR_HAND)
+        else:
+            pygame.mouse.set_cursor(pygame.SYSTEM_CURSOR_ARROW)
+    elif toestand == "game_over":
+        pygame.mouse.set_cursor(pygame.SYSTEM_CURSOR_HAND)
+    else:
+        pygame.mouse.set_cursor(pygame.SYSTEM_CURSOR_ARROW)
 
 
 def on_mouse_down(pos):
