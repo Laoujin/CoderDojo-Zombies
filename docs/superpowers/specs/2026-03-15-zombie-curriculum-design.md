@@ -356,7 +356,7 @@ CSS print stylesheet die:
 1. Schrijf challenges in `challenges.md`
 2. Website toont ze als lijst
 3. Print pagina (`/cards/level-1/`) rendert als kaarten
-4. Mentor print, knipt, lamineer, klaar
+4. Coach print, knipt, lamineer, klaar
 
 ---
 
@@ -419,7 +419,7 @@ CSS print stylesheet die:
 | Risico | Mitigatie |
 |--------|-----------|
 | Pygame Zero te moeilijke sprong | Level 4 functies goed oefenen, level 5 simpel houden |
-| Kids raken vast | Hints op challenge cards, mentoren beschikbaar |
+| Kids raken vast | Hints op challenge cards, coaches beschikbaar |
 | Engelse keywords verwarrend | Cheat sheet kaart met NL→Python vertalingen |
 | Syntax errors frustrerend | Pylance + friendly-traceback installeren |
 

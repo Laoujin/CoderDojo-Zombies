@@ -4,15 +4,15 @@ Leer Python programmeren met een zombie spel!
 
 **Website:** https://laoujin.github.io/CoderDojo-Zombies/
 
-## Voor mentoren
+## Voor Coaches
 
 Dit is een curriculum voor CoderDojo om kinderen (8-16 jaar) Python te leren. Het project bevat:
 
-- **4 text-based levels** met oplopende moeilijkheid
-- **Challenge cards** voor extra oefeningen (Opwarmer / Pittig / Boss)
+- **4 tekst-based levels** met oplopende moeilijkheid
+- **1 Pygame Zero level** voor "clicker-game"
+- **Printbare uitdaging kaarten** voor in de sessie (Opwarmer / Pittig / Boss)
 - **MkDocs website** met alle instructies
 - **Coaches handleiding** met sessie-voorbereiding tips
-- **Printbare kaarten** voor in de sessie
 
 ## Structuur
 
@@ -55,9 +55,9 @@ mkdocs gh-deploy
 | 3     | lijsten, random   | `levels/level-3/` |
 | 4     | functies          | `levels/level-4/` |
 
-## Printbare Challenge Cards
+## Printbare Uitdagingen Kaarten
 
-Genereer challenge cards met custom achtergrondafbeeldingen.
+Genereer uitdaging kaarten met custom achtergrondafbeeldingen.
 
 ### Setup
 
@@ -68,7 +68,7 @@ playwright install chromium
 
 ### Achtergrondafbeeldingen toevoegen
 
-Plaats afbeeldingen in `docs/cards/level-{n}/` met de slugified challenge naam:
+Plaats afbeeldingen in `docs/cards/level-{n}/` met de slugified uitdaging naam:
 
 ```
 docs/cards/

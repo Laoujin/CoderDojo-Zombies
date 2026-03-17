@@ -1890,7 +1890,7 @@ Create `README.md`:
 
 Leer Python programmeren met een zombie spel!
 
-## Voor mentoren
+## Voor Coaches
 
 Dit is een curriculum voor CoderDojo om kinderen (8-16 jaar) Python te leren. Het project bevat:
 

@@ -18,13 +18,14 @@ Dit project is gemaakt voor CoderDojo. Je leert stap voor stap programmeren, van
 | 2     | `while` loops | Levens systeem, game loop       |
 | 3     | Lijsten       | Inventory, zombie types         |
 | 4     | Functies      | Georganiseerde code             |
+| 5     | Pygame Zero   | Grafische game                  |
 
 ## Hoe werkt het?
 
 1. **BEKIJK** - Run de code, speel het spel
 2. **LEES** - Begrijp wat de code doet
 3. **PROBEER** - Maak een kleine aanpassing
-4. **UITDAGING** - Kies een challenge kaart
+4. **UITDAGING** - Kies een uitdaging kaart
 
 ## Uitdagingen
 
