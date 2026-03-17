@@ -1,6 +1,7 @@
 .claude/settings.local.json
 nul
 .playwright-cli
+docs/cards/output
 
 # MkDocs build output
 site/

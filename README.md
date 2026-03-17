@@ -54,3 +54,49 @@ mkdocs gh-deploy
 | 2     | while, variabelen | `levels/level-2/` |
 | 3     | lijsten, random   | `levels/level-3/` |
 | 4     | functies          | `levels/level-4/` |
+
+## Printbare Challenge Cards
+
+Genereer challenge cards met custom achtergrondafbeeldingen.
+
+### Setup
+
+```bash
+pip install playwright
+playwright install chromium
+```
+
+### Achtergrondafbeeldingen toevoegen
+
+Plaats afbeeldingen in `docs/cards/level-{n}/` met de slugified challenge naam:
+
+```
+docs/cards/
+├── level-1/
+│   ├── eigen-verhaal.png
+│   ├── verstoppen.png
+│   └── praten.png
+├── level-2/
+│   └── ...
+└── output/          # Gegenereerde kaarten
+```
+
+Gebruik `--list` om te zien welke afbeeldingen verwacht worden:
+
+```bash
+python docs/cards/generate.py --list
+```
+
+### Kaarten genereren
+
+```bash
+# Alle kaarten genereren
+python docs/cards/generate.py
+
+# Alleen level 1
+python docs/cards/generate.py --level 1
+```
+
+Kaarten worden opgeslagen in `docs/cards/output/` als PNG (600x400px, 3:2 ratio).
+
+**Tip:** Afbeeldingen van ~600x400px (of 3:2 ratio) werken het beste. De afbeelding wordt gecentreerd en bedekt de hele kaart.
