@@ -15,8 +15,8 @@ resultaat_goed = False
 laatste_actie = ""  # "vechten" of "rennen"
 
 # Button positions (x, y, width, height)
-KNOP_VECHTEN = Rect(100, 480, 150, 80)
-KNOP_RENNEN = Rect(550, 480, 150, 80)
+KNOP_VECHTEN = Rect(100, 400, 150, 150)
+KNOP_RENNEN = Rect(550, 400, 150, 150)
 
 
 def teken_tekst(tekst, center, fontsize, kleur="white"):
