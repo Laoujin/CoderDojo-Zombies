@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run with pgzrun",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pgzero",
+      "args": ["${file}"],
+      "console": "integratedTerminal",
+      "cwd": "${fileDirname}"
+    }
+  ]
+}

@@ -7,10 +7,11 @@ In dit level leer je over **Pygame Zero** - een library om grafische spelletjes 
 ## Opstarten
 
 ```bash
+cd levels/level-5
 pgzrun zombie.py
 ```
+Of met `F5`
 
-Of in VS Code: rechtermuisknop op `zombie.py` → "Run Python File in Terminal" werkt niet voor Pygame Zero. Gebruik altijd `pgzrun`.
 
 ## De code
 
@@ -49,6 +50,18 @@ screen.draw.text("Hallo!", center=(400, 300), fontsize=36, color="white")
 - `center=(x, y)` plaatst de tekst gecentreerd op die positie
 - `topleft=(x, y)` zou linksboven plaatsen
 
+
+### Rechthoeken (Rect)
+
+```python
+KNOP = Rect(100, 400, 150, 150)
+#           x    y    breedte hoogte
+```
+
+Een `Rect` is een onzichtbare rechthoek die je gebruikt voor:
+- Positie bepalen waar je iets tekent
+- Checken of de muis ergens op klikt
+
 ### Klikken detecteren
 
 ```python
@@ -61,16 +74,6 @@ def on_mouse_down(pos):
 - `pos` is de (x, y) positie van je muisklik
 - `collidepoint()` checkt of een punt binnen een rechthoek valt
 
-### Rechthoeken (Rect)
-
-```python
-KNOP = Rect(100, 400, 150, 150)
-#          x    y    breedte hoogte
-```
-
-Een `Rect` is een onzichtbare rechthoek die je gebruikt voor:
-- Positie bepalen waar je iets tekent
-- Checken of de muis ergens op klikt
 
 ### Iets later laten gebeuren
 
@@ -112,15 +115,15 @@ def update(dt):
 
 ## Nieuwe concepten
 
-| Concept | Wat het doet |
-|---------|--------------|
-| `draw()` | Tekent het scherm (60x per seconde) |
-| `screen.blit()` | Plaatje tekenen |
-| `screen.draw.text()` | Tekst tekenen |
-| `Rect` | Rechthoek voor posities en klikdetectie |
-| `on_mouse_down(pos)` | Reageert op muisklikken |
-| `clock.schedule()` | Iets later laten gebeuren |
-| `update(dt)` | Update logica elke frame |
+| Concept              | Wat het doet                            |
+|----------------------|-----------------------------------------|
+| `draw()`             | Tekent het scherm (60x per seconde)     |
+| `screen.blit()`      | Plaatje tekenen                         |
+| `screen.draw.text()` | Tekst tekenen                           |
+| `Rect`               | Rechthoek voor posities en klikdetectie |
+| `on_mouse_down(pos)` | Reageert op muisklikken                 |
+| `clock.schedule()`   | Iets later laten gebeuren               |
+| `update(dt)`         | Update logica elke frame                |
 
 ## BEKIJK
 

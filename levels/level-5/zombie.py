@@ -26,13 +26,6 @@ KNOP_VECHTEN = Rect(100, 400, 150, 150)
 KNOP_RENNEN = Rect(550, 400, 150, 150)
 
 
-def teken_tekst(tekst, center, fontsize, kleur="white"):
-    """Teken tekst met een schaduw voor betere leesbaarheid."""
-    x, y = center
-    screen.draw.text(tekst, center=(x+2, y+2), fontsize=fontsize, color="black")
-    screen.draw.text(tekst, center=(x, y), fontsize=fontsize, color=kleur)
-
-
 def draw():
     if toestand == "spel":
         # Achtergrond met zombie
@@ -42,32 +35,9 @@ def draw():
         for i in range(levens):
             screen.blit("hart", (20 + i * 50, 20))
 
-        # Haal muispositie op voor hover effecten
-        muis_pos = pygame.mouse.get_pos()
-        hover_vechten = KNOP_VECHTEN.collidepoint(muis_pos)
-        hover_rennen = KNOP_RENNEN.collidepoint(muis_pos)
-
-        # Knop VECHTEN - Pulse effect bij hover
-        if hover_vechten:
-            pulse = 1.0 + 0.08 * math.sin(tijd * 5)
-            new_size = int(150 * pulse)
-            offset = (new_size - 150) // 2
-            img = images.knop_vechten
-            scaled = pygame.transform.scale(img, (new_size, new_size))
-            screen.surface.blit(scaled, (KNOP_VECHTEN.x - offset, KNOP_VECHTEN.y - offset))
-        else:
-            screen.blit("knop_vechten", KNOP_VECHTEN.topleft)
-
-        # Knop RENNEN - Pulse effect bij hover
-        if hover_rennen:
-            pulse = 1.0 + 0.08 * math.sin(tijd * 5)
-            new_size = int(150 * pulse)
-            offset = (new_size - 150) // 2
-            img = images.knop_rennen
-            scaled = pygame.transform.scale(img, (new_size, new_size))
-            screen.surface.blit(scaled, (KNOP_RENNEN.x - offset, KNOP_RENNEN.y - offset))
-        else:
-            screen.blit("knop_rennen", KNOP_RENNEN.topleft)
+        # Knoppen met pulse effect bij hover
+        teken_knop_met_pulse("knop_vechten", KNOP_VECHTEN)
+        teken_knop_met_pulse("knop_rennen", KNOP_RENNEN)
 
     elif toestand == "resultaat":
         # Kies de juiste afbeelding op basis van actie en resultaat
@@ -122,7 +92,7 @@ def on_mouse_down(pos):
                 resultaat_goed = False
                 levens -= 1
             toestand = "resultaat"
-            clock.schedule(ga_naar_volgende, 3.0)
+            clock.schedule(ga_naar_volgende, 2.5)
 
         elif KNOP_RENNEN.collidepoint(pos):
             laatste_actie = "rennen"
@@ -135,7 +105,7 @@ def on_mouse_down(pos):
                 resultaat_goed = False
                 levens -= 1
             toestand = "resultaat"
-            clock.schedule(ga_naar_volgende, 3.0)
+            clock.schedule(ga_naar_volgende, 2.5)
 
     elif toestand == "game_over":
         reset_game()
@@ -156,3 +126,24 @@ def reset_game():
     resultaat_tekst = ""
     resultaat_goed = False
     laatste_actie = ""
+
+
+def teken_knop_met_pulse(image_name, rect):
+    """Teken een knop, met pulse animatie bij hover."""
+    muis_pos = pygame.mouse.get_pos()
+    if rect.collidepoint(muis_pos):
+        pulse = 1.0 + 0.08 * math.sin(tijd * 5)
+        new_size = int(150 * pulse)
+        offset = (new_size - 150) // 2
+        img = getattr(images, image_name)
+        scaled = pygame.transform.scale(img, (new_size, new_size))
+        screen.surface.blit(scaled, (rect.x - offset, rect.y - offset))
+    else:
+        screen.blit(image_name, rect.topleft)
+
+
+def teken_tekst(tekst, center, fontsize, kleur="white"):
+    """Teken tekst met een schaduw voor betere leesbaarheid."""
+    x, y = center
+    screen.draw.text(tekst, center=(x+2, y+2), fontsize=fontsize, color="black")
+    screen.draw.text(tekst, center=(x, y), fontsize=fontsize, color=kleur)
