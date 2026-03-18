@@ -1,7 +1,11 @@
 # Zombie Clicker - Level 4.5
 # Start met: pgzrun zombie.py
+# Of met F5
 
 import random
+from pgzero.builtins import Actor, sounds
+from pgzero.screen import Screen
+screen: Screen
 
 WIDTH = 800
 HEIGHT = 600
