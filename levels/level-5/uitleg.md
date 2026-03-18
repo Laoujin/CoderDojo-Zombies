@@ -4,6 +4,8 @@
 
 In dit level leer je over **Pygame Zero** - een library om grafische spelletjes te maken. Je leert hoe je plaatjes tekent, muisklikken afhandelt en animaties maakt.
 
+Als deze te moeilijk is, doe dan eerst de Pygame Zero Intro (level 4.5)
+
 ## Opstarten
 
 ```bash

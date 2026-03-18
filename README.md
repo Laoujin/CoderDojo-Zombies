@@ -36,13 +36,14 @@ mkdocs gh-deploy
 
 ## Levels
 
-| Level | Concept           | Files             |
-|-------|-------------------|-------------------|
-| 1     | if/elif/else      | `levels/level-1/` |
-| 2     | while, variabelen | `levels/level-2/` |
-| 3     | lijsten, random   | `levels/level-3/` |
-| 4     | functies          | `levels/level-4/` |
-| 5     | Pygame zero       | `levels/level-5/` |
+| Level | Concept           | Files               |
+|-------|-------------------|---------------------|
+| 1     | if/elif/else      | `levels/level-1/`   |
+| 2     | while, variabelen | `levels/level-2/`   |
+| 3     | lijsten, random   | `levels/level-3/`   |
+| 4     | functies          | `levels/level-4/`   |
+| 4.5   | Pygame zero intro | `levels/level-4.5/` |
+| 5     | Pygame zero       | `levels/level-5/`   |
 
 ## Printbare Uitdagingen Kaarten
 
