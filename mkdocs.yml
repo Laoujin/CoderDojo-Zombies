@@ -15,6 +15,9 @@ theme:
     - navigation.sections
     - navigation.expand
 
+extra_css:
+  - stylesheets/zombie-theme.css
+
 markdown_extensions:
   - admonition
   - pymdownx.details
