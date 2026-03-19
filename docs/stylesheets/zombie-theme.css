@@ -120,7 +120,7 @@
 
 /* Override primary colors with zombie theme */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: var(--zombie-green);
+  --md-primary-fg-color: var(--blood-red);
   --md-accent-fg-color: var(--slime-yellow);
 }
 
@@ -591,6 +591,7 @@
   width: 100%;
   margin: 0 auto 2rem auto;
   text-align: center;
+  z-index: 0;
 }
 
 .hero-banner input[type="radio"] {
@@ -648,7 +649,7 @@
   gap: 1rem;
   margin-top: -30px;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 
 .hero-buttons label {
@@ -686,8 +687,8 @@
   width: 300%;
   height: 100%;
   pointer-events: none;
-  z-index: -1;
-  opacity: 0.08;
+  z-index: 1;
+  opacity: 0.15;
 }
 
 .hero-banner::before {
@@ -724,4 +725,9 @@
   border: 3px solid var(--zombie-green);
   box-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
   margin: 1rem 0;
+}
+
+/* Hide MkDocs footer attribution */
+.md-footer-meta {
+  display: none;
 }
