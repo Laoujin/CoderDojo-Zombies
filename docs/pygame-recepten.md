@@ -46,25 +46,6 @@ huidige_zombie = kies_zombie()  # Meestal "baby" of "normal"
 
 ---
 
-## Vertraagde actie (Timer)
-
-Wacht even voordat iets gebeurt:
-
-```python
-def zoek_item():
-    screen.draw.text("Zoeken...", center=(400, 300))
-    clock.schedule(toon_resultaat, 1.5)  # Wacht 1.5 seconden
-
-def toon_resultaat():
-    global gevonden_item
-    if random.randint(1, 100) <= 50:
-        gevonden_item = "medkit"
-    else:
-        gevonden_item = None
-```
-
----
-
 ## Smooth beweging (Animate)
 
 Laat iets vloeiend bewegen in plaats van direct:
@@ -122,70 +103,101 @@ def draw():
 
 ---
 
-## Hover effect (muis over knop)
+## Coole effecten
 
-Verander kleur als de muis over een knop gaat:
+Maak je spel leuker met deze effecten! Allemaal gebruiken ze `tijd` voor animatie:
 
 ```python
-KNOP = Rect(300, 400, 200, 60)
+import math
+tijd = 0
 
-def draw():
-    # Check of muis over knop is
-    muis_pos = pygame.mouse.get_pos()
-    if KNOP.collidepoint(muis_pos):
-        kleur = "lightgreen"  # Hover kleur
-    else:
-        kleur = "green"       # Normale kleur
-
-    screen.draw.filled_rect(KNOP, kleur)
-    screen.draw.text("Klik mij!", center=KNOP.center)
+def update(dt):
+    global tijd
+    tijd += dt
 ```
 
----
-
-## Scherm schudden (Hit effect)
-
-Schud het scherm als je geraakt wordt:
+### Bounce (springen)
 
 ```python
-schud_offset = 0
+def draw():
+    bounce = abs(math.sin(tijd * 8)) * 15
+    screen.blit("knop", (KNOP.x, KNOP.y - bounce))
+```
+
+### Shake (schudden)
+
+```python
+import random
+
+def draw():
+    offset_x = random.randint(-4, 4)
+    offset_y = random.randint(-4, 4)
+    screen.blit("knop", (KNOP.x + offset_x, KNOP.y + offset_y))
+```
+
+Voor scherm-schudden bij een hit:
+
+```python
 schud_tijd = 0
 
 def start_schudden():
     global schud_tijd
-    schud_tijd = 10  # 10 frames schudden
+    schud_tijd = 0.3  # 0.3 seconden
 
-def update():
-    global schud_offset, schud_tijd
+def update(dt):
+    global schud_tijd
     if schud_tijd > 0:
-        schud_offset = random.randint(-5, 5)
-        schud_tijd -= 1
-    else:
-        schud_offset = 0
+        schud_tijd -= dt
 
 def draw():
-    # Gebruik schud_offset voor alle tekeningen
-    screen.blit("achtergrond", (schud_offset, 0))
-    screen.blit("zombie", (400 + schud_offset, 300))
+    if schud_tijd > 0:
+        offset = random.randint(-5, 5)
+    else:
+        offset = 0
+    screen.blit("achtergrond", (offset, 0))
 ```
 
----
-
-## Levens als hartjes
-
-Toon levens als plaatjes in plaats van tekst:
+### Spin (draaien)
 
 ```python
-levens = 3
-max_levens = 5
-
 def draw():
-    for i in range(max_levens):
-        x = 20 + (i * 35)
-        if i < levens:
-            screen.blit("hart", (x, 20))       # Vol hartje
-        else:
-            screen.blit("hart_leeg", (x, 20))  # Leeg hartje
+    # Simuleer rotatie door breedte te veranderen
+    spin = math.cos(tijd * 5)
+    nieuwe_breedte = abs(spin) * KNOP.width
+    x = KNOP.x + (KNOP.width - nieuwe_breedte) / 2
+    nieuwe_rect = Rect(x, KNOP.y, nieuwe_breedte, KNOP.height)
+    screen.draw.filled_rect(nieuwe_rect, "green")
+```
+
+### Rainbow (regenboog)
+
+```python
+def draw():
+    r = int((math.sin(tijd * 3) + 1) * 127)
+    g = int((math.sin(tijd * 3 + 2) + 1) * 127)
+    b = int((math.sin(tijd * 3 + 4) + 1) * 127)
+    screen.draw.filled_rect(KNOP, (r, g, b))
+```
+
+### Fade (vervagen)
+
+```python
+def draw():
+    fade = (math.sin(tijd * 4) + 1) / 2  # 0 tot 1
+    grijs = int(50 + fade * 200)
+    screen.draw.filled_rect(KNOP, (grijs, grijs, grijs))
+```
+
+### Squash (pletten)
+
+```python
+def draw():
+    squash = math.sin(tijd * 8)
+    nieuwe_hoogte = KNOP.height + squash * 15
+    nieuwe_breedte = KNOP.width - squash * 10
+    x = KNOP.x + (KNOP.width - nieuwe_breedte) / 2
+    y = KNOP.y + (KNOP.height - nieuwe_hoogte) / 2
+    screen.draw.filled_rect(Rect(x, y, nieuwe_breedte, nieuwe_hoogte), "purple")
 ```
 
 ---
@@ -243,22 +255,6 @@ sounds.hit.set_volume(0.3)  # 30% volume
 # Achtergrond muziek (herhaalt automatisch)
 music.play("spooky_music")
 music.set_volume(0.5)
-```
-
----
-
-## Willekeurige positie op scherm
-
-Spawn iets op een random plek:
-
-```python
-def random_positie():
-    x = random.randint(50, WIDTH - 50)
-    y = random.randint(50, HEIGHT - 50)
-    return (x, y)
-
-# Gebruik:
-zombie.pos = random_positie()
 ```
 
 ---
