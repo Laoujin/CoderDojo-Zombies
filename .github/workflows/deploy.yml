@@ -7,9 +7,10 @@ on:
       - main
     paths:
       - 'docs/**'
-      - 'levels/**/*.md'
+      - 'levels/**'
       - 'mkdocs.yml'
       - '.github/workflows/deploy.yml'
+      - 'download/**'
   workflow_dispatch:
 
 permissions:
@@ -23,11 +24,25 @@ jobs:
 
       - name: Sync level docs to docs/levels/
         run: |
-          mkdir -p docs/levels/level-{1,2,3,4}
+          mkdir -p docs/levels/level-{1,2,3,4,4.5,5}
           cp levels/level-1/uitleg.md docs/levels/level-1/
           cp levels/level-2/uitleg.md docs/levels/level-2/
           cp levels/level-3/uitleg.md docs/levels/level-3/
           cp levels/level-4/uitleg.md docs/levels/level-4/
+          cp levels/level-4.5/uitleg.md docs/levels/level-4.5/
+          cp levels/level-5/uitleg.md docs/levels/level-5/
+
+      - name: Create download ZIP
+        run: |
+          mkdir -p zombie-apocalypse
+          cp -r levels zombie-apocalypse/
+          cp download/LEES_MIJ.txt zombie-apocalypse/
+          echo "pgzero" > zombie-apocalypse/requirements.txt
+          # Remove uitdagingen.md files (those are on the website)
+          find zombie-apocalypse -name "uitdagingen.md" -delete
+          find zombie-apocalypse -name "uitleg.md" -delete
+          zip -r docs/zombie-apocalypse.zip zombie-apocalypse
+          rm -rf zombie-apocalypse
 
       - name: Setup Python
         uses: actions/setup-python@v5

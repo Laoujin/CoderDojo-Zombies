@@ -1,0 +1,56 @@
+========================================
+    ZOMBIE APOCALYPSE - Python Spel
+========================================
+
+Welkom bij het Zombie Apocalypse spel!
+Hier leer je Python programmeren door een spannend zombie spel te maken.
+
+
+HOE TE BEGINNEN
+---------------
+
+1. Open een terminal (Command Prompt of PowerShell)
+
+2. Installeer wat je nodig hebt:
+
+   pip install pgzero
+
+3. Ga naar een level map, bijvoorbeeld:
+
+   cd levels/level-1
+
+4. Start het spel:
+
+   python zombie.py
+
+   (Voor level 4.5 en 5 gebruik je: pgzrun zombie.py)
+
+
+DE LEVELS
+---------
+
+level-1/  ->  Je eerste keuzes maken
+level-2/  ->  Loops: het spel blijft doorgaan
+level-3/  ->  Lijsten: items en inventory
+level-4/  ->  Functies: code opdelen
+level-4.5/ -> Pygame Zero: graphics!
+level-5/  ->  Het complete zombie spel
+
+
+UITDAGINGEN
+-----------
+
+Klaar met een level? Ga naar de website voor extra uitdagingen:
+
+https://laoujin.github.io/CoderDojo-Zombies/
+
+
+HULP NODIG?
+-----------
+
+- Vraag het aan een coach!
+- Kijk op de website voor hints en tips
+- In elk level staat een uitleg.md bestand
+
+
+Veel plezier en succes met overleven!

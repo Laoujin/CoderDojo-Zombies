@@ -25,16 +25,16 @@ In VS Code:
 
 ## 4. Download de Code
 
-1. [Download het project als ZIP](https://github.com/Laoujin/CoderDojo-Zombies/archive/refs/heads/master.zip)
+1. [Download het Zombie spel](zombie-apocalypse.zip){ .md-button .md-button--primary }
 2. Pak de ZIP uit
 3. Open de folder in VS Code: File → Open Folder
 
-## 5. Installeer Packages
+## 5. Installeer Pygame Zero
 
 Open een terminal (in VS Code: Terminal → New Terminal) en:
 
 ```bash
-pip install -r requirements.txt
+pip install pgzero
 ```
 
 ## 6. Run de eerste zombie-level
