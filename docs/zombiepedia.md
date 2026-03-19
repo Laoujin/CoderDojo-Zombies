@@ -1,7 +1,49 @@
 # Zombiepedia
 
-Welkom bij de officiële gids voor alle zombies die je tegen kunt komen in de Zombie Apocalypse!
-Bestudeer ze goed - in Level 6 heb je deze kennis nodig om te overleven...
+!!! warning "Level 6: Bouw Je Eigen Spel!"
+    Dit is **Level 6** - de ultieme uitdaging!
+
+    Er is geen startcode. Je bouwt het **helemaal zelf** vanaf nul.
+
+    Gebruik alles wat je geleerd hebt in Level 1-5 om een slimmer zombie spel te maken waar de stats van elke zombie ertoe doen!
+
+## De Uitdaging
+
+Maak een spel waar je **tactisch** moet nadenken:
+
+- **Snelle zombie?** → Rennen werkt niet!
+- **Slimme zombie?** → Verstoppen werkt niet!
+- **Sterke zombie?** → Vechten zonder wapen werkt niet!
+
+Kies het juiste wapen, de juiste actie, en overleef!
+
+<div class="grid cards" markdown>
+
+-   :material-sword:{ .lg .middle } **Wapens Systeem**
+
+    ---
+
+    Verschillende wapens werken beter tegen bepaalde zombies
+
+-   :material-head-question:{ .lg .middle } **Slimme AI**
+
+    ---
+
+    Gebruik de stats om kansen te berekenen
+
+-   :material-treasure-chest:{ .lg .middle } **Inventory**
+
+    ---
+
+    Verzamel items en kies wanneer je ze gebruikt
+
+-   :material-map-marker-path:{ .lg .middle } **Meerdere Locaties**
+
+    ---
+
+    Elke locatie heeft andere zombie types
+
+</div>
 
 ---
 
@@ -481,9 +523,48 @@ Bestudeer ze goed - in Level 6 heb je deze kennis nodig om te overleven...
 
 ---
 
-!!! tip "Level 6 Tip"
-    In Level 6 moet je slim kiezen! Kijk naar de stats:
+---
 
+## Hoe Bouw Je Level 6?
+
+!!! tip "Start Simpel"
+    Begin met een **basis versie** en voeg stap voor stap features toe:
+
+    1. **Stap 1:** Maak een dictionary met zombie stats
+    2. **Stap 2:** Laat de actie-kans afhangen van de stats
+    3. **Stap 3:** Voeg wapens toe die de kansen veranderen
+    4. **Stap 4:** Maak het visueel met Pygame Zero
+
+!!! example "Voorbeeld: Zombie Stats"
+    ```python
+    zombies = {
+        "Baby Zombie": {"snelheid": 2, "slimheid": 1, "kracht": 1},
+        "Ninja Zombie": {"snelheid": 5, "slimheid": 4, "kracht": 3},
+        "Tank Zombie": {"snelheid": 1, "slimheid": 1, "kracht": 5},
+    }
+    ```
+
+!!! example "Voorbeeld: Slimme Kansen"
+    ```python
+    def bereken_kans(zombie, actie, wapen):
+        stats = zombies[zombie]
+
+        if actie == "rennen":
+            # Snelle zombies zijn moeilijk te ontlopen
+            kans = 5 - stats["snelheid"]
+        elif actie == "verstoppen":
+            # Slimme zombies vinden je
+            kans = 5 - stats["slimheid"]
+        elif actie == "vechten":
+            # Sterke zombies zijn moeilijk te verslaan
+            kans = 5 - stats["kracht"]
+            if wapen:
+                kans += 2  # Wapen geeft bonus!
+
+        return random.randint(1, 5) <= kans
+    ```
+
+!!! warning "De Regels"
     - **Hoge Snelheid?** → Rennen werkt NIET
     - **Hoge Slimheid?** → Verstoppen werkt NIET
     - **Hoge Kracht?** → Vechten werkt NIET (zonder wapen)
