@@ -150,7 +150,7 @@ Ga door 5 locaties heen om het spel te winnen.
 
 ??? note "Spieken"
     ```python
-    locaties = ["Suburb", "Library", "School", "Hospital", "Mall"]
+    locaties = ["home", "library", "school", "hospital", "mall"]
     locatie_index = 0
 
     def ga_naar_volgende():
@@ -164,17 +164,17 @@ Ga door 5 locaties heen om het spel te winnen.
             toestand = "spel"
 
     # In draw() bij "spel":
-    achtergrond = f"achtergrond_{locaties[locatie_index].lower()}"
+    achtergrond = f"loc_{locaties[locatie_index]}"
     screen.blit(achtergrond, (0, 0))
-    screen.draw.text(locaties[locatie_index], center=(400, 30), fontsize=28, color="white")
+    screen.draw.text(locaties[locatie_index].title(), center=(400, 30), fontsize=28, color="white")
 
     # In draw() bij "gewonnen":
     elif toestand == "gewonnen":
-        screen.blit("gewonnen", (0, 0))
+        screen.blit("win", (0, 0))
         screen.draw.text("JE HEBT GEWONNEN!", center=(400, 300), fontsize=48, color="gold")
     ```
 
-**Benodigde plaatjes:** `achtergrond_suburb.png`, `achtergrond_library.png`, `achtergrond_school.png`, `achtergrond_hospital.png`, `achtergrond_mall.png`, `gewonnen.png`
+**Benodigde plaatjes:** `loc_home.png`, `loc_library.png`, `loc_school.png`, `loc_hospital.png`, `loc_mall.png`, `win.png`
 
 ---
 
