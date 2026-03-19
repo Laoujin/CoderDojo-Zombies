@@ -2,6 +2,12 @@ site_name: Zombie Apocalypse
 site_description: Leer Python programmeren met een zombie spel!
 site_url: https://laoujin.github.io/CoderDojo-Zombies/
 
+exclude_docs: |
+  midjourney/
+  superpowers/
+  levels/*/uitdagingen.md
+  cards/
+
 theme:
   name: material
   language: nl
@@ -37,9 +43,12 @@ nav:
     - Level 2 - Loops: levels/level-2/uitleg.md
     - Level 3 - Lijsten: levels/level-3/uitleg.md
     - Level 4 - Functies: levels/level-4/uitleg.md
+    - Level 4.5 - Pygame Zero: levels/level-4.5/uitleg.md
+    - Level 5 - Zombie Spel: levels/level-5/uitleg.md
   - Uitdagingen:
     - Level 1: uitdagingen/level-1.md
     - Level 2: uitdagingen/level-2.md
     - Level 3: uitdagingen/level-3.md
     - Level 4: uitdagingen/level-4.md
+    - Level 5: uitdagingen/level-5.md
   - Cheatsheet: cheatsheet.md

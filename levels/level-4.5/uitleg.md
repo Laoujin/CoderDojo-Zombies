@@ -1,5 +1,8 @@
 # Level 4.5: Pygame Zero Intro
 
+!!! info "Dit level is optioneel"
+    Dit is een **apart mini-spelletje** om Pygame Zero te leren kennen. Als je al bekend bent met grafische games, kun je direct door naar [Level 5](../level-5/uitleg.md) om het echte Zombie spel te bouwen!
+
 ## Wat leer je?
 
 In dit level leer je over **Pygame Zero** - een library om grafische spelletjes te maken. Je leert hoe je een plaatje op het scherm zet en hoe je muisklikken afhandelt.
