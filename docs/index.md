@@ -3,6 +3,10 @@
   <div class="cloud cloud-2"></div>
   <div class="cloud cloud-3"></div>
   <div class="cloud cloud-4"></div>
+  <div class="cloud cloud-5"></div>
+  <div class="cloud cloud-6"></div>
+  <div class="cloud cloud-7"></div>
+  <div class="cloud cloud-8"></div>
 </div>
 
 # Zombie Apocalypse
