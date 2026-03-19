@@ -9,6 +9,7 @@ Voeg een score teller toe die omhoog gaat bij elke succesvolle actie.
 - +10 punten voor een gewonnen gevecht
 - +5 punten voor een succesvolle ontsnapping
 - Score reset bij game over
+- Toon de score in `score.png`
 
 **Hint:** Maak een `score` variabele en teken het met `screen.draw.text()`
 
@@ -74,6 +75,7 @@ Voeg een inventory toe die items opslaat en het spel beinvloedt.
 - Wapens (honkbalknuppel, mes): verhoog winkans van 50% naar 66%
 - Healing (medkit, energie bar): medkit +2 levens, energie bar +1 leven
 - Toon inventory op het scherm
+- Er zijn verschillende plaatjes beschikbaar, ze beginnen met `inv_`
 
 **Hint:** Gebruik een lijst voor items en check met `in`
 
@@ -107,6 +109,7 @@ Verschillende zombies verschijnen met verschillende winkansen.
 - Langzame zombie: 50% winkans
 - Snelle zombie: 40% winkans
 - Sterke zombie: 33% winkans (moeilijk)
+- Er zijn verschillende plaatjes beschikbaar, ze beginnen met `zombie_`
 
 **Hint:** Gebruik een dictionary met kansen per zombie type
 
@@ -141,6 +144,7 @@ Ga door 5 locaties heen om het spel te winnen.
 - Elke succesvolle actie brengt je naar de volgende locatie
 - Falen kost een leven maar je gaat ook door
 - Overleef alle 5 locaties = gewonnen!
+- Er zijn verschillende locaties beschikbaar, de plaatjes beginnen met `loc_`
 
 **Hint:** Gebruik een lijst met locaties en een index
 
