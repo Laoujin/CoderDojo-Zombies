@@ -60,3 +60,4 @@ nav:
   - Cheatsheets:
     - Python: cheatsheet.md
     - Pygame Zero: cheatsheet-pygame.md
+    - Pygame Recepten: pygame-recepten.md
