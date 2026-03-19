@@ -1,3 +1,10 @@
+<div class="clouds">
+  <div class="cloud cloud-1"></div>
+  <div class="cloud cloud-2"></div>
+  <div class="cloud cloud-3"></div>
+  <div class="cloud cloud-4"></div>
+</div>
+
 # Zombie Apocalypse
 
 **Leer Python programmeren door een zombie spel te bouwen!**

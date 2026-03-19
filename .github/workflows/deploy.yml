@@ -38,8 +38,28 @@ jobs:
           cp -r levels zombie-apocalypse/
           cp download/LEES_MIJ.txt zombie-apocalypse/
           echo "pgzero" > zombie-apocalypse/requirements.txt
-          zip -r docs/zombie-apocalypse.zip zombie-apocalypse
+          zip -r zombie-apocalypse.zip zombie-apocalypse
           rm -rf zombie-apocalypse
+
+      - name: Update latest release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Download Zombie Apocalypse
+          body: |
+            Download het Zombie Apocalypse spel!
+
+            **Bevat:**
+            - Alle levels (1-5)
+            - Python code en plaatjes
+            - Uitleg en uitdagingen
+
+            **Installatie:**
+            1. Pak de ZIP uit
+            2. `pip install pgzero`
+            3. `python levels/level-1/zombie.py`
+          files: zombie-apocalypse.zip
+          make_latest: true
 
       - name: Setup Python
         uses: actions/setup-python@v5

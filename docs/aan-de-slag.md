@@ -25,7 +25,7 @@ In VS Code:
 
 ## 4. Download de Code
 
-1. [Download het Zombie spel](zombie-apocalypse.zip){ .md-button .md-button--primary }
+1. [Download het Zombie spel](https://github.com/Laoujin/CoderDojo-Zombies/releases/latest/download/zombie-apocalypse.zip){ .md-button .md-button--primary }
 2. Pak de ZIP uit
 3. Open de folder in VS Code: File → Open Folder
 
