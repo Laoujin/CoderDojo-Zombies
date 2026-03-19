@@ -11,6 +11,8 @@ exclude_docs: |
 theme:
   name: material
   language: nl
+  logo: favicon.png
+  favicon: favicon.png
   palette:
     scheme: slate
     primary: red
