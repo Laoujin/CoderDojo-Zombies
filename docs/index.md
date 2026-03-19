@@ -2,6 +2,20 @@
 
 **Leer Python programmeren door een zombie spel te bouwen!**
 
+<div class="hero-banner">
+  <input type="radio" name="hero" id="hero-boy" checked>
+  <input type="radio" name="hero" id="hero-girl">
+  <div class="hero-image">
+    <img class="hero-boy" src="images/splash/hero4.png" alt="Hero jongen">
+    <img class="hero-girl" src="images/splash/hero5.png" alt="Hero meisje">
+  </div>
+  <div class="hero-tagline">Leer Python door zombies te verslaan!</div>
+  <div class="hero-buttons">
+    <label for="hero-boy">Jongen</label>
+    <label for="hero-girl">Meisje</label>
+  </div>
+</div>
+
 Dit project is gemaakt voor CoderDojo. Je leert stap voor stap programmeren, van simpele keuzes tot complete functies.
 
 ## Voor wie is dit?

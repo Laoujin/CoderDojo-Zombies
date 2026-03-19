@@ -4,9 +4,9 @@
 
 ### Score Teller
 
-![Score Teller](../cards/level-5/score-teller.png)
-
 Voeg een score teller toe die omhoog gaat bij elke succesvolle actie.
+
+![Score Teller](../cards/level-5/score-teller.png)
 
 - +10 punten voor een gewonnen gevecht
 - +5 punten voor een succesvolle ontsnapping
@@ -34,9 +34,9 @@ Voeg een score teller toe die omhoog gaat bij elke succesvolle actie.
 
 ### Verstoppen
 
-![Verstoppen](../cards/level-5/verstoppen.png)
-
 Voeg een derde knop "Verstoppen" toe als extra actie.
+
+![Verstoppen](../cards/level-5/verstoppen.png)
 
 - Nieuwe knop in het midden van het scherm
 - 50/50 kans op succes/faal
@@ -74,9 +74,9 @@ Voeg een derde knop "Verstoppen" toe als extra actie.
 
 ### Inventory Systeem
 
-![Inventory Systeem](../cards/level-5/inventory-systeem.png)
-
 Voeg een inventory toe die items opslaat en het spel beinvloedt.
+
+![Inventory Systeem](../cards/level-5/inventory-systeem.png)
 
 - Wapens (honkbalknuppel, mes): verhoog winkans van 50% naar 66%
 - Healing (medkit, energie bar): medkit +2 levens, energie bar +1 leven
@@ -109,9 +109,9 @@ Voeg een inventory toe die items opslaat en het spel beinvloedt.
 
 ### Zombie Types
 
-![Zombie Types](../cards/level-5/zombie-types.png)
-
 Verschillende zombies verschijnen met verschillende winkansen.
+
+![Zombie Types](../cards/level-5/zombie-types.png)
 
 - Baby zombie: 66% winkans (makkelijk)
 - Langzame zombie: 50% winkans
@@ -146,9 +146,9 @@ Verschillende zombies verschijnen met verschillende winkansen.
 
 ### Meerdere Locaties
 
-![Meerdere Locaties](../cards/level-5/meerdere-locaties.png)
-
 Ga door 5 locaties heen om het spel te winnen.
+
+![Meerdere Locaties](../cards/level-5/meerdere-locaties.png)
 
 - Locaties: Suburb → Library → School → Hospital → Mall
 - Elke succesvolle actie brengt je naar de volgende locatie
@@ -190,9 +190,9 @@ Ga door 5 locaties heen om het spel te winnen.
 
 ### Zoeken na Gevecht
 
-![Zoeken na Gevecht](../cards/level-5/zoeken-na-gevecht.png)
-
 Win een gevecht om het gebied te doorzoeken voor items.
+
+![Zoeken na Gevecht](../cards/level-5/zoeken-na-gevecht.png)
 
 - Na een gewonnen gevecht verschijnt een "Zoeken" knop
 - 50% kans om een item te vinden (medkit, wapen, etc.)

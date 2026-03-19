@@ -4,9 +4,9 @@
 
 ### Zombie Geluiden
 
-![Zombie Geluiden](../cards/level-3/zombie-geluiden.png)
-
 Laat de zombie een geluid maken als hij verschijnt
+
+![Zombie Geluiden](../cards/level-3/zombie-geluiden.png)
 
 **Hint:** Maak een lijst `zombie_geluiden = ["GRAAH!", "BRAINS!", ...]` en gebruik `random.choice()`
 
@@ -23,9 +23,9 @@ Laat de zombie een geluid maken als hij verschijnt
 
 ### Items Verbeteren
 
-![Items Verbeteren](../cards/level-3/items-verbeteren.png)
-
 Pas de medkit en energie bar aan: medkit geeft 3 levens, energie bar geeft 1 leven
+
+![Items Verbeteren](../cards/level-3/items-verbeteren.png)
 
 **Hint:** Check welk item je gebruikt met `if ... in inventory` en pas `levens +=` aan
 
@@ -52,9 +52,9 @@ Pas de medkit en energie bar aan: medkit geeft 3 levens, energie bar geeft 1 lev
 
 ### Zombie Drops
 
-![Zombie Drops](../cards/level-3/zombie-drops.png)
-
 Laat de zombie soms een item droppen als je wint
+
+![Zombie Drops](../cards/level-3/zombie-drops.png)
 
 **Hint:** Na het verslaan, gebruik `random.randint(1, 3) == 1` om te checken of er iets valt, en `random.choice()` om een item te kiezen
 
@@ -75,9 +75,9 @@ Laat de zombie soms een item droppen als je wint
 
 ### Sterke Zombie
 
-![Sterke Zombie](../cards/level-3/sterke-zombie.png)
-
 Voeg een "sterke zombie" toe die moeilijker te verslaan is
+
+![Sterke Zombie](../cards/level-3/sterke-zombie.png)
 
 **Hint:** Voeg "sterke zombie" toe aan de lijst en check `if zombie == "sterke zombie":` bij vechten
 
@@ -96,9 +96,9 @@ Voeg een "sterke zombie" toe die moeilijker te verslaan is
 
 ### Wapen Bonus
 
-![Wapen Bonus](../cards/level-3/wapen-bonus.png)
-
 De honkbalknuppel maakt vechten makkelijker (vooral tegen sterke zombies!)
+
+![Wapen Bonus](../cards/level-3/wapen-bonus.png)
 
 **Hint:** Check `if "honkbalknuppel" in inventory:` en geef een betere kans
 

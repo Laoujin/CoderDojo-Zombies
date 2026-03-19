@@ -4,9 +4,9 @@
 
 ### Eigen Verhaal
 
-![Eigen Verhaal](../cards/level-1/eigen-verhaal.png)
-
 Verander alle teksten naar je eigen zombie verhaal
+
+![Eigen Verhaal](../cards/level-1/eigen-verhaal.png)
 
 **Hint:** Pas de strings aan in de `print()` statements
 
@@ -20,9 +20,9 @@ Verander alle teksten naar je eigen zombie verhaal
 
 ### Verstoppen
 
-![Verstoppen](../cards/level-1/verstoppen.png)
-
 Voeg een derde optie toe: "verstoppen"
+
+![Verstoppen](../cards/level-1/verstoppen.png)
 
 **Hint:** Gebruik `elif actie == "verstoppen":`
 
@@ -43,9 +43,9 @@ Voeg een derde optie toe: "verstoppen"
 
 ### Praten
 
-![Praten](../cards/level-1/praten.png)
-
 Voeg een "praten" optie toe met je eigen logica
+
+![Praten](../cards/level-1/praten.png)
 
 **Hint:** Maak een `elif actie == "praten":` en bedenk zelf wat er gebeurt. Misschien kan je de zombie overtuigen?
 

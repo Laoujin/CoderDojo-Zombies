@@ -4,9 +4,9 @@
 
 ### Game Over Bericht
 
-![Game Over Bericht](../cards/level-2/game-over-bericht.png)
-
 Voeg een speciaal bericht toe als je dood gaat
+
+![Game Over Bericht](../cards/level-2/game-over-bericht.png)
 
 **Hint:** Voeg code toe NA de while loop maar VOOR "THE END"
 
@@ -27,9 +27,9 @@ Voeg een speciaal bericht toe als je dood gaat
 
 ### Score Systeem
 
-![Score Systeem](../cards/level-2/score-systeem.png)
-
 Voeg een score toe die omhoog gaat per overwonnen zombie
+
+![Score Systeem](../cards/level-2/score-systeem.png)
 
 **Hint:** Maak `score = 0` aan het begin, en `score += 10` als je wint
 
@@ -57,9 +57,9 @@ Voeg een score toe die omhoog gaat per overwonnen zombie
 
 ### Wapen Zoeken
 
-![Wapen Zoeken](../cards/level-2/wapen-zoeken.png)
-
 Voeg een "zoeken" actie toe om een wapen te vinden
+
+![Wapen Zoeken](../cards/level-2/wapen-zoeken.png)
 
 **Hint:** Maak een variabele `heeft_wapen = False` aan het begin
 
@@ -88,9 +88,9 @@ Voeg een "zoeken" actie toe om een wapen te vinden
 
 ### Wapen Bonus
 
-![Wapen Bonus](../cards/level-2/wapen-bonus.png)
-
 Het wapen verhoogt je winkans bij vechten
+
+![Wapen Bonus](../cards/level-2/wapen-bonus.png)
 
 **Hint:** Check `if heeft_wapen:` en pas de `random.randint()` aan
 

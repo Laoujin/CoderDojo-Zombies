@@ -4,9 +4,9 @@
 
 ### Status Verbeteren
 
-![Status Verbeteren](../cards/level-4/status-verbeteren.png)
-
 Pas `toon_status()` aan om ook het aantal items te tonen
+
+![Status Verbeteren](../cards/level-4/status-verbeteren.png)
 
 **Hint:** Gebruik `len(inventory)` om het aantal items te tellen
 
@@ -26,9 +26,9 @@ Pas `toon_status()` aan om ook het aantal items te tonen
 
 ### Meerdere Wapens
 
-![Meerdere Wapens](../cards/level-4/meerdere-wapens.png)
-
 Pas `vecht()` aan en voeg andere wapens toe als mogelijke inventory.
+
+![Meerdere Wapens](../cards/level-4/meerdere-wapens.png)
 
 **Hint:** Verander `heeft_wapen` naar `wapen_type` (None, "honkbalknuppel", "zwaard", etc.)
 
@@ -60,9 +60,9 @@ Pas `vecht()` aan en voeg andere wapens toe als mogelijke inventory.
 
 ### Zombie HP
 
-![Zombie HP](../cards/level-4/zombie-hp.png)
-
 Geef zombies meerdere levens zodat je ze vaker moet raken
+
+![Zombie HP](../cards/level-4/zombie-hp.png)
 
 **Hint:** Voeg `"hp": 2` toe aan de zombie dictionary in `maak_zombie()`. Bij vechten: `zombie["hp"] -= 1` en check of hp 0 is.
 
