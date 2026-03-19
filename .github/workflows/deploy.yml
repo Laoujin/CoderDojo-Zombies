@@ -38,9 +38,6 @@ jobs:
           cp -r levels zombie-apocalypse/
           cp download/LEES_MIJ.txt zombie-apocalypse/
           echo "pgzero" > zombie-apocalypse/requirements.txt
-          # Remove uitdagingen.md files (those are on the website)
-          find zombie-apocalypse -name "uitdagingen.md" -delete
-          find zombie-apocalypse -name "uitleg.md" -delete
           zip -r docs/zombie-apocalypse.zip zombie-apocalypse
           rm -rf zombie-apocalypse
 
