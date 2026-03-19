@@ -24,8 +24,7 @@ pip install -r requirements.txt
 pip install mkdocs mkdocs-material
 
 # Sync level docs naar docs/ (nodig voor MkDocs)
-cp levels/level-*/*.md docs/levels/level-*/  # Linux/Mac
-# Of maak docs/levels/ folders aan en kopieer handmatig op Windows
+Get-ChildItem levels/level-* -Directory | ForEach-Object { $dest = "docs/levels/$($_.Name)"; New-Item -ItemType Directory -Force -Path $dest | Out-Null; Copy-Item "$($_.FullName)/*.md" $dest }
 
 # Start de website lokaal
 mkdocs serve
