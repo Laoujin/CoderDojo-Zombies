@@ -4,6 +4,8 @@
 
 ### Zombie Geluiden
 
+![Zombie Geluiden](../cards/level-3/zombie-geluiden.png)
+
 Laat de zombie een geluid maken als hij verschijnt
 
 **Hint:** Maak een lijst `zombie_geluiden = ["GRAAH!", "BRAINS!", ...]` en gebruik `random.choice()`
@@ -20,6 +22,8 @@ Laat de zombie een geluid maken als hij verschijnt
 ---
 
 ### Items Verbeteren
+
+![Items Verbeteren](../cards/level-3/items-verbeteren.png)
 
 Pas de medkit en energie bar aan: medkit geeft 3 levens, energie bar geeft 1 leven
 
@@ -48,6 +52,8 @@ Pas de medkit en energie bar aan: medkit geeft 3 levens, energie bar geeft 1 lev
 
 ### Zombie Drops
 
+![Zombie Drops](../cards/level-3/zombie-drops.png)
+
 Laat de zombie soms een item droppen als je wint
 
 **Hint:** Na het verslaan, gebruik `random.randint(1, 3) == 1` om te checken of er iets valt, en `random.choice()` om een item te kiezen
@@ -69,6 +75,8 @@ Laat de zombie soms een item droppen als je wint
 
 ### Sterke Zombie
 
+![Sterke Zombie](../cards/level-3/sterke-zombie.png)
+
 Voeg een "sterke zombie" toe die moeilijker te verslaan is
 
 **Hint:** Voeg "sterke zombie" toe aan de lijst en check `if zombie == "sterke zombie":` bij vechten
@@ -87,6 +95,8 @@ Voeg een "sterke zombie" toe die moeilijker te verslaan is
 ---
 
 ### Wapen Bonus
+
+![Wapen Bonus](../cards/level-3/wapen-bonus.png)
 
 De honkbalknuppel maakt vechten makkelijker (vooral tegen sterke zombies!)
 

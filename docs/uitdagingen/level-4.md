@@ -4,6 +4,8 @@
 
 ### Status Verbeteren
 
+![Status Verbeteren](../cards/level-4/status-verbeteren.png)
+
 Pas `toon_status()` aan om ook het aantal items te tonen
 
 **Hint:** Gebruik `len(inventory)` om het aantal items te tellen
@@ -23,6 +25,8 @@ Pas `toon_status()` aan om ook het aantal items te tonen
 ## Pittig
 
 ### Meerdere Wapens
+
+![Meerdere Wapens](../cards/level-4/meerdere-wapens.png)
 
 Pas `vecht()` aan en voeg andere wapens toe als mogelijke inventory.
 
@@ -55,6 +59,8 @@ Pas `vecht()` aan en voeg andere wapens toe als mogelijke inventory.
 ## Boss
 
 ### Zombie HP
+
+![Zombie HP](../cards/level-4/zombie-hp.png)
 
 Geef zombies meerdere levens zodat je ze vaker moet raken
 

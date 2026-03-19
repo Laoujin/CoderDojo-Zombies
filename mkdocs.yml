@@ -6,7 +6,11 @@ exclude_docs: |
   midjourney/
   superpowers/
   levels/*/uitdagingen.md
-  cards/
+  cards/*.md
+  cards/*.py
+  cards/*.html
+  cards/*/*.md
+  cards/output/
 
 theme:
   name: material
@@ -53,4 +57,6 @@ nav:
     - Level 3: uitdagingen/level-3.md
     - Level 4: uitdagingen/level-4.md
     - Level 5: uitdagingen/level-5.md
-  - Cheatsheet: cheatsheet.md
+  - Cheatsheets:
+    - Python: cheatsheet.md
+    - Pygame Zero: cheatsheet-pygame.md

@@ -4,6 +4,8 @@
 
 ### Eigen Verhaal
 
+![Eigen Verhaal](../cards/level-1/eigen-verhaal.png)
+
 Verander alle teksten naar je eigen zombie verhaal
 
 **Hint:** Pas de strings aan in de `print()` statements
@@ -17,6 +19,8 @@ Verander alle teksten naar je eigen zombie verhaal
 ## Pittig
 
 ### Verstoppen
+
+![Verstoppen](../cards/level-1/verstoppen.png)
 
 Voeg een derde optie toe: "verstoppen"
 
@@ -38,6 +42,8 @@ Voeg een derde optie toe: "verstoppen"
 ## Boss
 
 ### Praten
+
+![Praten](../cards/level-1/praten.png)
 
 Voeg een "praten" optie toe met je eigen logica
 
