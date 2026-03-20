@@ -47,486 +47,6 @@ Kies het juiste wapen, de juiste actie, en overleef!
 
 ---
 
-# Zombiepedia
-
-## Makkelijk
-
-<div class="zombie-grid">
-
-<div class="zombie-card tier-easy">
-    <img src="../images/zombies/baby1.png" alt="Baby Zombie">
-    <h3>Baby Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:20%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:20%"></span></span></div>
-    </div>
-    <p class="description">"Wil alleen maar spelen... en je hersenen eten."</p>
-    <p class="weakness">Zwakte: Afgeleid door speelgoed</p>
-    <div class="tactics">
-        <span class="tactic good">Vechten</span>
-        <span class="tactic good">Rennen</span>
-        <span class="tactic good">Verstoppen</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-easy">
-    <img src="../images/zombies/slow1.png" alt="Langzame Zombie">
-    <h3>Langzame Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:20%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:20%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:40%"></span></span></div>
-    </div>
-    <p class="description">"Schuifelt langzaam maar zeker je richting op. Geen haast."</p>
-    <p class="weakness">Zwakte: Wandelen is al te snel</p>
-    <div class="tactics">
-        <span class="tactic good">Vechten</span>
-        <span class="tactic good">Rennen</span>
-        <span class="tactic good">Verstoppen</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-easy">
-    <img src="../images/zombies/grandma1.png" alt="Oma Zombie">
-    <h3>Oma Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:20%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:20%"></span></span></div>
-    </div>
-    <p class="description">"Wil je een koekje geven... een HERSENEN koekje!"</p>
-    <p class="weakness">Zwakte: Kan haar bril niet vinden</p>
-    <div class="tactics">
-        <span class="tactic good">Vechten</span>
-        <span class="tactic good">Rennen</span>
-        <span class="tactic good">Verstoppen</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-easy">
-    <img src="../images/zombies/gamer1.png" alt="Gamer Zombie">
-    <h3>Gamer Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:20%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:20%"></span></span></div>
-    </div>
-    <p class="description">"Nog één potje... nog één potje... HERSENEN!"</p>
-    <p class="weakness">Zwakte: Zit vastgeplakt aan z'n stoel</p>
-    <div class="tactics">
-        <span class="tactic good">Vechten</span>
-        <span class="tactic good">Rennen</span>
-        <span class="tactic ok">Verstoppen</span>
-    </div>
-</div>
-
-</div>
-
----
-
-## Gemiddeld
-
-<div class="zombie-grid">
-
-<div class="zombie-card tier-medium">
-    <img src="../images/zombies/fast1.png" alt="Snelle Zombie">
-    <h3>Snelle Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:80%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:40%"></span></span></div>
-    </div>
-    <p class="description">"ZOOM! Was dat een zombie of een raket?!"</p>
-    <p class="weakness">Zwakte: Rent tegen muren aan</p>
-    <div class="tactics">
-        <span class="tactic bad">Rennen</span>
-        <span class="tactic good">Verstoppen</span>
-        <span class="tactic ok">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-medium">
-    <img src="../images/zombies/chef1.png" alt="Chef Zombie">
-    <h3>Chef Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:40%"></span></span></div>
-    </div>
-    <p class="description">"Vandaag op het menu: verse hersenen à la carte!"</p>
-    <p class="weakness">Zwakte: Perfectionist - moet alles perfect bereiden</p>
-    <div class="tactics">
-        <span class="tactic ok">Rennen</span>
-        <span class="tactic ok">Verstoppen</span>
-        <span class="tactic ok">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-medium">
-    <img src="../images/zombies/disco1.png" alt="Disco Zombie">
-    <h3>Disco Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:40%"></span></span></div>
-    </div>
-    <p class="description">"Stayin' alive! Stayin' alive! Oh wacht... te laat."</p>
-    <p class="weakness">Zwakte: Kan niet stoppen met dansen</p>
-    <div class="tactics">
-        <span class="tactic ok">Rennen</span>
-        <span class="tactic good">Verstoppen</span>
-        <span class="tactic ok">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-medium">
-    <img src="../images/zombies/skater1.png" alt="Skater Zombie">
-    <h3>Skater Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:80%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:40%"></span></span></div>
-    </div>
-    <p class="description">"Sick kickflip bro! Nu sick bite bro!"</p>
-    <p class="weakness">Zwakte: Valt bij elke stoeprand</p>
-    <div class="tactics">
-        <span class="tactic bad">Rennen</span>
-        <span class="tactic good">Verstoppen</span>
-        <span class="tactic ok">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-medium">
-    <img src="../images/zombies/farmer1.png" alt="Boer Zombie">
-    <h3>Boer Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:60%"></span></span></div>
-    </div>
-    <p class="description">"Tijd om te oogsten... HERSENEN te oogsten!"</p>
-    <p class="weakness">Zwakte: Hooivork zit vast in de grond</p>
-    <div class="tactics">
-        <span class="tactic ok">Rennen</span>
-        <span class="tactic ok">Verstoppen</span>
-        <span class="tactic ok">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-medium">
-    <img src="../images/zombies/post1.png" alt="Postbode Zombie">
-    <h3>Postbode Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:40%"></span></span></div>
-    </div>
-    <p class="description">"Pakketje voor u! Het is... UW ONDERGANG!"</p>
-    <p class="weakness">Zwakte: Moet elke brievenbus checken</p>
-    <div class="tactics">
-        <span class="tactic ok">Rennen</span>
-        <span class="tactic ok">Verstoppen</span>
-        <span class="tactic ok">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-medium">
-    <img src="../images/zombies/yoga1.png" alt="Yoga Zombie">
-    <h3>Yoga Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:40%"></span></span></div>
-    </div>
-    <p class="description">"Namaste... nu ga ik je OPETEN-ste!"</p>
-    <p class="weakness">Zwakte: Moet eerst stretchen</p>
-    <div class="tactics">
-        <span class="tactic good">Rennen</span>
-        <span class="tactic ok">Verstoppen</span>
-        <span class="tactic ok">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-medium">
-    <img src="../images/zombies/golf1.png" alt="Golf Zombie">
-    <h3>Golf Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:60%"></span></span></div>
-    </div>
-    <p class="description">"FORE! Oh sorry, ik bedoel: HERSENEN!"</p>
-    <p class="weakness">Zwakte: Moet eerst z'n handicap berekenen</p>
-    <div class="tactics">
-        <span class="tactic ok">Rennen</span>
-        <span class="tactic ok">Verstoppen</span>
-        <span class="tactic bad">Vechten</span>
-    </div>
-</div>
-
-</div>
-
----
-
-## Moeilijk
-
-<div class="zombie-grid">
-
-<div class="zombie-card tier-hard">
-    <img src="../images/zombies/tank1.png" alt="Tank Zombie">
-    <h3>Tank Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:20%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:20%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:100%"></span></span></div>
-    </div>
-    <p class="description">"HULK SMASH! Maar dan met meer kwijl."</p>
-    <p class="weakness">Zwakte: Past niet door deuren</p>
-    <div class="tactics">
-        <span class="tactic good">Rennen</span>
-        <span class="tactic good">Verstoppen</span>
-        <span class="tactic bad">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-hard">
-    <img src="../images/zombies/ninja1.png" alt="Ninja Zombie">
-    <h3>Ninja Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:100%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:80%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:60%"></span></span></div>
-    </div>
-    <p class="description">"Je ziet me niet, je ziet me niet, je ziet me- BOE!"</p>
-    <p class="weakness">Zwakte: Zaklamp verblindt hem</p>
-    <div class="tactics">
-        <span class="tactic bad">Rennen</span>
-        <span class="tactic bad">Verstoppen</span>
-        <span class="tactic ok">Vechten + Zaklamp</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-hard">
-    <img src="../images/zombies/scientist1.png" alt="Wetenschapper Zombie">
-    <h3>Wetenschapper Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:100%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:40%"></span></span></div>
-    </div>
-    <p class="description">"Interessant... je hersenen zijn 1.4kg. Dat weet ik ZEKER straks."</p>
-    <p class="weakness">Zwakte: Moet eerst een hypothese opstellen</p>
-    <div class="tactics">
-        <span class="tactic good">Rennen</span>
-        <span class="tactic bad">Verstoppen</span>
-        <span class="tactic ok">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-hard">
-    <img src="../images/zombies/teacher1.png" alt="Leraar Zombie">
-    <h3>Leraar Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:80%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:40%"></span></span></div>
-    </div>
-    <p class="description">"Pop quiz: hoeveel hersenen heb jij? ANTWOORD: NIET LANG MEER!"</p>
-    <p class="weakness">Zwakte: Moet alles drie keer uitleggen</p>
-    <div class="tactics">
-        <span class="tactic good">Rennen</span>
-        <span class="tactic bad">Verstoppen</span>
-        <span class="tactic ok">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-hard">
-    <img src="../images/zombies/pirate1.png" alt="Piraat Zombie">
-    <h3>Piraat Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:80%"></span></span></div>
-    </div>
-    <p class="description">"ARRR! Waar is me schat? Oh ja: JOUW HERSENEN!"</p>
-    <p class="weakness">Zwakte: Kan niet goed zien met één oog</p>
-    <div class="tactics">
-        <span class="tactic ok">Rennen</span>
-        <span class="tactic ok">Verstoppen (rechts)</span>
-        <span class="tactic bad">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-hard">
-    <img src="../images/zombies/wrestler1.png" alt="Worstelaar Zombie">
-    <h3>Worstelaar Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:100%"></span></span></div>
-    </div>
-    <p class="description">"AND HIS NAME IS JOHN ZOMBIE! *toetertje*"</p>
-    <p class="weakness">Zwakte: Moet eerst z'n entrance doen</p>
-    <div class="tactics">
-        <span class="tactic ok">Rennen</span>
-        <span class="tactic good">Verstoppen</span>
-        <span class="tactic bad">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-hard">
-    <img src="../images/zombies/viking1.png" alt="Viking Zombie">
-    <h3>Viking Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:100%"></span></span></div>
-    </div>
-    <p class="description">"VALHALLA! Maar eerst: jouw hersenen als ontbijt!"</p>
-    <p class="weakness">Zwakte: Helm zit over z'n ogen</p>
-    <div class="tactics">
-        <span class="tactic ok">Rennen</span>
-        <span class="tactic good">Verstoppen</span>
-        <span class="tactic bad">Vechten</span>
-    </div>
-</div>
-
-</div>
-
----
-
-## Boss Zombies
-
-<div class="zombie-grid">
-
-<div class="zombie-card tier-boss">
-    <img src="../images/zombies/wizard1.png" alt="Tovenaar Zombie">
-    <h3>Tovenaar Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:100%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:80%"></span></span></div>
-    </div>
-    <p class="description">"Abracadabra... je bent nu DOOD-cadaver!"</p>
-    <p class="weakness">Zwakte: Spreuk duurt 3 seconden</p>
-    <div class="tactics">
-        <span class="tactic ok">Rennen (snel!)</span>
-        <span class="tactic bad">Verstoppen</span>
-        <span class="tactic bad">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-boss">
-    <img src="../images/zombies/mummy1.png" alt="Mummie Zombie">
-    <h3>Mummie Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:80%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:100%"></span></span></div>
-    </div>
-    <p class="description">"3000 jaar gewacht... nu heb ik HONGER!"</p>
-    <p class="weakness">Zwakte: Bandages raken los</p>
-    <div class="tactics">
-        <span class="tactic good">Rennen</span>
-        <span class="tactic bad">Verstoppen</span>
-        <span class="tactic bad">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-boss">
-    <img src="../images/zombies/astronaut1.png" alt="Astronaut Zombie">
-    <h3>Astronaut Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:40%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:100%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:80%"></span></span></div>
-    </div>
-    <p class="description">"Houston, we hebben een probleem: IK HEB HONGER!"</p>
-    <p class="weakness">Zwakte: Pak is zwaar en log</p>
-    <div class="tactics">
-        <span class="tactic good">Rennen</span>
-        <span class="tactic bad">Verstoppen</span>
-        <span class="tactic bad">Vechten</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-boss">
-    <img src="../images/zombies/dentist1.png" alt="Tandarts Zombie">
-    <h3>Tandarts Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:60%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:100%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:60%"></span></span></div>
-    </div>
-    <p class="description">"Open je mond wijd... WIJDER... perfectie!"</p>
-    <p class="weakness">Zwakte: Boor maakt irritant geluid</p>
-    <div class="tactics">
-        <span class="tactic ok">Rennen</span>
-        <span class="tactic bad">Verstoppen</span>
-        <span class="tactic ok">Vechten + Oordoppen</span>
-    </div>
-</div>
-
-</div>
-
----
-
-## Geheime Zombies
-
-<div class="zombie-grid">
-
-<div class="zombie-card tier-secret">
-    <img src="../images/zombies/fish1.png" alt="Vis Zombie">
-    <h3>??? Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:0%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:0%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:0%"></span></span></div>
-    </div>
-    <p class="description">"Versla Level 6 om deze zombie te ontgrendelen!"</p>
-    <p class="weakness">Zwakte: ???</p>
-    <div class="tactics">
-        <span class="tactic unknown">???</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-secret">
-    <img src="../images/zombies/pilot1.png" alt="Piloot Zombie">
-    <h3>??? Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:0%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:0%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:0%"></span></span></div>
-    </div>
-    <p class="description">"Versla Level 6 om deze zombie te ontgrendelen!"</p>
-    <p class="weakness">Zwakte: ???</p>
-    <div class="tactics">
-        <span class="tactic unknown">???</span>
-    </div>
-</div>
-
-<div class="zombie-card tier-secret">
-    <img src="../images/zombies/construction1.png" alt="Bouwvakker Zombie">
-    <h3>??? Zombie</h3>
-    <div class="stats">
-        <div class="stat"><span class="label">Snelheid</span><span class="bar"><span style="width:0%"></span></span></div>
-        <div class="stat"><span class="label">Slimheid</span><span class="bar"><span style="width:0%"></span></span></div>
-        <div class="stat"><span class="label">Kracht</span><span class="bar"><span style="width:0%"></span></span></div>
-    </div>
-    <p class="description">"Versla Level 6 om deze zombie te ontgrendelen!"</p>
-    <p class="weakness">Zwakte: ???</p>
-    <div class="tactics">
-        <span class="tactic unknown">???</span>
-    </div>
-</div>
-
-</div>
-
----
-
----
-
 ## Hoe Bouw Je Level 6?
 
 !!! tip "Start Simpel"
@@ -572,3 +92,197 @@ Kies het juiste wapen, de juiste actie, en overleef!
     - **Hoge Kracht?** → Vechten werkt NIET (zonder wapen)
 
     Combineer je wapen met de zwakte van de zombie voor de beste kans!
+
+---
+
+## Inspiratie: Extra Game Mechanics
+
+Kies de features die jij cool vindt en bouw ze in jouw spel!
+
+### Stamina Systeem
+
+Je kunt niet eeuwig blijven rennen!
+
+- `stamina = 3` aan het begin
+- Rennen kost 1 stamina
+- Bij 0 stamina: "Je bent te moe om te rennen!"
+- Rusten = stamina terug (maar kost een beurt)
+- Visueel: `⚡⚡⚡` of `⚡⚡○`
+
+### Geluidsmeter
+
+Maak te veel lawaai en verstoppen werkt niet meer!
+
+- `geluid = 0` (stil) tot `5` (LUID)
+- Rennen: +2 geluid
+- Vechten: +3 geluid
+- Verstoppen: -1 geluid
+- Hoog geluid = zombie vindt je makkelijker
+- Visueel: `🔊🔊🔊○○`
+
+### Vallen Plaatsen
+
+Plaats vallen om zombies te vertragen of te vangen!
+
+- Touw Val — zombie zit vast (skip beurt)
+- Bananen Schil — zombie valt (bonus aanval)
+- Spijker Plank — zombie neemt schade
+- Val plaatsen kost een beurt
+- Val werkt maar één keer
+
+### Random Events
+
+Onverwachte gebeurtenissen maken het spel spannender!
+
+- "Je vindt een verborgen wapen!"
+- "Je struikelt over een steen!" (-1 stamina)
+- "Je telefoon gaat af!" (+3 geluid)
+- "Je vindt een blikje eten!" (+1 HP)
+- "Het begint te regenen..." (zombies trager)
+- "Je zaklamp batterij is leeg!"
+- "Een extra zombie verschijnt!"
+- "De zombie valt even in slaap..." (gratis beurt)
+- 30% kans per beurt op een event
+
+### Weer Effecten
+
+Het weer beïnvloedt het spel!
+
+- **Regen** — rennen trager, geluid gedempt
+- **Mist** — verstoppen makkelijker
+- **Nacht** — zombies sterker, zaklamp nodig
+- **Storm** — random events vaker
+- Weer verandert elke X beurten
+
+### Dag/Nacht Cyclus
+
+'s Nachts wordt het gevaarlijker!
+
+- Dag: normale stats
+- Schemering: zombies +1 snelheid
+- Nacht: zombies +1 op alles, verstoppen moeilijker
+- Zaklamp werkt alleen 's nachts
+
+### Crafting Systeem
+
+Combineer items tot betere items!
+
+- Stok + Spijkers = Spijkerknuppel
+- Fles + Doek + Aansteker = Molotov
+- Verband + Alcohol = Medkit
+- Recepten ontdekken door te experimenteren
+
+### Locaties
+
+Elke plek heeft eigen zombies en items!
+
+- **School** — Leraar, Gamer zombie + boeken, potloden
+- **Supermarkt** — Chef zombie + eten, blikken
+- **Ziekenhuis** — Tandarts zombie + medkits, verband
+- **Pretpark** — Clown zombie + speelgoed, ballonnen
+- **Politiebureau** — Tank zombie + wapens, radio
+- Kies waar je heen gaat, elke locatie heeft risico's en beloningen
+
+### Hordes
+
+Meerdere zombies tegelijk!
+
+- Normale ronde: 1 zombie
+- Horde ronde: 2-4 zombies tegelijk
+- Elke actie raakt maar 1 zombie
+- Vallen en wapens met "splash" raken meerdere
+- Overleef de horde voor bonus items
+
+### Boss Fights
+
+Speciale zombies met fases!
+
+- Boss heeft meerdere HP (bijv. 3 hits nodig)
+- Bij 50% HP: "De zombie wordt BOOS!" (stats omhoog)
+- Speciale aanval patronen
+- Versla de boss = unlock geheime zombie
+
+### Survivors (NPCs)
+
+Red andere mensen!
+
+- Vind survivors in locaties
+- Keuze: help ze of negeer ze
+- Geredde survivors helpen later:
+    - Extra aanval per beurt
+    - Delen items met je
+    - Waarschuwen voor gevaar
+
+### Achievements
+
+Verdien badges voor speciale acties!
+
+- "Ninja" — Versla 5 zombies zonder gezien te worden
+- "Tank" — Overleef 10 gevechten op rij
+- "Verzamelaar" — Vind alle wapens
+- "Geluidloos" — Win zonder geluid te maken
+- "Survivor" — Eindig met 1 HP
+
+### Highscores
+
+Sla je beste scores op!
+
+- Gebruik File I/O uit Level 4
+- `highscores.txt` met naam + score
+- Toon top 5 bij game over
+- Score = zombies verslagen × overgebleven HP
+
+### Critical Hits
+
+Kleine kans op instant win!
+
+- 10% kans op "CRITICAL HIT!"
+- Verslaat elke zombie in één klap
+- Sommige wapens hebben hogere crit kans
+- Visueel: extra vet of kleur
+
+### Armor/Bescherming
+
+Verminder schade!
+
+- Helm: -1 schade van aanvallen
+- Vest: 50% kans om schade te negeren
+- Schild: blokkeer 1 aanval volledig (breekt daarna)
+- Armor vinden in locaties
+
+### Hunger/Dorst
+
+Je moet eten en drinken!
+
+- `honger = 10` aan het begin
+- Elke beurt: -1 honger
+- Bij 0 honger: -1 HP per beurt
+- Eten vinden herstelt honger
+- Extra tactiek: wanneer zoek je eten vs wanneer vecht je?
+
+### Munitie
+
+Wapens hebben beperkte kogels!
+
+- Pistool: 6 kogels
+- Shotgun: 2 kogels (maar sterker)
+- Geen kogels = wapen is nutteloos
+- Kogels vinden is zeldzaam
+
+### New Game+
+
+Tweede playthrough is moeilijker!
+
+- Na winnen: "New Game+ unlocked!"
+- Alle zombies +1 op stats
+- Maar je houdt één item/wapen
+- Hoe ver kom je?
+
+### Easter Eggs
+
+Geheime verrassingen!
+
+- Typ "konami" = gratis wapen
+- Vind de geheime kamer
+- Bepaalde zombie + wapen combo = grappige tekst
+- Verborgen achievement voor ontdekken
