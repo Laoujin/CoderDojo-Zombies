@@ -3,6 +3,10 @@
 !!! tip "Te moeilijk?"
     Vind je dit level lastig? Doe dan eerst [Level 4.5 - Pygame Zero Intro](../level-4.5/uitleg.md) om de basis te leren met een simpeler spelletje!
 
+<video class="gameplay-video" controls>
+  <source src="../../../images/level-5-gameplay.mp4" type="video/mp4">
+</video>
+
 ## Wat leer je?
 
 In dit level leer je over **Pygame Zero** - een library om grafische spelletjes te maken. Je leert hoe je plaatjes tekent, muisklikken afhandelt en animaties maakt.
