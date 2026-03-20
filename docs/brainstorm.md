@@ -1,4 +1,4 @@
-# Zombiepedia
+# Brainstorm
 
 !!! warning "Level 6: Bouw Je Eigen Spel!"
     Dit is **Level 6** - de ultieme uitdaging!
@@ -46,6 +46,8 @@ Kies het juiste wapen, de juiste actie, en overleef!
 </div>
 
 ---
+
+# Zombiepedia
 
 ## Makkelijk
 
