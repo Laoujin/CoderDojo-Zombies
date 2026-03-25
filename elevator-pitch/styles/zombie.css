@@ -1,0 +1,228 @@
+/* ===========================================
+   ZOMBIE APOCALYPSE - Slidev Theme
+   Ported from CoderDojo-Zombies website
+   =========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Bangers&family=Grandstander:wght@400;600;700&display=swap');
+
+:root {
+  /* Zombie color palette */
+  --zombie-green: #4ade80;
+  --zombie-green-dark: #22c55e;
+  --zombie-purple: #a855f7;
+  --blood-red: #dc2626;
+  --slime-yellow: #facc15;
+  --bone-white: #fef3c7;
+  --dark-bg: #1a1a2e;
+  --darker-bg: #0f0f1a;
+
+  /* Slidev overrides */
+  --slidev-theme-primary: var(--zombie-green);
+  --slidev-theme-background: var(--darker-bg);
+}
+
+/* Dark background for all slides */
+.slidev-layout {
+  background: var(--darker-bg);
+  color: var(--bone-white);
+}
+
+/* Main title - Creepster font */
+h1 {
+  font-family: 'Creepster', cursive !important;
+  color: var(--zombie-green) !important;
+  text-shadow:
+    4px 4px 0 var(--blood-red),
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000;
+  letter-spacing: 3px;
+  font-size: 4rem !important;
+}
+
+/* Subheadings - Bangers font */
+h2 {
+  font-family: 'Bangers', cursive !important;
+  color: var(--slime-yellow) !important;
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+  font-size: 2.5rem !important;
+}
+
+h3 {
+  font-family: 'Bangers', cursive !important;
+  color: var(--zombie-purple) !important;
+  letter-spacing: 1px;
+}
+
+/* Body text */
+p, li {
+  font-family: 'Grandstander', sans-serif !important;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+/* Code styling */
+code {
+  background-color: rgba(74, 222, 128, 0.15) !important;
+  color: var(--zombie-green) !important;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 1.2rem;
+}
+
+/* Links */
+a {
+  color: var(--zombie-green) !important;
+  text-decoration: underline wavy var(--blood-red) !important;
+}
+
+/* Images shake on hover */
+img:hover {
+  animation: zombie-shake 0.5s ease-in-out;
+}
+
+@keyframes zombie-shake {
+  0%, 100% { transform: translateX(0) rotate(0); }
+  25% { transform: translateX(-5px) rotate(-2deg); }
+  50% { transform: translateX(5px) rotate(2deg); }
+  75% { transform: translateX(-3px) rotate(-1deg); }
+}
+
+/* Pulsing glow effect for important elements */
+.glow {
+  animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px var(--zombie-green));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px var(--zombie-green))
+            drop-shadow(0 0 40px var(--zombie-green));
+  }
+}
+
+/* Biohazard background decoration */
+.slidev-layout::before {
+  content: "☣";
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  font-size: 150px;
+  color: rgba(250, 204, 21, 0.08);
+  pointer-events: none;
+  z-index: 0;
+  transform: rotate(15deg);
+}
+
+.slidev-layout::after {
+  content: "☣";
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  font-size: 100px;
+  color: rgba(220, 38, 38, 0.06);
+  pointer-events: none;
+  z-index: 0;
+  transform: rotate(-10deg);
+}
+
+/* Fog/cloud layers */
+.fog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.fog::before,
+.fog::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(ellipse, rgba(74, 222, 128, 0.1) 0%, transparent 50%);
+  animation: fog-drift 30s linear infinite;
+}
+
+.fog::after {
+  animation-delay: -15s;
+  background: radial-gradient(ellipse, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+}
+
+@keyframes fog-drift {
+  0% { transform: translate(-25%, -25%); }
+  50% { transform: translate(0%, 0%); }
+  100% { transform: translate(-25%, -25%); }
+}
+
+/* Cover slide styling */
+.slidev-layout.cover h1 {
+  font-size: 5rem !important;
+}
+
+/* Center layout */
+.slidev-layout.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Full-bleed images */
+.slidev-layout.image-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Zombie emoji accents */
+.zombie-accent::before {
+  content: "🧟";
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+/* Skull bullets */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "💀 ";
+}
+
+/* Blood drip effect for dramatic slides */
+.blood-drip::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(to bottom, var(--blood-red), transparent);
+}
+
+/* Slide transitions */
+.slidev-vclick-target {
+  transition: all 0.5s ease;
+}
+
+/* Progress bar styling */
+.slidev-progress {
+  background: var(--blood-red) !important;
+}
+
+/* Navigation styling */
+.slidev-nav {
+  background: var(--dark-bg) !important;
+}

@@ -44,6 +44,18 @@ mkdocs gh-deploy
 | 4.5   | Pygame zero intro | `levels/level-4.5/` |
 | 5     | Pygame zero       | `levels/level-5/`   |
 
+## Elevator Pitch Presentatie
+
+Een korte Slidev presentatie om kinderen warm te maken voor het zombie project.
+
+```bash
+cd elevator-pitch
+bun install
+bun dev
+```
+
+Open http://localhost:3030 in de browser. Gebruik pijltjestoetsen om door de slides te navigeren.
+
 ## Printbare Uitdagingen Kaarten
 
 Genereer uitdaging kaarten met custom achtergrondafbeeldingen.
