@@ -291,13 +291,13 @@ Verander alle teksten naar je eigen zombie verhaal
 ### Zombie Naam
 De zombie heeft een naam (kies random uit een lijst)
 
-**Hint:** Maak een lijst: `namen = ["Gerrit", "Zombie-Jan", "Ransen"]`
+**Hint:** Maak een lijst: `namen = ["Zombert", "Kreunald", "Rottie", "Stumpertje"]`
 
 ??? note "Spieken"
     ```python
     import random
 
-    namen = ["Gerrit", "Zombie-Jan", "Ransen", "Pansen"]
+    namen = ["Zombert", "Kreunald", "Rottie", "Stumpertje"]
     zombie_naam = random.choice(namen)
 
     print(f"🧟 {zombie_naam} de zombie komt op je af!")

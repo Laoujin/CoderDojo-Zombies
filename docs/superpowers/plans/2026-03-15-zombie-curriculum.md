@@ -275,13 +275,13 @@ Verander alle teksten naar je eigen zombie verhaal
 
 De zombie heeft een naam (kies random uit een lijst)
 
-**Hint:** Maak een lijst: `namen = ["Gerrit", "Zombie-Jan", "Ransen"]` en gebruik `random.choice()`
+**Hint:** Maak een lijst: `namen = ["Zombert", "Kreunald", "Stumpertje"]` en gebruik `random.choice()`
 
 ??? note "Spieken"
     ```python
     import random
 
-    namen = ["Gerrit", "Zombie-Jan", "Ransen", "Pansen"]
+    namen = ["Zombert", "Kreunald", "Stumpertje"]
     zombie_naam = random.choice(namen)
 
     print(f"🧟 {zombie_naam} de zombie komt op je af!")
@@ -968,7 +968,7 @@ def toon_status(levens, score, inventory):
 def maak_zombie():
     """Maak een nieuwe zombie met random eigenschappen."""
     types = ["langzame zombie", "snelle zombie", "sterke zombie"]
-    namen = ["Gerrit", "Jan", "Pansen", "Ransen", "Kansen"]
+    namen = ["Zombert", "Kreunald", "Rottie", "Stumpertje"]
     geluiden = ["GRAAAAAH!", "BRAAAAINS!", "UGHHHH..."]
 
     return {
@@ -1412,7 +1412,7 @@ Maak een `nieuwe_zombie()` functie die steeds moeilijkere zombies maakt
         else:
             types = ["langzame zombie", "snelle zombie", "sterke zombie"]
 
-        namen = ["Gerrit", "Jan", "Pansen"]
+        namen = ["Zombert", "Kreunald", "Rottie", "Stumpertje"]
 
         return {
             "type": random.choice(types),
