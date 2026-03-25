@@ -1,5 +1,11 @@
 # Level 5: Pygame Zero
 
+??? code "Bekijk de volledige code"
+
+    ```python
+    --8<-- "level-5/zombie.py"
+    ```
+
 !!! tip "Te moeilijk?"
     Vind je dit level lastig? Doe dan eerst [Level 4.5 - Pygame Zero Intro](../level-4.5/uitleg.md) om de basis te leren met een simpeler spelletje!
 

@@ -1,5 +1,11 @@
 # Level 1: Keuzes Maken
 
+??? code "Bekijk de volledige code"
+
+    ```python
+    --8<-- "level-1/zombie.py"
+    ```
+
 ## Wat leer je?
 
 In dit level leer je hoe je de computer keuzes laat maken met `if`, `elif` en `else`. Je leert ook hoe je input van de speler vraagt met `input()`.

@@ -1,5 +1,11 @@
 # Level 3: Lijsten en Inventory
 
+??? code "Bekijk de volledige code"
+
+    ```python
+    --8<-- "level-3/zombie.py"
+    ```
+
 ## Wat leer je?
 
 In dit level leer je over **lijsten** - een manier om meerdere dingen te bewaren in één variabele. Je leert ook `random.choice()` om iets willekeurigs uit een lijst te kiezen.

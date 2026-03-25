@@ -1,5 +1,11 @@
 # Level 2: Levens en Loops
 
+??? code "Bekijk de volledige code"
+
+    ```python
+    --8<-- "level-2/zombie.py"
+    ```
+
 ## Wat leer je?
 
 In dit level leer je hoe je code herhaalt met `while` loops en hoe je variabelen gebruikt om de status van het spel bij te houden.

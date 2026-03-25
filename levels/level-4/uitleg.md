@@ -1,5 +1,11 @@
 # Level 4: Functies
 
+??? code "Bekijk de volledige code"
+
+    ```python
+    --8<-- "level-4/zombie.py"
+    ```
+
 ## Wat leer je?
 
 In dit level leer je over **functies** - een manier om code te organiseren in herbruikbare blokken. Functies maken je code overzichtelijker en makkelijker aan te passen.

@@ -1,5 +1,11 @@
 # Level 4.5: Pygame Zero Intro
 
+??? code "Bekijk de volledige code"
+
+    ```python
+    --8<-- "level-4.5/zombie.py"
+    ```
+
 !!! info "Dit level is optioneel"
     Dit is een **apart mini-spelletje** om Pygame Zero te leren kennen. Als je al bekend bent met grafische games, kun je direct door naar [Level 5](../level-5/uitleg.md) om het echte Zombie spel te bouwen!
 
