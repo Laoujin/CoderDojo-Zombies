@@ -1,3 +1,11 @@
+# =============================================================================
+# ZOMBIE APOCALYPSE - Level 4
+# =============================================================================
+# Nieuw in dit level:
+# - Functies (def) om code te organiseren en herbruiken
+# - Dictionaries (woordenboeken) voor zombie eigenschappen
+# =============================================================================
+
 import os
 import random
 import time
@@ -5,10 +13,22 @@ import time
 os.system('cls' if os.name == 'nt' else 'clear')
 
 
-# === FUNCTIES ===
-
+# =============================================================================
+# FUNCTIES
+# =============================================================================
+# Een functie is een blok code met een naam die je kunt hergebruiken
+# Je maakt een functie met "def naam():"
+# Je roept een functie aan met "naam()"
+#
+# Functies kunnen PARAMETERS hebben (input) en iets RETURNEN (output)
+# =============================================================================
 def toon_status(levens, score, inventory):
-    """Toon de huidige status van de speler."""
+    """
+    Toon de huidige status van de speler.
+
+    Dit is een "docstring" - uitleg wat de functie doet.
+    Deze functie heeft 3 parameters: levens, score en inventory.
+    """
     print()
     print(f"❤️ Levens: {levens} | 🏆 Score: {score}")
     if inventory:
@@ -17,11 +37,25 @@ def toon_status(levens, score, inventory):
 
 
 def maak_zombie():
-    """Maak een nieuwe zombie met random eigenschappen."""
+    """
+    Maak een nieuwe zombie met random eigenschappen.
+
+    Returns: een dictionary met zombie info
+    """
+
     types = ["langzame zombie", "snelle zombie", "sterke zombie"]
-    namen = ["Gerrit", "Jan", "Pansen", "Ransen", "Kansen"]
+    namen = ["Zombert", "Kreunald", "Rottie", "Stumpertje"]
     geluiden = ["GRAAAAAH!", "BRAAAAINS!", "UGHHHH..."]
 
+    # =========================================================================
+    # DICTIONARIES (WOORDENBOEKEN)
+    # =========================================================================
+    # Een dictionary slaat data op met "sleutel: waarde" paren
+    # Je maakt ze met { } en haalt waardes op met ["sleutel"]
+    #
+    # Bijvoorbeeld: zombie["naam"] geeft de naam van de zombie
+    # =========================================================================
+    # "return" geeft een waarde terug aan de code die de functie aanriep
     return {
         "type": random.choice(types),
         "naam": random.choice(namen),
@@ -33,12 +67,22 @@ def toon_zombie(zombie):
     """Toon de zombie met spanning."""
     print("🌫️ Het is donker... je hoort gegrom...")
     time.sleep(1)
+
+    # zombie['naam'] haalt de waarde op die bij sleutel 'naam' hoort
     print(f"🧟‍♂️ {zombie['naam']} de {zombie['type']} komt op je af!")
     print(f"   '{zombie['geluid']}'")
 
 
 def bereken_winkans(zombie, heeft_wapen):
-    """Bereken de kans om te winnen tegen deze zombie."""
+    """
+    Bereken de kans om te winnen tegen deze zombie.
+
+    Parameters:
+        zombie: dictionary met zombie info
+        heeft_wapen: True of False
+
+    Returns: een getal (hoe hoger, hoe moeilijker)
+    """
     basis_kans = 2  # 1 op 2
 
     if zombie["type"] == "sterke zombie":
@@ -47,7 +91,9 @@ def bereken_winkans(zombie, heeft_wapen):
         basis_kans = 2  # normaal
 
     if heeft_wapen:
-        basis_kans = max(1, basis_kans - 1)  # makkelijker met wapen
+        # max() geeft de hoogste waarde
+        # We willen niet lager dan 1 (altijd kans om te verliezen)
+        basis_kans = max(1, basis_kans - 1)
 
     return basis_kans
 
@@ -55,7 +101,8 @@ def bereken_winkans(zombie, heeft_wapen):
 def vecht(zombie, heeft_wapen):
     """
     Vecht tegen een zombie.
-    Returns: True als je wint, False als je verliest.
+
+    Returns: True als je wint, False als je verliest
     """
     print("⚔️ Je maakt je klaar om te vechten...")
     if heeft_wapen:
@@ -76,13 +123,14 @@ def vecht(zombie, heeft_wapen):
 def ren_weg(zombie):
     """
     Probeer weg te rennen.
-    Returns: True als je ontsnapt, False als je gepakt wordt.
+
+    Returns: True als je ontsnapt, False als je gepakt wordt
     """
     print("🏃‍♂️ Je probeert weg te sprinten...")
     time.sleep(1)
 
     if zombie["type"] == "snelle zombie":
-        kans = random.randint(1, 3)  # moeilijker
+        kans = random.randint(1, 3)
     else:
         kans = random.randint(1, 2)
 
@@ -97,7 +145,8 @@ def ren_weg(zombie):
 def zoek_item(inventory):
     """
     Zoek naar items.
-    Returns: het gevonden item of None.
+
+    Returns: het gevonden item of None (niks)
     """
     print("🔍 Je zoekt rond...")
     time.sleep(1)
@@ -110,6 +159,7 @@ def zoek_item(inventory):
         return item
     else:
         print("Je vindt niks bruikbaars...")
+        # None betekent "niks" of "geen waarde"
         return None
 
 
@@ -125,45 +175,12 @@ def toon_help():
     print()
 
 
-def laad_highscores():
-    """Laad highscores uit bestand."""
-    try:
-        with open("highscores.txt", "r") as f:
-            scores = []
-            for line in f:
-                if "," in line:
-                    naam, score = line.strip().split(",")
-                    scores.append((naam, int(score)))
-            return scores
-    except FileNotFoundError:
-        return []
 
-
-def sla_score_op(naam, score):
-    """Sla een score op in het bestand."""
-    with open("highscores.txt", "a") as f:
-        f.write(f"{naam},{score}\n")
-
-
-def toon_highscores():
-    """Toon de top 5 highscores."""
-    scores = laad_highscores()
-    if not scores:
-        print("Nog geen highscores!")
-        return
-
-    # Sorteer op score (hoogste eerst)
-    scores.sort(key=lambda x: x[1], reverse=True)
-
-    print()
-    print("=== HIGHSCORES ===")
-    for i, (naam, score) in enumerate(scores[:5], 1):
-        print(f"  {i}. {naam}: {score}")
-    print("==================")
-
-
-# === MAIN GAME ===
-
+# =============================================================================
+# MAIN FUNCTIE
+# =============================================================================
+# Dit is het startpunt van de game
+# =============================================================================
 def main():
     levens = 3
     score = 0
@@ -172,6 +189,8 @@ def main():
     print("🧟‍♂️💀 WELKOM BIJ ZOMBIE APOCALYPSE 💀🧟‍♂️")
     toon_highscores()
     print()
+
+    # .strip() haalt spaties weg, "or" geeft alternatief als leeg
     naam = input("Wat is je naam? ➜ ").strip() or "Anoniem"
     print(f"Welkom {naam}! Type 'help' voor alle opties")
 
@@ -182,11 +201,13 @@ def main():
         toon_zombie(zombie)
         print()
 
+        # .lower() maakt alles kleine letters, .strip() haalt spaties weg
         actie = input("⚡ Wat doe je? ➜ ").lower().strip()
 
         if actie == "help":
             toon_help()
-            continue  # Sla de rest over, begin opnieuw
+            # "continue" slaat de rest van de loop over en begint opnieuw
+            continue
 
         elif actie == "rennen":
             if not ren_weg(zombie):
@@ -196,7 +217,6 @@ def main():
             heeft_wapen = "honkbalknuppel" in inventory
             if vecht(zombie, heeft_wapen):
                 score += 10
-                # Kans op drop
                 if random.randint(1, 3) == 1:
                     item = random.choice(["medkit", "energie bar"])
                     print(f"   {zombie['naam']} liet een {item} vallen!")
@@ -206,6 +226,7 @@ def main():
 
         elif actie == "zoeken":
             item = zoek_item(inventory)
+            # None is "niks", alles anders is een item
             if item:
                 inventory.append(item)
 
@@ -231,12 +252,142 @@ def main():
     else:
         print("💀 Probeer het nog eens...")
 
-    # Sla score op
     sla_score_op(naam, score)
     print(f"Score opgeslagen voor {naam}!")
     toon_highscores()
 
 
-# Start het spel
+
+# =============================================================================
+# =                                DANGER ZONE                                =
+# =============================================================================
+# LET OP: De code hieronder is wat geavanceerder!!
+#
+# We gaan met bestanden werken en foutafhandeling voor de highscores
+# Je kan deze code gebruiken als inspiratie voor wanneer je zelf dingen wil
+# bewaren en/of die je bij opnieuw spelen wil herstellen
+#
+# Bijvoorbeeld:
+# Je kan een bestand bewaren met "levens = 3" om zo het aantal start levens
+# configureerbaar te maken!
+# =============================================================================
+
+
+
+
+# =============================================================================
+# BESTANDEN LEZEN EN SCHRIJVEN
+# =============================================================================
+# Met open() kun je bestanden openen om te lezen of schrijven
+# "r" = read (lezen), "w" = write (schrijven), "a" = append (toevoegen)
+#
+# "with open() as f:" zorgt dat het bestand netjes gesloten wordt
+# =============================================================================
+def laad_highscores():
+    """Laad highscores uit bestand."""
+
+    # =========================================================================
+    # TRY/EXCEPT
+    # =========================================================================
+    # Soms kan code fout gaan (bijv. bestand bestaat niet)
+    # Met try/except kun je fouten opvangen zonder dat het programma crasht
+    #
+    # try:
+    #     code die fout kan gaan
+    # except SoortFout:
+    #     wat te doen als die fout gebeurt
+    # =========================================================================
+    try:
+        with open("highscores.txt", "r") as f:
+            # Nieuw lijst met de highscores
+            scores = []
+
+            # f is het bestand, we lezen elke regel
+            # Een regel is bewaard als "naam,score"
+            # Bijvoorbeeld: "Jan,150"
+            for line in f:
+                if "," in line:
+                    # .strip() haalt spaties en enters weg
+                    # .split(",") splitst tekst op de komma
+                    naam, score = line.strip().split(",")
+
+                    # int() maakt van tekst een getal
+                    # De scores is een lijst van tuples (naam, score)
+                    scores.append((naam, int(score)))
+
+            # Let op het level van inspringen van de return:
+            # Je wil de scores NA de "for line in f:" loop returnen
+            return scores
+    except FileNotFoundError:
+        # Bestand bestaat nog niet, geef lege lijst terug
+        return []
+
+
+def sla_score_op(naam, score):
+    """Sla een score op in het bestand."""
+
+    # "a" = append, voegt toe aan het einde (maakt bestand aan als nodig)
+    with open("highscores.txt", "a") as f:
+        # .write() schrijft tekst naar het bestand
+        # \n is een nieuwe regel (enter)
+        f.write(f"{naam},{score}\n")
+
+
+def toon_highscores():
+    """Toon de top 5 highscores."""
+
+    scores = laad_highscores()
+    if not scores:
+        print("Nog geen highscores!")
+        return
+
+    # =========================================================================
+    # SORTEREN MET KEY EN LAMBDA
+    # =========================================================================
+    # .sort() sorteert een lijst
+    # key= zegt HOE te sorteren
+    # lambda x: x[1] is een mini-functie die het 2e element pakt (de score)
+    # lambda x: x[0] zou sorteren op de naam van de speler
+    # reverse=True sorteert van hoog naar laag
+    # =========================================================================
+    scores.sort(key=lambda x: x[1], reverse=True)
+
+    print()
+    print("=== HIGHSCORES ===")
+    # enumerate() geeft een teller mee, we beginnen bij 1
+    # "i" krijgt daardoor eerst de waarde 1, daarna de waarde 2 etc
+    # [:5] pakt alleen de eerste 5 items (slicing)
+    # (naam, score) gaat de score tuple unpacken waarbij naam de eerste waarde krijgt en score de tweede waarde
+    for i, (naam, score) in enumerate(scores[:5], 1):
+        print(f"  {i}. {naam}: {score}")
+
+    # Deze code zou ook op deze manier kunnen geschreven worden:
+    # for i, score in enumerate(scores[:5], 1):
+    #     print(f"  {i}. {score[0]}: {score[1]}")
+
+    # Of op deze manier
+    # teller = 1
+    # for score in scores[:5]:
+    #     print(f"  {teller}. {score[0]}: {score[1]}")
+    #     teller += 1
+
+    # Of op deze manier
+    # teller = 1
+    # for (naam, score) in scores:
+    #     if teller < 6:
+    #         print(f"  {teller}. {naam}: {score}")
+    #     teller += 1
+
+    print("==================")
+
+
+# =============================================================================
+# IF __NAME__ == "__MAIN__"
+# =============================================================================
+# Deze check zorgt dat main() alleen draait als je DIT bestand start
+# Als iemand dit bestand importeert in een ander programma, draait main() niet
+# Dit is een standaard patroon in Python
+# Op zich is het hier niet zo belangrijk...
+# =============================================================================
 if __name__ == "__main__":
     main()
