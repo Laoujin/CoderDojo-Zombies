@@ -232,6 +232,40 @@ async def main():
 
     print(f"\nDone! Cards saved to docs/cards/output/")
 
+    # Generate PDFs per level
+    generate_pdfs(output_dir, levels.keys())
+
+
+def generate_pdfs(output_dir: Path, level_numbers: list[int]):
+    """Generate PDF files per level from card PNGs."""
+    from PIL import Image
+
+    for level in sorted(level_numbers):
+        # Find all PNGs for this level
+        pngs = sorted(output_dir.glob(f"level-{level}-*.png"))
+        if not pngs:
+            continue
+
+        # Convert PNGs to RGB images (PDF doesn't support RGBA)
+        images = []
+        for png_path in pngs:
+            img = Image.open(png_path)
+            if img.mode == "RGBA":
+                # Create white background
+                bg = Image.new("RGB", img.size, (255, 255, 255))
+                bg.paste(img, mask=img.split()[3])
+                images.append(bg)
+            else:
+                images.append(img.convert("RGB"))
+
+        if not images:
+            continue
+
+        # Save as PDF (first image, append rest)
+        pdf_path = output_dir / f"level-{level}.pdf"
+        images[0].save(pdf_path, "PDF", save_all=True, append_images=images[1:])
+        print(f"  Generated PDF: {pdf_path.name} ({len(images)} cards)")
+
 
 if __name__ == "__main__":
     asyncio.run(main())
