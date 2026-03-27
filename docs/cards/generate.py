@@ -104,6 +104,11 @@ def get_tier_color(tier: str) -> str:
     }.get(tier, "#666")
 
 
+def markdown_inline_code(text: str) -> str:
+    """Convert markdown `code` to <code>code</code>."""
+    return re.sub(r"`([^`]+)`", r"<code>\1</code>", text)
+
+
 def render_card_html(challenge: Challenge, background_path: Path | None, template: str) -> str:
     """Render a challenge as HTML card."""
     import base64
@@ -126,15 +131,18 @@ def render_card_html(challenge: Challenge, background_path: Path | None, templat
     html = html.replace("{{TIER_COLOR}}", tier_color)
     html = html.replace("{{LEVEL}}", str(challenge.level))
     html = html.replace("{{TITLE}}", challenge.title)
-    html = html.replace("{{DESCRIPTION}}", challenge.description)
-    html = html.replace("{{HINT}}", challenge.hint)
+    html = html.replace("{{DESCRIPTION}}", markdown_inline_code(challenge.description))
+    html = html.replace("{{HINT}}", markdown_inline_code(challenge.hint))
 
     return html
 
 
 async def generate_card_image(html: str, output_path: Path, browser):
     """Generate PNG image from HTML using Playwright."""
-    page = await browser.new_page(viewport={"width": 600, "height": 400})
+    page = await browser.new_page(
+        viewport={"width": 600, "height": 400},
+        device_scale_factor=3,
+    )
     await page.set_content(html)
     await page.screenshot(path=str(output_path), type="png")
     await page.close()
@@ -261,10 +269,16 @@ def generate_pdfs(output_dir: Path, level_numbers: list[int]):
         if not images:
             continue
 
-        # Save as PDF (first image, append rest)
+        # Save as PDF - set resolution so cards print at 600x400 "points" (~21x14cm)
         pdf_path = output_dir / f"level-{level}.pdf"
-        images[0].save(pdf_path, "PDF", save_all=True, append_images=images[1:])
-        print(f"  Generated PDF: {pdf_path.name} ({len(images)} cards)")
+        dpi = images[0].width / 600 * 72  # scale factor * 72
+        images[0].save(
+            pdf_path, "PDF",
+            save_all=True,
+            append_images=images[1:],
+            resolution=dpi,
+        )
+        print(f"  Generated PDF: {pdf_path.name} ({len(images)} cards, {dpi:.0f} DPI)")
 
 
 if __name__ == "__main__":

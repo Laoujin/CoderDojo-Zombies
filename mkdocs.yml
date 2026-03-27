@@ -11,6 +11,10 @@ exclude_docs: |
   cards/*.html
   cards/*/*.md
   cards/output/
+  cards/syntax/*.md
+  cards/syntax/*.py
+  cards/syntax/*.html
+  cards/syntax/output/*.html
 
 theme:
   name: material
@@ -64,6 +68,7 @@ nav:
     - Level 5: uitdagingen/level-5.md
   - Brainstorm: brainstorm.md
   - Zombiepedia: zombiepedia.md
+  - Referentiekaarten: referentiekaarten.md
   - Cheatsheets:
     - Python: cheatsheet.md
     - Pygame Zero: cheatsheet-pygame.md

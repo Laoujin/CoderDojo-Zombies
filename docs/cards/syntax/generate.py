@@ -214,7 +214,10 @@ def render_recap_card(card: RecapCard, template: str, images_dir: Path) -> str:
 
 async def generate_card_image(html: str, output_path: Path, browser):
     """Generate PNG image from HTML using Playwright."""
-    page = await browser.new_page(viewport={"width": 600, "height": 400})
+    page = await browser.new_page(
+        viewport={"width": 600, "height": 400},
+        device_scale_factor=3,
+    )
     await page.set_content(html)
     await page.screenshot(path=str(output_path), type="png")
     await page.close()
@@ -242,8 +245,15 @@ def generate_pdfs(output_dir: Path, prefix: str, label: str):
         return
 
     pdf_path = output_dir / f"{prefix.rstrip('-')}s.pdf"
-    images[0].save(pdf_path, "PDF", save_all=True, append_images=images[1:])
-    print(f"  Generated PDF: {pdf_path.name} ({len(images)} cards)")
+    # Set resolution so cards print at 600x400 "points" (~21x14cm)
+    dpi = images[0].width / 600 * 72  # scale factor * 72
+    images[0].save(
+        pdf_path, "PDF",
+        save_all=True,
+        append_images=images[1:],
+        resolution=dpi,
+    )
+    print(f"  Generated PDF: {pdf_path.name} ({len(images)} cards, {dpi:.0f} DPI)")
 
 
 def generate_combined_html(syntax_dir: Path, output_dir: Path, do_errors: bool, do_recaps: bool):
