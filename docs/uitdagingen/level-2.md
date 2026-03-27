@@ -53,6 +53,48 @@ Voeg een score toe die omhoog gaat per overwonnen zombie
 
 ---
 
+### Stamina
+
+Je kunt niet eeuwig blijven rennen! Voeg een `⚡⚡○` stamina systeem toe.
+
+![Stamina](../cards/level-2/stamina.png)
+
+Bij 0 stamina: "Je bent te moe om te rennen!" en je verliest een leven
+
+**Hint:** Voeg een variabele toe `stamina = 3` en doe `stamina = stamina - 1` als je rent.
+
+??? note "Spieken"
+    ```python
+    levens = 3
+    stamina = 3
+
+    while levens > 0:
+        print(f"Levens: {levens} | Stamina: {stamina}")
+
+        # ... bestaande intro code ...
+
+        actie = input("Wat doe je? (rennen / vechten) ")
+
+        if actie == "rennen":
+            if stamina <= 0:
+                print("Je bent te moe om te rennen!")
+                print("De zombie pakt je...")
+                levens = levens - 1
+            else:
+                stamina = stamina - 1
+                kans = random.randint(1, 2)
+                if kans == 1:
+                    print("Je bent ontsnapt!")
+                else:
+                    print("De zombie was sneller!")
+                    levens = levens - 1
+
+        elif actie == "vechten":
+            # ... bestaande vecht code ...
+    ```
+
+---
+
 ## Boss
 
 ### Wapen Zoeken

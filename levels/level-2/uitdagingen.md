@@ -20,6 +20,16 @@ Voeg een score toe die omhoog gaat per overwonnen zombie
 
 ---
 
+### Stamina
+
+Je kunt niet eeuwig blijven rennen! Voeg een `⚡⚡○` stamina systeem toe.
+
+Bij 0 stamina: "Je bent te moe om te rennen!" en je verliest een leven
+
+**Hint:** Voeg een variabele toe `stamina = 3` en doe `stamina = stamina - 1` als je rent.
+
+---
+
 ## Boss
 
 ### Wapen Zoeken

@@ -27,6 +27,16 @@ A cute cartoon scoreboard scene, big golden numbers and stars floating, a happy 
 
 ---
 
+## stamina.png
+
+**Challenge:** Stamina - Je kunt niet eeuwig blijven rennen! Voeg een stamina systeem toe.
+
+```
+A cute cartoon kid character exhausted and panting, bent over with hands on knees, sweat drops flying off, three lightning bolt energy icons above (two bright yellow, one grey/empty), a zombie approaching in the background, tired legs shaking, cartoon style, Plants vs Zombies aesthetic, bright saturated colors, friendly exaggerated features, soft rounded shapes, clean bold outlines, suitable for children, energetic green-to-red gradient background --ar 3:2 --style raw
+```
+
+---
+
 ## wapen-zoeken.png
 
 **Challenge:** Wapen Zoeken - Voeg een "zoeken" actie toe om een wapen te vinden
