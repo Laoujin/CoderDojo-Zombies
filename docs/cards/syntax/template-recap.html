@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 600px;
+      height: 400px;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: {{BACKGROUND}};
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 10, 0, 0.3) 0%,
+        rgba(0, 15, 0, 0.5) 40%,
+        rgba(0, 10, 0, 0.88) 100%
+      );
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      color: white;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: auto;
+    }
+
+    .level-badge {
+      background: linear-gradient(135deg, #22c55e, #15803d);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 8px rgba(34, 197, 94, 0.4);
+    }
+
+    .theme-badge {
+      background: rgba(34, 197, 94, 0.2);
+      backdrop-filter: blur(4px);
+      color: #86efac;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+
+    .main {
+      margin-top: auto;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      line-height: 1.2;
+    }
+
+    .powers-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .power-item {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(6px);
+      border-radius: 8px;
+      padding: 8px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .power-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .power-text {
+      font-size: 13px;
+      line-height: 1.3;
+    }
+
+    .power-code {
+      font-family: 'Consolas', 'Monaco', monospace;
+      color: #fbbf24;
+      font-size: 12px;
+      display: block;
+    }
+
+    .power-label {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 11px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="header">
+      <span class="level-badge">Level {{LEVEL}}</span>
+      <span class="theme-badge">{{THEME}}</span>
+    </div>
+    <div class="main">
+      <h1 class="title">{{TITLE}}</h1>
+      <div class="powers-grid">
+        {{POWERS}}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

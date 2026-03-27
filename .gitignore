@@ -9,3 +9,4 @@ site/
 
 # Auto-generated from levels/ (source of truth is levels/level-*/**.md)
 docs/levels/
+docs/cards/syntax/output

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 600px;
+      height: 400px;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: {{BACKGROUND}};
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(20, 0, 0, 0.35) 0%,
+        rgba(30, 0, 0, 0.55) 40%,
+        rgba(15, 0, 0, 0.9) 100%
+      );
+    }
+
+    /* Biohazard watermark */
+    .biohazard {
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      font-size: 180px;
+      opacity: 0.08;
+      z-index: 0;
+      line-height: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      color: white;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: auto;
+    }
+
+    .danger-badge {
+      background: linear-gradient(135deg, #dc2626, #991b1b);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 8px rgba(220, 38, 38, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .danger-badge::before {
+      content: "☣";
+      font-size: 16px;
+    }
+
+    .error-type-badge {
+      background: rgba(220, 38, 38, 0.25);
+      backdrop-filter: blur(4px);
+      color: #fca5a5;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: 'Consolas', 'Monaco', monospace;
+      border: 1px solid rgba(220, 38, 38, 0.3);
+    }
+
+    .main {
+      margin-top: auto;
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title .zombie-icon {
+      font-size: 30px;
+    }
+
+    .description {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      opacity: 0.95;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .fix-box {
+      background: rgba(34, 197, 94, 0.15);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      padding: 12px 16px;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+
+    .fix-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #4ade80;
+      margin-bottom: 4px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .fix-text {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #d1fae5;
+    }
+
+    code {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-family: 'Consolas', 'Monaco', monospace;
+      color: #fbbf24;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="biohazard">☣</div>
+  <div class="content">
+    <div class="header">
+      <span class="danger-badge">{{DANGER}}</span>
+      <span class="error-type-badge">{{ERROR_TYPE}}</span>
+    </div>
+    <div class="main">
+      <h1 class="title">{{TITLE}}</h1>
+      <p class="description">{{DESCRIPTION}}</p>
+      <div class="fix-box">
+        <div class="fix-label">Zo versla je deze zombie</div>
+        <div class="fix-text">{{FIX}}</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
