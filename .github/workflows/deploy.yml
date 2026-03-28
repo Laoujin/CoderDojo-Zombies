@@ -37,6 +37,7 @@ jobs:
         run: |
           mkdir -p zombie-apocalypse
           cp -r levels zombie-apocalypse/
+          cp -r .vscode zombie-apocalypse/
           cp download/LEES_MIJ.txt zombie-apocalypse/
           echo "pgzero" > zombie-apocalypse/requirements.txt
           zip -r zombie-apocalypse.zip zombie-apocalypse
