@@ -137,6 +137,12 @@ zonder de Python code te veranderen.
     De Brainstorm, Zombiepedia en Pygame Recepten staan op de website:
     [laoujin.github.io/CoderDojo-Zombies](https://laoujin.github.io/CoderDojo-Zombies/)
 
+!!! tip "Extra plaatjes"
+    Elke starter heeft alleen de plaatjes die hij nodig heeft.
+    Wil je meer? In `levels/level-5/images/` vind je 70+ plaatjes:
+    achtergronden, knoppen, items, zombies en locaties.
+    Kopieer wat je nodig hebt naar de `images/` map van jouw starter!
+
 Kies een starter en bouw je eigen spel! Hier zijn een paar ideeën
 om je op weg te helpen:
 
