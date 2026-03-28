@@ -6,7 +6,7 @@ Handige kaarten om naast je laptop te leggen terwijl je programmeert!
 
 ---
 
-## Foutmeldingen — Ken Je Vijand!
+## Foutmeldingen — Ken Je Vijand! { data-toc-label="Foutmeldingen" }
 
 Elke foutmelding is een zombie die je moet leren verslaan.
 Hoe beter je ze kent, hoe sneller je ze uitschakelt!
@@ -18,7 +18,7 @@ Hoe beter je ze kent, hoe sneller je ze uitschakelt!
 ![De Verminkte Zombie](cards/syntax/syntax-error.png)
 </div>
 
-#### ☣ SyntaxError — De Verminkte Zombie
+#### ☣ SyntaxError — De Verminkte Zombie { data-toc-label="SyntaxError" }
 
 Python snapt je code niet! Er mist een `:` na if/while/def, aanhalingstekens `""` niet gesloten, of haakjes `()` vergeten.
 
@@ -30,7 +30,7 @@ Python snapt je code niet! Er mist een `:` na if/while/def, aanhalingstekens `""
 ![De Onzichtbare Zombie](cards/syntax/name-error.png)
 </div>
 
-#### ☣ NameError — De Onzichtbare Zombie
+#### ☣ NameError — De Onzichtbare Zombie { data-toc-label="NameError" }
 
 Python kent deze naam niet! Een variabele die niet bestaat, een typfout in de naam, of je bent vergeten hem aan te maken.
 
@@ -42,7 +42,7 @@ Python kent deze naam niet! Een variabele die niet bestaat, een typfout in de na
 ![De Dronken Zombie](cards/syntax/indentation-error.png)
 </div>
 
-#### ☣ IndentationError — De Dronken Zombie
+#### ☣ IndentationError — De Dronken Zombie { data-toc-label="IndentationError" }
 
 Je code staat niet recht! Na `if`, `while`, of `def` moet de volgende regel inspringen met spaties.
 
@@ -54,7 +54,7 @@ Je code staat niet recht! Na `if`, `while`, of `def` moet de volgende regel insp
 ![De Verwarde Zombie](cards/syntax/type-error.png)
 </div>
 
-#### ☣ TypeError — De Verwarde Zombie
+#### ☣ TypeError — De Verwarde Zombie { data-toc-label="TypeError" }
 
 Je mixt dingen die niet samen kunnen! Tekst en getallen optellen, of een functie verkeerd aanroepen.
 
@@ -66,7 +66,7 @@ Je mixt dingen die niet samen kunnen! Tekst en getallen optellen, of een functie
 ![De Gulzige Zombie](cards/syntax/index-error.png)
 </div>
 
-#### ☣ IndexError — De Gulzige Zombie
+#### ☣ IndexError — De Gulzige Zombie { data-toc-label="IndexError" }
 
 Je grijpt naar iets dat er niet is! De lijst heeft minder items dan je denkt. Lijsten beginnen bij `0`, niet bij `1`!
 
@@ -78,7 +78,7 @@ Je grijpt naar iets dat er niet is! De lijst heeft minder items dan je denkt. Li
 ![De Verdwaalde Zombie](cards/syntax/file-not-found-error.png)
 </div>
 
-#### ☣ FileNotFoundError — De Verdwaalde Zombie
+#### ☣ FileNotFoundError — De Verdwaalde Zombie { data-toc-label="FileNotFoundError" }
 
 Python kan het bestand niet vinden! Verkeerd pad, verkeerde naam, of het bestand bestaat nog niet.
 
@@ -89,7 +89,7 @@ Python kan het bestand niet vinden! Verkeerd pad, verkeerde naam, of het bestand
 
 ---
 
-## Overlevingskaarten — Wat Heb Je Geleerd?
+## Overlevingskaarten — Wat Heb Je Geleerd? { data-toc-label="Overlevingskaarten" }
 
 Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 
@@ -100,7 +100,7 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 ![Level 1](cards/syntax/level-1-recap.png)
 </div>
 
-#### Level 1 — Eerste Hulp Kit
+#### Level 1 — Eerste Hulp Kit { data-toc-label="Level 1" }
 
 | | Code | Wat doet het? |
 |---|---|---|
@@ -117,14 +117,14 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 ![Level 2](cards/syntax/level-2-recap.png)
 </div>
 
-#### Level 2 — Overlevingsgids
+#### Level 2 — Overlevingsgids { data-toc-label="Level 2" }
 
 | | Code | Wat doet het? |
 |---|---|---|
 | 🔄 | `while levens > 0:` | Herhalen tot klaar |
 | 💔 | `levens = levens - 1` | Variabele aanpassen |
 | ⚖️ | `> < == != >= <=` | Vergelijken |
-| 🛑 | `levens = 0` | Loop stoppen |
+| 🪆 | `while:` ↳ `if:` | Nesting |
 </div>
 
 <div class="zombie-card tier-medium" markdown>
@@ -132,7 +132,7 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 ![Level 3](cards/syntax/level-3-recap.png)
 </div>
 
-#### Level 3 — Wapenarsenaal
+#### Level 3 — Wapenarsenaal { data-toc-label="Level 3" }
 
 | | Code | Wat doet het? |
 |---|---|---|
@@ -149,7 +149,7 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 ![Level 4](cards/syntax/level-4-recap.png)
 </div>
 
-#### Level 4 — Commandocentrum
+#### Level 4 — Commandocentrum { data-toc-label="Level 4" }
 
 | | Code | Wat doet het? |
 |---|---|---|

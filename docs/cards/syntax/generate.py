@@ -120,7 +120,7 @@ RECAP_CARDS = [
             ("🔄", "while levens > 0:", "Herhalen tot klaar"),
             ("💔", "levens = levens - 1", "Variabele aanpassen"),
             ("⚖️", "> < == != >= <=", "Vergelijken"),
-            ("🛑", "levens = 0", "Loop stoppen"),
+            ("🪆", "while: ↳ if:", "Nesting"),
         ],
     ),
     RecapCard(
