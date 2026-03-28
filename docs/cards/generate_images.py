@@ -99,7 +99,7 @@ def generate_image(prompt: str, output_path: Path):
 
 def main():
     parser = argparse.ArgumentParser(description="Generate card images with Gemini")
-    parser.add_argument("--level", type=int, required=True, help="Level number")
+    parser.add_argument("--level", type=str, required=True, help="Level number (e.g. 1, 4.5)")
     args = parser.parse_args()
 
     cards_dir = Path(__file__).parent

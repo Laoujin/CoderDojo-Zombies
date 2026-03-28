@@ -91,7 +91,7 @@ ERROR_CARDS = [
 @dataclass
 class RecapCard:
     slug: str
-    level: int
+    level: str
     title: str
     theme: str
     powers: list  # list of (icon, code, label) tuples
@@ -99,7 +99,7 @@ class RecapCard:
 RECAP_CARDS = [
     RecapCard(
         slug="level-1-recap",
-        level=1,
+        level="1",
         title="Eerste Hulp Kit",
         theme="Overlevingskaart",
         powers=[
@@ -113,7 +113,7 @@ RECAP_CARDS = [
     ),
     RecapCard(
         slug="level-2-recap",
-        level=2,
+        level="2",
         title="Overlevingsgids",
         theme="Overlevingskaart",
         powers=[
@@ -125,7 +125,7 @@ RECAP_CARDS = [
     ),
     RecapCard(
         slug="level-3-recap",
-        level=3,
+        level="3",
         title="Wapenarsenaal",
         theme="Overlevingskaart",
         powers=[
@@ -139,7 +139,7 @@ RECAP_CARDS = [
     ),
     RecapCard(
         slug="level-4-recap",
-        level=4,
+        level="4",
         title="Commandocentrum",
         theme="Overlevingskaart",
         powers=[
@@ -167,7 +167,7 @@ RECAP_CARDS = [
     ),
     RecapCard(
         slug="level-5-recap",
-        level=5,
+        level="5",
         title="Volledige Aanval",
         theme="Pygame Zero Kaart",
         powers=[
