@@ -29,7 +29,7 @@ Of open `zombie.py` in VS Code en druk op `F5`.
 ```python
 WIDTH = 800
 HEIGHT = 600
-TITLE = "Zombie Clicker"
+TITLE = "Zombie Smash"
 ```
 
 Dit bepaalt de grootte en titel van je spelvenster.

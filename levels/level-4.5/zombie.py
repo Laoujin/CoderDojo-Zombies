@@ -1,5 +1,5 @@
 # =============================================================================
-# ZOMBIE CLICKER - Level 4.5
+# ZOMBIE SMASH - Level 4.5
 # =============================================================================
 # Start met: pgzrun zombie.py
 # Of met F5 in VSCode
@@ -38,7 +38,7 @@ screen: Screen  # Dit helpt VSCode met code-suggesties
 
 WIDTH = 800
 HEIGHT = 600
-TITLE = "Zombie Clicker"
+TITLE = "Zombie Smash"
 
 # =============================================================================
 # ACTOR (SPRITE)
