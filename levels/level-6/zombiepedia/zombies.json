@@ -22,6 +22,7 @@
       "naam": "Langzame Zombie",
       "type": "Makkelijk",
       "afbeelding": "zombie_slow",
+      "afbeelding_actor": "sprites/zombie_slow",
       "beschrijving": "Schuifelt langzaam maar zeker je richting op. Geen haast.",
       "zwakte": "Wandelen is al te snel",
       "stats": {
@@ -57,6 +58,7 @@
       "naam": "Gamer Zombie",
       "type": "Makkelijk",
       "afbeelding": "zombie_gamer",
+      "afbeelding_actor": "sprites/zombie_gamer",
       "beschrijving": "Nog één potje... nog één potje... HERSENEN!",
       "zwakte": "Zit vastgeplakt aan z'n stoel",
       "stats": {
@@ -128,6 +130,7 @@
       "naam": "Disco Zombie",
       "type": "Gemiddeld",
       "afbeelding": "zombie_disco",
+      "afbeelding_actor": "sprites/zombie_disco",
       "beschrijving": "Stayin' alive! Stayin' alive! Oh wacht... te laat.",
       "zwakte": "Kan niet stoppen met dansen",
       "stats": {
@@ -145,6 +148,7 @@
       "naam": "Skater Zombie",
       "type": "Gemiddeld",
       "afbeelding": "zombie_skater",
+      "afbeelding_actor": "sprites/zombie_skater",
       "beschrijving": "Sick kickflip bro! Nu sick bite bro!",
       "zwakte": "Valt bij elke stoeprand",
       "stats": {
@@ -162,6 +166,7 @@
       "naam": "Boer Zombie",
       "type": "Gemiddeld",
       "afbeelding": "zombie_farmer",
+      "afbeelding_actor": "sprites/zombie_farmer",
       "beschrijving": "Tijd om te oogsten... HERSENEN te oogsten!",
       "zwakte": "Hooivork zit vast in de grond",
       "stats": {
@@ -179,6 +184,7 @@
       "naam": "Postbode Zombie",
       "type": "Gemiddeld",
       "afbeelding": "zombie_post",
+      "afbeelding_actor": "sprites/zombie_post",
       "beschrijving": "Pakketje voor u! Het is... UW ONDERGANG!",
       "zwakte": "Moet elke brievenbus checken",
       "stats": {
@@ -214,6 +220,7 @@
       "naam": "Golf Zombie",
       "type": "Gemiddeld",
       "afbeelding": "zombie_golf",
+      "afbeelding_actor": "sprites/zombie_golf",
       "beschrijving": "FORE! Oh sorry, ik bedoel: HERSENEN!",
       "zwakte": "Moet eerst z'n handicap berekenen",
       "stats": {
@@ -285,6 +292,7 @@
       "naam": "Ninja Zombie",
       "type": "Moeilijk",
       "afbeelding": "zombie_ninja",
+      "afbeelding_actor": "sprites/zombie_ninja",
       "beschrijving": "Je ziet me niet, je ziet me niet, je ziet me- BOE!",
       "zwakte": "Zaklamp verblindt hem",
       "stats": {
@@ -392,6 +400,7 @@
       "naam": "Tovenaar Zombie",
       "type": "Boss",
       "afbeelding": "zombie_wizard",
+      "afbeelding_actor": "sprites/zombie_wizard",
       "beschrijving": "Abracadabra... je bent nu DOOD-cadaver!",
       "zwakte": "Spreuk duurt 3 seconden",
       "stats": {
@@ -409,6 +418,7 @@
       "naam": "Mummie Zombie",
       "type": "Boss",
       "afbeelding": "zombie_mummy",
+      "afbeelding_actor": "sprites/zombie_mummy",
       "beschrijving": "3000 jaar gewacht... nu heb ik HONGER!",
       "zwakte": "Bandages raken los",
       "stats": {
@@ -426,6 +436,7 @@
       "naam": "Astronaut Zombie",
       "type": "Boss",
       "afbeelding": "zombie_astronaut",
+      "afbeelding_actor": "sprites/zombie_astronaut",
       "beschrijving": "Houston, we hebben een probleem: IK HEB HONGER!",
       "zwakte": "Pak is zwaar en log",
       "stats": {
@@ -443,6 +454,7 @@
       "naam": "Tandarts Zombie",
       "type": "Boss",
       "afbeelding": "zombie_dentist",
+      "afbeelding_actor": "sprites/zombie_dentist",
       "beschrijving": "Open je mond wijd... WIJDER... perfectie!",
       "zwakte": "Boor maakt irritant geluid",
       "stats": {
