@@ -26,7 +26,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Challenge:
-    level: int
+    level: str
     tier: str  # Opwarmer, Pittig, Boss
     title: str
     description: str
@@ -42,7 +42,7 @@ def slugify(text: str) -> str:
     return text
 
 
-def parse_uitdagingen(filepath: Path, level: int) -> list[Challenge]:
+def parse_uitdagingen(filepath: Path, level: str) -> list[Challenge]:
     """Parse a uitdagingen.md file and extract challenges."""
     content = filepath.read_text(encoding="utf-8")
     challenges = []
@@ -129,7 +129,7 @@ def render_card_html(challenge: Challenge, background_path: Path | None, templat
     html = template.replace("{{BACKGROUND}}", bg_style)
     html = html.replace("{{TIER}}", challenge.tier)
     html = html.replace("{{TIER_COLOR}}", tier_color)
-    html = html.replace("{{LEVEL}}", str(challenge.level))
+    html = html.replace("{{LEVEL}}", challenge.level)
     html = html.replace("{{TITLE}}", challenge.title)
     html = html.replace("{{DESCRIPTION}}", markdown_inline_code(challenge.description))
     html = html.replace("{{HINT}}", markdown_inline_code(challenge.hint))
@@ -148,7 +148,7 @@ async def generate_card_image(html: str, output_path: Path, browser):
     await page.close()
 
 
-def get_all_challenges(levels_dir: Path, level_filter: int | None = None) -> list[Challenge]:
+def get_all_challenges(levels_dir: Path, level_filter: str | None = None) -> list[Challenge]:
     """Get all challenges from uitdagingen.md files."""
     if level_filter:
         patterns = [levels_dir / f"level-{level_filter}" / "uitdagingen.md"]
@@ -161,11 +161,11 @@ def get_all_challenges(levels_dir: Path, level_filter: int | None = None) -> lis
             print(f"Warning: {filepath} not found")
             continue
 
-        level_match = re.search(r"level-(\d+)", str(filepath))
+        level_match = re.search(r"level-([\d.]+)", str(filepath))
         if not level_match:
             continue
 
-        level = int(level_match.group(1))
+        level = level_match.group(1)
         challenges = parse_uitdagingen(filepath, level)
         all_challenges.extend(challenges)
 
@@ -174,7 +174,7 @@ def get_all_challenges(levels_dir: Path, level_filter: int | None = None) -> lis
 
 async def main():
     parser = argparse.ArgumentParser(description="Generate challenge cards")
-    parser.add_argument("--level", type=int, help="Generate only for specific level")
+    parser.add_argument("--level", type=str, help="Generate only for specific level")
     parser.add_argument("--list", action="store_true", help="List expected background image paths")
     args = parser.parse_args()
 
@@ -244,7 +244,7 @@ async def main():
     generate_pdfs(output_dir, levels.keys())
 
 
-def generate_pdfs(output_dir: Path, level_numbers: list[int]):
+def generate_pdfs(output_dir: Path, level_numbers: list[str]):
     """Generate PDF files per level from card PNGs."""
     from PIL import Image
 
