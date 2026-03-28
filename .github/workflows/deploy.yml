@@ -24,13 +24,14 @@ jobs:
 
       - name: Sync level docs to docs/levels/
         run: |
-          mkdir -p docs/levels/level-{1,2,3,4,4.5,5}
+          mkdir -p docs/levels/level-{1,2,3,4,4.5,5,6}
           cp levels/level-1/uitleg.md docs/levels/level-1/
           cp levels/level-2/uitleg.md docs/levels/level-2/
           cp levels/level-3/uitleg.md docs/levels/level-3/
           cp levels/level-4/uitleg.md docs/levels/level-4/
           cp levels/level-4.5/uitleg.md docs/levels/level-4.5/
           cp levels/level-5/uitleg.md docs/levels/level-5/
+          cp levels/level-6/uitleg.md docs/levels/level-6/
 
       - name: Create download ZIP
         run: |
