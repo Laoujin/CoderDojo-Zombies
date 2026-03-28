@@ -101,3 +101,19 @@ python docs/cards/generate.py --level 1
 Kaarten worden opgeslagen in `docs/cards/output/` als PNG (600x400px, 3:2 ratio).
 
 **Tip:** Afbeeldingen van ~600x400px (of 3:2 ratio) werken het beste. De afbeelding wordt gecentreerd en bedekt de hele kaart.
+
+### Syntax kaarten (foutmeldingen + recaps)
+
+```bash
+# Alle syntax kaarten genereren (error zombies + level recaps)
+python docs/cards/syntax/generate.py
+
+# Alleen error cards of recaps
+python docs/cards/syntax/generate.py --errors
+python docs/cards/syntax/generate.py --recaps
+
+# HTML preview (geen Playwright nodig)
+python docs/cards/syntax/generate.py --html
+```
+
+Kaarten worden opgeslagen in `docs/cards/syntax/output/`.
