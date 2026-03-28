@@ -171,7 +171,7 @@ RECAP_CARDS = [
         title="Volledige Aanval",
         theme="Pygame Zero Kaart",
         powers=[
-            ("🔲", "Rect(x, y, b, h)", "x, y, breedte, hoogte"),
+            ("🔲", "Rect(x, y, b, h)", "Rechthoek / knop"),
             ("🔄", "def update(dt):", "Elk frame updaten"),
             ("📺", "toestand = \"spel\"", "Game states"),
             ("⏰", "clock.schedule(f, 2.5)", "Functie f na 2.5 sec"),

@@ -187,7 +187,7 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 
 | | Code | Wat doet het? |
 |---|---|---|
-| 🔲 | `Rect(x, y, b, h)` | x, y, breedte, hoogte |
+| 🔲 | `Rect(x, y, b, h)` | Een rechthoek maken (voor knoppen!) |
 | 🔄 | `def update(dt):` | Elk frame updaten (voor animaties) |
 | 📺 | `toestand = "spel"` | Game states: schakelen tussen schermen |
 | ⏰ | `clock.schedule(f, 2.5)` | Functie f na 2.5 seconden uitvoeren |
