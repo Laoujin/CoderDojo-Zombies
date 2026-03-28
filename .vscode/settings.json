@@ -1,0 +1,5 @@
+{
+  "terminal.integrated.env.windows": {
+    "PYTHONUTF8": "1"
+  }
+}
