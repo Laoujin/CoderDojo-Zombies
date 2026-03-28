@@ -1,12 +1,16 @@
 .claude/settings.local.json
+.claude
+_bmad
 nul
+
 .playwright-cli
-docs/cards/output
 __pycache__/
+
+docs/cards/output
+docs/cards/syntax/output
 
 # MkDocs build output
 site/
 
 # Auto-generated from levels/ (source of truth is levels/level-*/**.md)
 docs/levels/
-docs/cards/syntax/output
