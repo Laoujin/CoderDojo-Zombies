@@ -170,12 +170,12 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 
 | | Code | Wat doet het? |
 |---|---|---|
-| 🎮 | `Actor("zombie")` | Een sprite (plaatje) op het scherm zetten |
+| 🎮 | `actor = Actor("zombie")` | Sprite uit `images/` map op het scherm |
 | 🖌️ | `def draw():` | Tekenen op het scherm (60x per seconde!) |
-| 🖱️ | `on_mouse_down(pos)` | Code uitvoeren als de speler klikt |
+| 🖱️ | `on_mouse_down(pos)` | `pos` is (x, y) van de klik |
 | 💥 | `actor.collidepoint(pos)` | Checken of een klik de actor raakt |
 | 🎨 | `screen.fill("kleur")` | Het hele scherm vullen met een kleur |
-| 🔊 | `sounds.whack.play()` | Een geluidseffect afspelen |
+| 🔊 | `sounds.whack.play()` | Geluid uit `sounds/` map afspelen |
 </div>
 
 <div class="zombie-card tier-boss" markdown>
@@ -187,12 +187,12 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 
 | | Code | Wat doet het? |
 |---|---|---|
-| 🔲 | `Rect(x, y, b, h)` | Een rechthoek maken (voor knoppen!) |
+| 🔲 | `Rect(x, y, b, h)` | x, y, breedte, hoogte |
 | 🔄 | `def update(dt):` | Elk frame updaten (voor animaties) |
 | 📺 | `toestand = "spel"` | Game states: schakelen tussen schermen |
-| ⏰ | `clock.schedule(f, 2.5)` | Een functie aanroepen na X seconden |
+| ⏰ | `clock.schedule(f, 2.5)` | Functie f na 2.5 seconden uitvoeren |
 | 🖼️ | `screen.blit("img", pos)` | Een plaatje tekenen op een positie |
-| 🌐 | `global variabele` | Een variabele buiten de functie aanpassen |
+| 🌐 | `global variabele` | Variabele aanpassen binnen een functie |
 </div>
 
 </div>

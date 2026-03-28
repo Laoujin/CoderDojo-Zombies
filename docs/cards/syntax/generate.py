@@ -157,12 +157,12 @@ RECAP_CARDS = [
         title="Eerste Contact",
         theme="Pygame Zero Kaart",
         powers=[
-            ("🎮", "Actor(\"zombie\")", "Sprite op het scherm"),
+            ("🎮", 'actor = Actor("zombie")', "Sprite uit images/ map"),
             ("🖌️", "def draw():", "Tekenen (60× per seconde)"),
-            ("🖱️", "on_mouse_down(pos)", "Klik detecteren"),
+            ("🖱️", "on_mouse_down(pos)", "pos is (x, y) van de klik"),
             ("💥", "actor.collidepoint(pos)", "Raak ik het?"),
-            ("🎨", 'screen.fill(\"kleur\")', "Achtergrond kleur"),
-            ("🔊", "sounds.whack.play()", "Geluid afspelen"),
+            ("🎨", 'screen.fill("kleur")', "Achtergrond kleur"),
+            ("🔊", "sounds.whack.play()", "Geluid uit sounds/ map"),
         ],
     ),
     RecapCard(
@@ -171,12 +171,12 @@ RECAP_CARDS = [
         title="Volledige Aanval",
         theme="Pygame Zero Kaart",
         powers=[
-            ("🔲", "Rect(x, y, b, h)", "Rechthoek / knop"),
+            ("🔲", "Rect(x, y, b, h)", "x, y, breedte, hoogte"),
             ("🔄", "def update(dt):", "Elk frame updaten"),
             ("📺", "toestand = \"spel\"", "Game states"),
-            ("⏰", "clock.schedule(f, 2.5)", "Code na X seconden"),
+            ("⏰", "clock.schedule(f, 2.5)", "Functie f na 2.5 sec"),
             ("🖼️", 'screen.blit(\"img\", pos)', "Plaatje tekenen"),
-            ("🌐", "global variabele", "Variabele aanpassen"),
+            ("🌐", "global variabele", "Aanpassen binnen functie"),
         ],
     ),
 ]
