@@ -151,6 +151,34 @@ RECAP_CARDS = [
             ("🚫", "None", "Niks / geen waarde"),
         ],
     ),
+    RecapCard(
+        slug="level-4.5-recap",
+        level="4.5",
+        title="Eerste Contact",
+        theme="Pygame Zero Kaart",
+        powers=[
+            ("🎮", "Actor(\"zombie\")", "Sprite op het scherm"),
+            ("🖌️", "def draw():", "Tekenen (60× per seconde)"),
+            ("🖱️", "on_mouse_down(pos)", "Klik detecteren"),
+            ("💥", "actor.collidepoint(pos)", "Raak ik het?"),
+            ("🎨", 'screen.fill(\"kleur\")', "Achtergrond kleur"),
+            ("🔊", "sounds.whack.play()", "Geluid afspelen"),
+        ],
+    ),
+    RecapCard(
+        slug="level-5-recap",
+        level=5,
+        title="Volledige Aanval",
+        theme="Pygame Zero Kaart",
+        powers=[
+            ("🔲", "Rect(x, y, b, h)", "Rechthoek / knop"),
+            ("🔄", "def update(dt):", "Elk frame updaten"),
+            ("📺", "toestand = \"spel\"", "Game states"),
+            ("⏰", "clock.schedule(f, 2.5)", "Code na X seconden"),
+            ("🖼️", 'screen.blit(\"img\", pos)', "Plaatje tekenen"),
+            ("🌐", "global variabele", "Variabele aanpassen"),
+        ],
+    ),
 ]
 
 

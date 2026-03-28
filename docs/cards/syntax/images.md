@@ -115,6 +115,26 @@ A cartoon command center with multiple screens and a control panel, a cartoon ki
 
 ---
 
+## level-4.5-recap.png
+
+**Level:** 4.5 - Eerste Contact
+
+```
+A cartoon kid sitting at a computer screen that has come alive, a cute cartoon zombie reaching out from the monitor screen, the kid clicking a mouse excitedly, colorful pixel effects and sparkles coming from the screen, first encounter with a game world, a simple game window visible with a score counter, cartoon style, Plants vs Zombies aesthetic, bright saturated colors, friendly exaggerated features, soft rounded shapes, clean bold outlines, suitable for children, cozy bedroom with computer desk background --ar 3:2 --style raw
+```
+
+---
+
+## level-5-recap.png
+
+**Level:** 5 - Volledige Aanval
+
+```
+A cartoon kid as a game commander with a full battle station setup, multiple game screens showing different scenes like a menu screen and a game over screen and an action scene, big red and green arcade buttons on the desk, a clock ticking on the wall, visual timer counting down, cartoon zombies visible on all screens, epic final battle vibes, cartoon style, Plants vs Zombies aesthetic, bright saturated colors, friendly exaggerated features, soft rounded shapes, clean bold outlines, suitable for children, epic gaming command center background with dramatic lighting --ar 3:2 --style raw
+```
+
+---
+
 ## Usage
 
 1. Generate images using the prompts above (Midjourney or Gemini)

@@ -161,4 +161,38 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 | 🚫 | `None` | Betekent "niks" — als er geen resultaat is |
 </div>
 
+<div class="zombie-card tier-hard" markdown>
+<div class="zombie-card-img" markdown>
+![Level 4.5](cards/syntax/level-4.5-recap.png)
+</div>
+
+#### Level 4.5 — Eerste Contact { data-toc-label="Level 4.5" }
+
+| | Code | Wat doet het? |
+|---|---|---|
+| 🎮 | `Actor("zombie")` | Een sprite (plaatje) op het scherm zetten |
+| 🖌️ | `def draw():` | Tekenen op het scherm (60x per seconde!) |
+| 🖱️ | `on_mouse_down(pos)` | Code uitvoeren als de speler klikt |
+| 💥 | `actor.collidepoint(pos)` | Checken of een klik de actor raakt |
+| 🎨 | `screen.fill("kleur")` | Het hele scherm vullen met een kleur |
+| 🔊 | `sounds.whack.play()` | Een geluidseffect afspelen |
+</div>
+
+<div class="zombie-card tier-boss" markdown>
+<div class="zombie-card-img" markdown>
+![Level 5](cards/syntax/level-5-recap.png)
+</div>
+
+#### Level 5 — Volledige Aanval { data-toc-label="Level 5" }
+
+| | Code | Wat doet het? |
+|---|---|---|
+| 🔲 | `Rect(x, y, b, h)` | Een rechthoek maken (voor knoppen!) |
+| 🔄 | `def update(dt):` | Elk frame updaten (voor animaties) |
+| 📺 | `toestand = "spel"` | Game states: schakelen tussen schermen |
+| ⏰ | `clock.schedule(f, 2.5)` | Een functie aanroepen na X seconden |
+| 🖼️ | `screen.blit("img", pos)` | Een plaatje tekenen op een positie |
+| 🌐 | `global variabele` | Een variabele buiten de functie aanpassen |
+</div>
+
 </div>
