@@ -141,7 +141,9 @@ zonder de Python code te veranderen.
     Elke starter heeft alleen de plaatjes die hij nodig heeft.
     Wil je meer? In `levels/level-5/images/` vind je 70+ plaatjes:
     achtergronden, knoppen, items, zombies en locaties.
-    Kopieer wat je nodig hebt naar de `images/` map van jouw starter!
+    In `levels/level-5/images/sprites/` vind je losse zombie sprites
+    met transparante achtergrond — perfect om als Actor te gebruiken!
+    Kopieer wat je nodig hebt naar de `images/` map van jouw starter.
 
 Kies een starter en bouw je eigen spel! Hier zijn een paar ideeën
 om je op weg te helpen:

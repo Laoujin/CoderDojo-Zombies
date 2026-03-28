@@ -54,6 +54,20 @@ def draw():
 - Bestand: `images/achtergrond.png`
 - Code: `screen.blit("achtergrond", (0, 0))`
 
+!!! tip "Zombie sprites"
+    In `images/sprites/` vind je losse zombie plaatjes met transparante
+    achtergrond. Die kan je als Actor gebruiken om een zombie op het scherm
+    te tekenen:
+
+    ```python
+    zombie = Actor("sprites/zombie_baby")
+    zombie.pos = (400, 300)
+
+    def draw():
+        screen.blit("achtergrond", (0, 0))
+        zombie.draw()
+    ```
+
 ### Tekst tekenen
 
 ```python

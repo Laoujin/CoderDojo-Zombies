@@ -4,6 +4,39 @@ Handige code patronen voor je spel!
 
 ---
 
+## Plaatje groter of kleiner maken
+
+Soms is een plaatje te groot of te klein. Met `pygame.transform.scale()`
+kan je het formaat aanpassen:
+
+```python
+import pygame
+from pgzero.builtins import images
+
+def draw():
+    # Laad het plaatje
+    img = getattr(images, "sprites/zombie_baby")
+
+    # Maak het 100x100 pixels
+    img = pygame.transform.scale(img, (100, 100))
+
+    # Teken op het scherm
+    screen.surface.blit(img, (350, 250))
+```
+
+!!! tip "Verhouding behouden"
+    Als je de breedte/hoogte verhouding wil behouden:
+
+    ```python
+    img = getattr(images, "sprites/zombie_baby")
+    nieuwe_hoogte = 100
+    verhouding = img.get_width() / img.get_height()
+    nieuwe_breedte = int(nieuwe_hoogte * verhouding)
+    img = pygame.transform.scale(img, (nieuwe_breedte, nieuwe_hoogte))
+    ```
+
+---
+
 ## Meerdere plaatjes tonen (Inventory)
 
 Toon een lijst van items op het scherm:
