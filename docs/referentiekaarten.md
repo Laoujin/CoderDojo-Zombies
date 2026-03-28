@@ -104,12 +104,12 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 
 | | Code | Wat doet het? |
 |---|---|---|
-| 🖨️ | `print()` | Tekst tonen |
-| 🎤 | `input()` | Speler laten typen |
-| 🔀 | `if / elif / else` | Keuzes maken |
-| 🎲 | `random.randint()` | Willekeurig getal |
-| ⏳ | `time.sleep()` | Even wachten |
-| ⚠️ | `=` opslaan, `==` vergelijken | Pas op! |
+| 🖨️ | `print("tekst")` | Tekst op het scherm zetten |
+| 🎤 | `actie = input("...")` | De speler iets laten typen en opslaan |
+| 🔀 | `if / elif / else` | Verschillende keuzes maken |
+| 🎲 | `random.randint(1, 2)` | Willekeurig getal kiezen (zoals een dobbelsteen) |
+| ⏳ | `time.sleep(1)` | 1 seconde wachten (voor de spanning!) |
+| ⚠️ | `=` opslaan, `==` vergelijken | `actie = "rennen"` vs `actie == "rennen"` |
 </div>
 
 <div class="zombie-card tier-easy" markdown>
@@ -121,10 +121,10 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 
 | | Code | Wat doet het? |
 |---|---|---|
-| 🔄 | `while levens > 0:` | Herhalen tot klaar |
-| 💔 | `levens = levens - 1` | Variabele aanpassen |
-| ⚖️ | `> < == != >= <=` | Vergelijken |
-| 🪆 | `while:` ↳ `if:` | Nesting |
+| 🔄 | `while levens > 0:` | Herhaal zolang de voorwaarde waar is |
+| 💔 | `levens = levens - 1` | Een variabele veranderen (1 afhalen) |
+| ⚖️ | `> < == != >= <=` | Getallen vergelijken (groter, kleiner, gelijk) |
+| 🪆 | `while:` ↳ `if:` | Code in code: de spaties moeten exact uitgelijnd zijn! |
 </div>
 
 <div class="zombie-card tier-medium" markdown>
@@ -136,12 +136,12 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 
 | | Code | Wat doet het? |
 |---|---|---|
-| 📋 | `lijst = [a, b, c]` | Lijst maken |
-| ➕ | `lijst.append(x)` | Item toevoegen |
-| ➖ | `lijst.remove(x)` | Item verwijderen |
-| 🔍 | `if x in lijst:` | Zoeken in lijst |
-| 🎯 | `random.choice(lijst)` | Willekeurig kiezen |
-| ✨ | `f"Score: {score}"` | f-strings |
+| 📋 | `lijst = [a, b, c]` | Meerdere dingen bewaren in een lijst |
+| ➕ | `lijst.append(x)` | Een item achteraan toevoegen |
+| ➖ | `lijst.remove(x)` | Een item verwijderen uit de lijst |
+| 🔍 | `if x in lijst:` | Checken of iets in de lijst zit |
+| 🎯 | `random.choice(lijst)` | Willekeurig een item kiezen uit de lijst |
+| ✨ | `f"Score: {score}"` | Variabelen in tekst zetten met f-strings |
 </div>
 
 <div class="zombie-card tier-hard" markdown>
@@ -153,12 +153,12 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 
 | | Code | Wat doet het? |
 |---|---|---|
-| ⚙️ | `def functie(x):` | Functies maken |
-| 🔢 | `return waarde` | Waarde teruggeven |
-| 📖 | `{"naam": "waarde"}` | Dictionaries |
-| 🔑 | `zombie["naam"]` | Waarde opvragen |
-| 🧹 | `.lower()` `.strip()` | Tekst opschonen |
-| 🚫 | `None` | Niks / geen waarde |
+| ⚙️ | `def functie(x):` | Code een naam geven en hergebruiken |
+| 🔢 | `return waarde` | Een waarde teruggeven aan wie de functie aanriep |
+| 📖 | `{"naam": "waarde"}` | Gegevens opslaan als sleutel-waarde paren |
+| 🔑 | `zombie["naam"]` | Een waarde opvragen met de sleutel |
+| 🧹 | `.lower()` `.strip()` | Tekst omzetten naar kleine letters en spaties weghalen |
+| 🚫 | `None` | Betekent "niks" — als er geen resultaat is |
 </div>
 
 </div>

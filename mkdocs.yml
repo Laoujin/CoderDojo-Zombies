@@ -68,8 +68,8 @@ nav:
     - Level 5: uitdagingen/level-5.md
   - Brainstorm: brainstorm.md
   - Zombiepedia: zombiepedia.md
-  - Referentiekaarten: referentiekaarten.md
   - Cheatsheets:
     - Python: cheatsheet.md
     - Pygame Zero: cheatsheet-pygame.md
     - Pygame Recepten: pygame-recepten.md
+  - Referentiekaarten: referentiekaarten.md
