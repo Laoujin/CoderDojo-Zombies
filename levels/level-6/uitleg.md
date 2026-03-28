@@ -133,7 +133,43 @@ zonder de Python code te veranderen.
 
 ## En nu?
 
-Kies een starter en bouw je eigen spel!
+Kies een starter en bouw je eigen spel! Hier zijn een paar ideeën
+om je op weg te helpen:
 
-- Bekijk de [Brainstorm](../../brainstorm.md) voor de uitdaging en ideeën
-- Bekijk de [Zombiepedia](../../zombiepedia.md) voor alle zombies en hun stats
+### Tactisch gevecht met zombie stats
+
+Begin met **Starter C** (JSON Data). De zombies hebben al stats
+(snelheid, slimheid, kracht). Gebruik die stats om te bepalen
+welke actie werkt:
+
+- Snelle zombie? → Rennen werkt niet!
+- Slimme zombie? → Verstoppen werkt niet!
+- Sterke zombie? → Vechten zonder wapen werkt niet!
+
+Bekijk de [Brainstorm](../../brainstorm.md) voor voorbeeldcode
+die laat zien hoe je kansen berekent op basis van stats.
+
+### Meerdere locaties ontdekken
+
+Begin met **Starter B** (Locaties). Voeg zombie-ontmoetingen toe
+op elke locatie. Misschien heeft het ziekenhuis andere zombies
+dan het park?
+
+Bekijk de [Zombiepedia](../../zombiepedia.md) om te kiezen welke
+zombies waar verschijnen.
+
+### Combineer alles
+
+Wil je het ultieme spel? Combineer de ideeën!
+
+1. Gebruik **Starter A** (Enums) voor nette code
+2. Voeg locaties toe uit **Starter B**
+3. Laad zombie data uit een JSON bestand zoals in **Starter C**
+4. Gebruik de [Brainstorm](../../brainstorm.md) voor tactisch gevecht
+5. Kies je zombies uit de [Zombiepedia](../../zombiepedia.md)
+
+### Hulp nodig?
+
+- [Brainstorm](../../brainstorm.md) — de uitdaging, spelregels en voorbeeldcode
+- [Zombiepedia](../../zombiepedia.md) — alle zombies met stats en zwaktes
+- [Pygame Recepten](../../pygame-recepten.md) — handige patronen voor animaties, meerdere sprites en meer
