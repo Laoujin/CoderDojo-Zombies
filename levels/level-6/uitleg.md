@@ -133,6 +133,10 @@ zonder de Python code te veranderen.
 
 ## En nu?
 
+!!! tip "Website"
+    De Brainstorm, Zombiepedia en Pygame Recepten staan op de website:
+    [laoujin.github.io/CoderDojo-Zombies](https://laoujin.github.io/CoderDojo-Zombies/)
+
 Kies een starter en bouw je eigen spel! Hier zijn een paar ideeën
 om je op weg te helpen:
 
