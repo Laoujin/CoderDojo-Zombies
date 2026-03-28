@@ -5,6 +5,7 @@ nul
 
 .playwright-cli
 __pycache__/
+.venv
 
 docs/cards/output
 docs/cards/syntax/output
