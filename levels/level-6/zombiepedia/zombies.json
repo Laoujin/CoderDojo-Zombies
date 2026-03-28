@@ -71,6 +71,24 @@
       }
     },
     {
+      "naam": "Strand Zombie",
+      "type": "Makkelijk",
+      "afbeelding": "zombie_beach",
+      "afbeelding_actor": "sprites/zombie_beach",
+      "beschrijving": "Surf's up, dude! En jouw hersenen ook!",
+      "zwakte": "Glijdt uit over zonnebrandcrème",
+      "stats": {
+        "snelheid": 2,
+        "slimheid": 1,
+        "kracht": 2
+      },
+      "tactieken": {
+        "vechten": "goed",
+        "rennen": "goed",
+        "verstoppen": "ok"
+      }
+    },
+    {
       "naam": "Snelle Zombie",
       "type": "Gemiddeld",
       "afbeelding": "zombie_fast",
@@ -210,10 +228,46 @@
       }
     },
     {
-      "naam": "Tank Zombie",
-      "type": "Moeilijk",
+      "naam": "Cowboy Zombie",
+      "type": "Gemiddeld",
+      "afbeelding": "zombie_cowboy",
+      "afbeelding_actor": "sprites/zombie_cowboy",
+      "beschrijving": "Howdy partner! Tijd voor een HERSEN-rodeo!",
+      "zwakte": "Moet eerst z'n lasso ontwarren",
+      "stats": {
+        "snelheid": 3,
+        "slimheid": 2,
+        "kracht": 3
+      },
+      "tactieken": {
+        "vechten": "ok",
+        "rennen": "ok",
+        "verstoppen": "ok"
+      }
+    },
+    {
+      "naam": "Sterke Zombie",
+      "type": "Gemiddeld",
       "afbeelding": "zombie_strong",
       "afbeelding_actor": "sprites/zombie_strong",
+      "beschrijving": "Doet aan gewichtheffen... met je auto.",
+      "zwakte": "Spieren zijn sneller dan z'n hersenen",
+      "stats": {
+        "snelheid": 2,
+        "slimheid": 1,
+        "kracht": 4
+      },
+      "tactieken": {
+        "vechten": "slecht",
+        "rennen": "ok",
+        "verstoppen": "goed"
+      }
+    },
+    {
+      "naam": "Tank Zombie",
+      "type": "Moeilijk",
+      "afbeelding": "zombie_tank",
+      "afbeelding_actor": "sprites/zombie_tank",
       "beschrijving": "HULK SMASH! Maar dan met meer kwijl.",
       "zwakte": "Past niet door deuren",
       "stats": {
