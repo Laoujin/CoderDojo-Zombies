@@ -11,11 +11,11 @@ Handige kaarten om naast je laptop te leggen terwijl je programmeert!
 Elke foutmelding is een zombie die je moet leren verslaan.
 Hoe beter je ze kent, hoe sneller je ze uitschakelt!
 
-<div class="zombie-grid" markdown>
+<div class="zombie-grid" style="grid-template-columns: 1fr;" markdown>
 
 <div class="zombie-card tier-hard" markdown>
 <div class="zombie-card-img" markdown>
-![De Verminkte Zombie](cards/syntax/output/error-syntax-error.png)
+![De Verminkte Zombie](cards/syntax/syntax-error.png)
 </div>
 
 #### ☣ SyntaxError — De Verminkte Zombie
@@ -27,7 +27,7 @@ Python snapt je code niet! Er mist een `:` na if/while/def, aanhalingstekens `""
 
 <div class="zombie-card tier-hard" markdown>
 <div class="zombie-card-img" markdown>
-![De Onzichtbare Zombie](cards/syntax/output/error-name-error.png)
+![De Onzichtbare Zombie](cards/syntax/name-error.png)
 </div>
 
 #### ☣ NameError — De Onzichtbare Zombie
@@ -39,7 +39,7 @@ Python kent deze naam niet! Een variabele die niet bestaat, een typfout in de na
 
 <div class="zombie-card tier-medium" markdown>
 <div class="zombie-card-img" markdown>
-![De Dronken Zombie](cards/syntax/output/error-indentation-error.png)
+![De Dronken Zombie](cards/syntax/indentation-error.png)
 </div>
 
 #### ☣ IndentationError — De Dronken Zombie
@@ -51,7 +51,7 @@ Je code staat niet recht! Na `if`, `while`, of `def` moet de volgende regel insp
 
 <div class="zombie-card tier-medium" markdown>
 <div class="zombie-card-img" markdown>
-![De Verwarde Zombie](cards/syntax/output/error-type-error.png)
+![De Verwarde Zombie](cards/syntax/type-error.png)
 </div>
 
 #### ☣ TypeError — De Verwarde Zombie
@@ -63,7 +63,7 @@ Je mixt dingen die niet samen kunnen! Tekst en getallen optellen, of een functie
 
 <div class="zombie-card tier-medium" markdown>
 <div class="zombie-card-img" markdown>
-![De Gulzige Zombie](cards/syntax/output/error-index-error.png)
+![De Gulzige Zombie](cards/syntax/index-error.png)
 </div>
 
 #### ☣ IndexError — De Gulzige Zombie
@@ -75,7 +75,7 @@ Je grijpt naar iets dat er niet is! De lijst heeft minder items dan je denkt. Li
 
 <div class="zombie-card tier-easy" markdown>
 <div class="zombie-card-img" markdown>
-![De Verdwaalde Zombie](cards/syntax/output/error-file-not-found-error.png)
+![De Verdwaalde Zombie](cards/syntax/file-not-found-error.png)
 </div>
 
 #### ☣ FileNotFoundError — De Verdwaalde Zombie
@@ -93,11 +93,11 @@ Python kan het bestand niet vinden! Verkeerd pad, verkeerde naam, of het bestand
 
 Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 
-<div class="zombie-grid" markdown>
+<div class="zombie-grid" style="grid-template-columns: 1fr;" markdown>
 
 <div class="zombie-card tier-easy" markdown>
 <div class="zombie-card-img" markdown>
-![Level 1](cards/syntax/output/recap-level-1.png)
+![Level 1](cards/syntax/level-1-recap.png)
 </div>
 
 #### Level 1 — Eerste Hulp Kit
@@ -109,12 +109,12 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 | 🔀 | `if / elif / else` | Keuzes maken |
 | 🎲 | `random.randint()` | Willekeurig getal |
 | ⏳ | `time.sleep()` | Even wachten |
-| 📦 | `variabele = waarde` | Iets onthouden |
+| ⚠️ | `=` opslaan, `==` vergelijken | Pas op! |
 </div>
 
 <div class="zombie-card tier-easy" markdown>
 <div class="zombie-card-img" markdown>
-![Level 2](cards/syntax/output/recap-level-2.png)
+![Level 2](cards/syntax/level-2-recap.png)
 </div>
 
 #### Level 2 — Overlevingsgids
@@ -124,12 +124,12 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 | 🔄 | `while levens > 0:` | Herhalen tot klaar |
 | 💔 | `levens = levens - 1` | Variabele aanpassen |
 | ⚖️ | `> < == != >= <=` | Vergelijken |
-| 🏁 | `while True / break` | Oneindige loop |
+| 🛑 | `levens = 0` | Loop stoppen |
 </div>
 
 <div class="zombie-card tier-medium" markdown>
 <div class="zombie-card-img" markdown>
-![Level 3](cards/syntax/output/recap-level-3.png)
+![Level 3](cards/syntax/level-3-recap.png)
 </div>
 
 #### Level 3 — Wapenarsenaal
@@ -146,7 +146,7 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 
 <div class="zombie-card tier-hard" markdown>
 <div class="zombie-card-img" markdown>
-![Level 4](cards/syntax/output/recap-level-4.png)
+![Level 4](cards/syntax/level-4-recap.png)
 </div>
 
 #### Level 4 — Commandocentrum
@@ -154,20 +154,11 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 | | Code | Wat doet het? |
 |---|---|---|
 | ⚙️ | `def functie(x):` | Functies maken |
-| 📖 | `{"naam": "waarde"}` | Dictionaries |
-| 💾 | `open("bestand.txt")` | Bestanden lezen |
-| 🛡️ | `try: ... except:` | Fouten opvangen |
 | 🔢 | `return waarde` | Waarde teruggeven |
-| 🏆 | `scores.txt` | Highscores opslaan |
+| 📖 | `{"naam": "waarde"}` | Dictionaries |
+| 🔑 | `zombie["naam"]` | Waarde opvragen |
+| 🧹 | `.lower()` `.strip()` | Tekst opschonen |
+| 🚫 | `None` | Niks / geen waarde |
 </div>
 
 </div>
-
----
-
-## Printen
-
-Download de kaarten als PDF:
-
-- [☣ Foutmeldingen (PDF)](cards/syntax/output/errors.pdf)
-- [Overlevingskaarten (PDF)](cards/syntax/output/recaps.pdf)

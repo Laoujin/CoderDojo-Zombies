@@ -108,7 +108,7 @@ RECAP_CARDS = [
             ("🔀", "if / elif / else", "Keuzes maken"),
             ("🎲", "random.randint()", "Willekeurig getal"),
             ("⏳", "time.sleep()", "Even wachten"),
-            ("📦", "variabele = waarde", "Iets onthouden"),
+            ("⚠️", "= opslaan, == vergelijken", "Pas op!"),
         ],
     ),
     RecapCard(
@@ -120,7 +120,7 @@ RECAP_CARDS = [
             ("🔄", "while levens > 0:", "Herhalen tot klaar"),
             ("💔", "levens = levens - 1", "Variabele aanpassen"),
             ("⚖️", "> < == != >= <=", "Vergelijken"),
-            ("🏁", "while True / break", "Oneindige loop"),
+            ("🛑", "levens = 0", "Loop stoppen"),
         ],
     ),
     RecapCard(
@@ -144,11 +144,11 @@ RECAP_CARDS = [
         theme="Overlevingskaart",
         powers=[
             ("⚙️", "def functie(x):", "Functies maken"),
-            ("📖", '{\"naam\": \"waarde\"}', "Dictionaries"),
-            ("💾", 'open("bestand.txt")', "Bestanden lezen"),
-            ("🛡️", "try: ... except:", "Fouten opvangen"),
             ("🔢", "return waarde", "Waarde teruggeven"),
-            ("🏆", "scores.txt", "Highscores opslaan"),
+            ("📖", '{\"naam\": \"waarde\"}', "Dictionaries"),
+            ("🔑", 'zombie[\"naam\"]', "Waarde opvragen"),
+            ("🧹", ".lower() .strip()", "Tekst opschonen"),
+            ("🚫", "None", "Niks / geen waarde"),
         ],
     ),
 ]
