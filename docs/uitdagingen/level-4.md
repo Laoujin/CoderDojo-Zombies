@@ -24,14 +24,12 @@ Pas `toon_status()` aan om ook het aantal items te tonen
 
 ### Gebruik Item
 
-Maak een nieuwe functie `gebruik_item(item, levens, inventory)` die een item uit je inventory gebruikt.
+Maak een nieuwe functie die een item uit je inventory gebruikt.
 
 ![Gebruik Item](../cards/level-4/gebruik-item.png)
 
-- Medkit: +2 levens
-- Energie bar: +1 leven
-- De functie returned het nieuwe aantal levens
-- Roep de functie aan in `main()` in plaats van de bestaande medkit code
+Vraag welk item je wil gebruiken voor extra levens of gebruik de zaklamp voor de kans een nieuw
+item te vinden.
 
 **Hint:** Maak een `def gebruik_item(item, levens, inventory):` met `if item == "medkit":` en `return levens`
 
@@ -49,20 +47,45 @@ Maak een nieuwe functie `gebruik_item(item, levens, inventory)` die een item uit
             inventory.remove("energie bar")
             levens += 1
             print(f"   +1 leven! (nu: {levens})")
+        elif item == "zaklamp":
+            print("🔦 Je schijnt rond met de zaklamp...")
+            inventory.remove("zaklamp")
+            nieuw_item = random.choice(["medkit", "energie bar", "honkbalknuppel", "spijkers"])
+            print(f"   Je vindt een {nieuw_item}!")
+            inventory.append(nieuw_item)
         else:
             print(f"Je kunt {item} niet gebruiken.")
 
         return levens
 
     # In main(), vervang de medkit code met:
-    if levens < 3 and ("medkit" in inventory or "energie bar" in inventory):
-        print("Je hebt healing items!")
-        for item in ["medkit", "energie bar"]:
+    if levens < 3 and ("medkit" in inventory or "energie bar" in inventory or "zaklamp" in inventory):
+        print("Je hebt items!")
+        for item in ["medkit", "energie bar", "zaklamp"]:
             if item in inventory:
                 print(f"   - {item}")
         keuze = input("Welk item gebruiken? (of 'nee') ➜ ").lower()
         if keuze in inventory:
             levens = gebruik_item(keuze, levens, inventory)
+    ```
+
+
+**Extra:** Gebruik de zaklamp om een zombie te verblinden als je actie mislukt!
+
+??? note "Extra: Zaklamp als tweede kans"
+    ```python
+    # In main(), na een mislukte actie:
+    if not ren_weg(zombie):
+        if "zaklamp" in inventory:
+            print("🧟‍♂️ De zombie grijpt je!")
+            red = input("🔦 Zaklamp gebruiken om te verblinden? (ja/nee) ➜ ").lower()
+            if red == "ja":
+                print("💡 FLITS! De zombie is verblind!")
+                inventory.remove("zaklamp")
+            else:
+                levens -= 1
+        else:
+            levens -= 1
     ```
 
 ---
@@ -106,9 +129,7 @@ Maak een `craft(inventory)` functie die twee items combineert tot iets beters. G
 
 ![Crafting](../cards/level-4/crafting.png)
 
-- Honkbalknuppel + spijkers = spijkerknuppel
-- Zaklamp + batterij = super zaklamp
-- Voeg "craft" toe als actie in het spel
+Maak bijvoorbeeld een spijkerknuppel door honkbalknuppel en spijkers te combineren!
 
 **Hint:** Maak een dictionary `recepten = {"spijkerknuppel": ["honkbalknuppel", "spijkers"]}` en check of beide items in de inventory zitten
 
@@ -116,7 +137,7 @@ Maak een `craft(inventory)` functie die twee items combineert tot iets beters. G
     ```python
     recepten = {
         "spijkerknuppel": ["honkbalknuppel", "spijkers"],
-        "super zaklamp": ["zaklamp", "batterij"],
+        "alarm systeem": ["zaklamp", "spijkers"],
     }
 
     def craft(inventory):
