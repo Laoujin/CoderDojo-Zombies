@@ -3,7 +3,7 @@
 ## Installatie Stappen
 
 - Python
-   - Installatie: `winget install -e --id Python.Python.3.13`
+   - Installatie: `winget install -e --id Python.Python.3.12`
       - Versie: `python --version`
    - Python staat niet in je PATH
       - Typisch: `C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python312\`
