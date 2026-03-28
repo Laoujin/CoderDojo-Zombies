@@ -3,6 +3,7 @@
     {
       "naam": "honkbalknuppel",
       "type": "wapen",
+      "afbeelding": "inv_honkbalknuppel",
       "beschrijving": "Een stevige knuppel. Beter dan niks!",
       "bonus": 1,
       "locaties": ["Huis", "Sportschool"]
@@ -10,6 +11,7 @@
     {
       "naam": "zwaard",
       "type": "wapen",
+      "afbeelding": "inv_sword",
       "beschrijving": "Scherp en dodelijk. Waar lag dit?!",
       "bonus": 2,
       "locaties": ["Winkelcentrum"]
@@ -17,9 +19,42 @@
     {
       "naam": "koekenpan",
       "type": "wapen",
+      "afbeelding": "inv_pan",
       "beschrijving": "BONK! Verrassend effectief.",
       "bonus": 1,
       "locaties": ["Restaurant"]
+    },
+    {
+      "naam": "racket",
+      "type": "wapen",
+      "afbeelding": "inv_racket",
+      "beschrijving": "Tennisracket. Smash die zombie!",
+      "bonus": 1,
+      "locaties": ["Sportschool", "Park"]
+    },
+    {
+      "naam": "pistool",
+      "type": "wapen",
+      "afbeelding": "inv_gun",
+      "beschrijving": "Pew pew! Maar kogels zijn schaars.",
+      "bonus": 3,
+      "locaties": ["Politiebureau"]
+    },
+    {
+      "naam": "shotgun",
+      "type": "wapen",
+      "afbeelding": "inv_gun2",
+      "beschrijving": "BOEM! Eén schot, grote schade.",
+      "bonus": 4,
+      "locaties": ["Politiebureau"]
+    },
+    {
+      "naam": "geweer",
+      "type": "wapen",
+      "afbeelding": "inv_gun3",
+      "beschrijving": "Van een afstand raak schieten. Handig!",
+      "bonus": 3,
+      "locaties": ["Politiebureau"]
     },
     {
       "naam": "spijkerknuppel",
@@ -40,6 +75,7 @@
     {
       "naam": "helm",
       "type": "bescherming",
+      "afbeelding": "inv_helmet",
       "beschrijving": "Beschermt je hoofd. Handig!",
       "effect": "Vermindert schade met 1",
       "locaties": ["Politiebureau"]
@@ -54,15 +90,33 @@
     {
       "naam": "schild",
       "type": "bescherming",
+      "afbeelding": "inv_shield",
       "beschrijving": "Blokt één aanval volledig. Breekt daarna.",
       "effect": "Blokt 1 aanval, breekt daarna",
       "locaties": ["Winkelcentrum"]
+    },
+    {
+      "naam": "nachtkijker",
+      "type": "bescherming",
+      "afbeelding": "inv_goggles",
+      "beschrijving": "Zie alles in het donker. Ninja's haten dit!",
+      "effect": "Bonus tegen Ninja Zombie, onthult verborgen items in donkere locaties",
+      "locaties": ["Politiebureau", "Ziekenhuis"]
+    },
+    {
+      "naam": "rugzak",
+      "type": "bescherming",
+      "afbeelding": "inv_backpack",
+      "beschrijving": "Meer ruimte voor spullen!",
+      "effect": "Verhoogt inventory capaciteit",
+      "locaties": ["School", "Winkelcentrum"]
     }
   ],
   "medisch": [
     {
       "naam": "medkit",
       "type": "medisch",
+      "afbeelding": "inv_medkit",
       "beschrijving": "Herstelt 3 levens. Levensreddend!",
       "effect": "+3 levens",
       "locaties": ["Ziekenhuis"]
@@ -77,6 +131,7 @@
     {
       "naam": "energie bar",
       "type": "medisch",
+      "afbeelding": "inv_candy",
       "beschrijving": "Geeft je energie! Herstelt 1 leven.",
       "effect": "+1 leven",
       "locaties": ["Supermarkt"]
@@ -87,6 +142,22 @@
       "beschrijving": "Eten uit blik. Herstelt 1 leven en stamina.",
       "effect": "+1 leven, +1 stamina",
       "locaties": ["Supermarkt", "Park", "Restaurant"]
+    },
+    {
+      "naam": "frisdrank",
+      "type": "medisch",
+      "afbeelding": "inv_soda",
+      "beschrijving": "Pssst! Verfrissend én herstellend.",
+      "effect": "+1 leven, +1 stamina",
+      "locaties": ["Supermarkt", "Tankstation", "Restaurant"]
+    },
+    {
+      "naam": "banaan",
+      "type": "medisch",
+      "afbeelding": "inv_banana",
+      "beschrijving": "Gezond EN je kunt de schil als val gebruiken!",
+      "effect": "+1 leven, schil bruikbaar als val",
+      "locaties": ["Supermarkt", "Park"]
     }
   ],
   "gereedschap": [
@@ -100,6 +171,7 @@
     {
       "naam": "touw",
       "type": "gereedschap",
+      "afbeelding": "inv_rope",
       "beschrijving": "Handig voor vallen en klimmen.",
       "effect": "Kan als val gebruikt worden",
       "locaties": ["Speeltuin", "Dak", "Boomhut"]
@@ -114,6 +186,7 @@
     {
       "naam": "kaart",
       "type": "gereedschap",
+      "afbeelding": "inv_map",
       "beschrijving": "Een plattegrond van de stad. Onthult nieuwe locaties!",
       "effect": "Onthult 1 verborgen locatie",
       "locaties": ["Bibliotheek", "Bus"]
@@ -124,6 +197,62 @@
       "beschrijving": "Vuur maken! Handig voor crafting.",
       "effect": "Crafting ingrediënt",
       "locaties": ["Tankstation"]
+    },
+    {
+      "naam": "verrekijker",
+      "type": "gereedschap",
+      "afbeelding": "inv_binoculars",
+      "beschrijving": "Zie vijanden van ver aankomen!",
+      "effect": "Toont zombies in aangrenzende locaties",
+      "locaties": ["Dak", "Boomhut"]
+    },
+    {
+      "naam": "sleutel",
+      "type": "gereedschap",
+      "afbeelding": "inv_key",
+      "beschrijving": "Past op sommige deuren. Waar zou die op passen?",
+      "effect": "Opent afgesloten deuren",
+      "locaties": ["Huis", "School", "Politiebureau"]
+    },
+    {
+      "naam": "gouden sleutel",
+      "type": "gereedschap",
+      "afbeelding": "inv_keygold",
+      "beschrijving": "Een bijzondere sleutel. Opent iets speciaals...",
+      "effect": "Opent geheime ruimtes",
+      "locaties": ["Kelder", "Bibliotheek"]
+    },
+    {
+      "naam": "geluksbrenger",
+      "type": "gereedschap",
+      "afbeelding": "inv_lucky",
+      "beschrijving": "Voel je het geluk? Betere kansen!",
+      "effect": "Verhoogt winkansen met 10%",
+      "locaties": ["Winkelcentrum", "Restaurant"]
+    },
+    {
+      "naam": "knikkers",
+      "type": "gereedschap",
+      "afbeelding": "inv_marbles",
+      "beschrijving": "Strooi ze op de grond. Zombies glijden uit!",
+      "effect": "Kan als val gebruikt worden",
+      "locaties": ["Speeltuin", "School"]
+    },
+    {
+      "naam": "skateboard",
+      "type": "gereedschap",
+      "afbeelding": "inv_skateboard",
+      "beschrijving": "Snel wegwezen! Bonus bij rennen.",
+      "effect": "Verhoogt renkans",
+      "locaties": ["Speeltuin", "Parkeergarage"]
+    },
+    {
+      "naam": "walkie talkie",
+      "type": "gereedschap",
+      "afbeelding": "inv_walkytalky",
+      "beschrijving": "Hallo? Is daar iemand? Roep hulp!",
+      "effect": "Kans op hulp van overlevenden",
+      "locaties": ["Politiebureau", "Tankstation"]
     }
   ],
   "crafting": [
