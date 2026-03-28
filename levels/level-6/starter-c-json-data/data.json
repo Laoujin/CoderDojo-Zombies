@@ -1,0 +1,84 @@
+{
+  "zombies": [
+    {
+      "naam": "Chef Zombie",
+      "type": "Keuken Zombie",
+      "afbeelding": "zombie_chef",
+      "stats": {
+        "snelheid": 2,
+        "kracht": 3,
+        "slimheid": 4
+      }
+    },
+    {
+      "naam": "Snelle Zombie",
+      "type": "Sprint Zombie",
+      "afbeelding": "zombie_fast",
+      "stats": {
+        "snelheid": 5,
+        "kracht": 2,
+        "slimheid": 1
+      }
+    },
+    {
+      "naam": "Oma Zombie",
+      "type": "Langzame Zombie",
+      "afbeelding": "zombie_grandma",
+      "stats": {
+        "snelheid": 1,
+        "kracht": 2,
+        "slimheid": 3
+      }
+    },
+    {
+      "naam": "Piraat Zombie",
+      "type": "Zee Zombie",
+      "afbeelding": "zombie_pirate",
+      "stats": {
+        "snelheid": 3,
+        "kracht": 4,
+        "slimheid": 2
+      }
+    },
+    {
+      "naam": "Wetenschapper Zombie",
+      "type": "Slimme Zombie",
+      "afbeelding": "zombie_scientist",
+      "stats": {
+        "snelheid": 2,
+        "kracht": 1,
+        "slimheid": 5
+      }
+    },
+    {
+      "naam": "Sterke Zombie",
+      "type": "Tank Zombie",
+      "afbeelding": "zombie_strong",
+      "stats": {
+        "snelheid": 1,
+        "kracht": 5,
+        "slimheid": 2
+      }
+    },
+    {
+      "naam": "Viking Zombie",
+      "type": "Krijger Zombie",
+      "afbeelding": "zombie_viking",
+      "stats": {
+        "snelheid": 3,
+        "kracht": 5,
+        "slimheid": 1
+      }
+    },
+    {
+      "naam": "Cowboy Zombie",
+      "type": "Western Zombie",
+      "afbeelding": "zombie_cowboy",
+      "stats": {
+        "snelheid": 4,
+        "kracht": 3,
+        "slimheid": 2
+      }
+    }
+  ]
+}
