@@ -22,6 +22,51 @@ Pas `toon_status()` aan om ook het aantal items te tonen
 
 ---
 
+### Gebruik Item
+
+Maak een nieuwe functie `gebruik_item(item, levens, inventory)` die een item uit je inventory gebruikt.
+
+![Gebruik Item](../cards/level-4/gebruik-item.png)
+
+- Medkit: +2 levens
+- Energie bar: +1 leven
+- De functie returned het nieuwe aantal levens
+- Roep de functie aan in `main()` in plaats van de bestaande medkit code
+
+**Hint:** Maak een `def gebruik_item(item, levens, inventory):` met `if item == "medkit":` en `return levens`
+
+??? note "Spieken"
+    ```python
+    def gebruik_item(item, levens, inventory):
+        """Gebruik een item en geef het nieuwe aantal levens terug."""
+        if item == "medkit":
+            print("💊 Je gebruikt een medkit!")
+            inventory.remove("medkit")
+            levens += 2
+            print(f"   +2 levens! (nu: {levens})")
+        elif item == "energie bar":
+            print("🍫 Je eet een energie bar!")
+            inventory.remove("energie bar")
+            levens += 1
+            print(f"   +1 leven! (nu: {levens})")
+        else:
+            print(f"Je kunt {item} niet gebruiken.")
+
+        return levens
+
+    # In main(), vervang de medkit code met:
+    if levens < 3 and ("medkit" in inventory or "energie bar" in inventory):
+        print("Je hebt healing items!")
+        for item in ["medkit", "energie bar"]:
+            if item in inventory:
+                print(f"   - {item}")
+        keuze = input("Welk item gebruiken? (of 'nee') ➜ ").lower()
+        if keuze in inventory:
+            levens = gebruik_item(keuze, levens, inventory)
+    ```
+
+---
+
 ## Pittig
 
 ### Meerdere Wapens
@@ -55,6 +100,47 @@ Pas `vecht()` aan en voeg andere wapens toe als mogelijke inventory.
 
 ---
 
+### Crafting
+
+Maak een `craft(inventory)` functie die twee items combineert tot iets beters. Gebruik een `recepten` dictionary.
+
+![Crafting](../cards/level-4/crafting.png)
+
+- Honkbalknuppel + spijkers = spijkerknuppel
+- Zaklamp + batterij = super zaklamp
+- Voeg "craft" toe als actie in het spel
+
+**Hint:** Maak een dictionary `recepten = {"spijkerknuppel": ["honkbalknuppel", "spijkers"]}` en check of beide items in de inventory zitten
+
+??? note "Spieken"
+    ```python
+    recepten = {
+        "spijkerknuppel": ["honkbalknuppel", "spijkers"],
+        "super zaklamp": ["zaklamp", "batterij"],
+    }
+
+    def craft(inventory):
+        """Probeer items te combineren tot iets beters."""
+        print("🔧 Crafting recepten:")
+        for resultaat, ingredienten in recepten.items():
+            print(f"   {ingredienten[0]} + {ingredienten[1]} = {resultaat}")
+
+        for resultaat, ingredienten in recepten.items():
+            if ingredienten[0] in inventory and ingredienten[1] in inventory:
+                print(f"✨ Je maakt een {resultaat}!")
+                inventory.remove(ingredienten[0])
+                inventory.remove(ingredienten[1])
+                inventory.append(resultaat)
+                return
+
+        print("Je hebt niet de juiste items...")
+
+    # In main(), voeg toe als actie:
+    elif actie == "craft":
+        craft(inventory)
+    ```
+
+---
 
 ## Boss
 

@@ -17,12 +17,32 @@ A cute cartoon game HUD interface floating in air, health hearts, inventory slot
 
 ---
 
+## gebruik-item.png
+
+**Challenge:** Gebruik Item - Maak een nieuwe functie die items uit je inventory gebruikt
+
+```
+A cute cartoon kid opening a glowing backpack, pulling out a medkit with a red cross and an energy bar, healing sparkles and plus signs floating up, items coming to life, cartoon style, Plants vs Zombies aesthetic, bright saturated colors, friendly exaggerated features, soft rounded shapes, clean bold outlines, suitable for children, warm green healing background --ar 3:2 --style raw
+```
+
+---
+
 ## meerdere-wapens.png
 
 **Challenge:** Meerdere Wapens - Voeg andere wapens toe als mogelijke inventory
 
 ```
 A cute cartoon weapon collection display, baseball bat, foam sword, water gun, flashlight, all arranged like a shop inventory, weapon selection screen feeling, cartoon style, Plants vs Zombies aesthetic, bright saturated colors, friendly exaggerated features, soft rounded shapes, clean bold outlines, suitable for children, wooden shelf brown background --ar 3:2 --style raw
+```
+
+---
+
+## crafting.png
+
+**Challenge:** Crafting - Combineer twee items tot iets beters met een recepten dictionary
+
+```
+A cute cartoon crafting workbench scene, a kid combining a baseball bat and nails to make a spiked bat, sparkles and gears floating, recipe book open on the table, workshop inventor feeling, cartoon style, Plants vs Zombies aesthetic, bright saturated colors, friendly exaggerated features, soft rounded shapes, clean bold outlines, suitable for children, warm workshop orange background --ar 3:2 --style raw
 ```
 
 ---
