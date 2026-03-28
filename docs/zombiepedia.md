@@ -2,6 +2,10 @@
 
 Alle zombies die je kunt tegenkomen in Level 6!
 
+!!! tip "Aan de slag"
+    - Begin met een [Starter Kit](levels/level-6/uitleg.md)
+    - Bekijk de [Brainstorm](brainstorm.md) voor de uitdaging en ideeën
+
 ## Makkelijk
 
 <div class="zombie-grid">

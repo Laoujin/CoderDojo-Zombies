@@ -3,9 +3,10 @@
 !!! warning "Level 6: Bouw Je Eigen Spel!"
     Dit is **Level 6** - de ultieme uitdaging!
 
-    Er is geen startcode. Je bouwt het **helemaal zelf** vanaf nul.
-
     Gebruik alles wat je geleerd hebt in Level 1-5 om een slimmer zombie spel te maken waar de stats van elke zombie ertoe doen!
+
+    - Begin met een [Starter Kit](levels/level-6/uitleg.md)
+    - Bekijk de [Zombiepedia](zombiepedia.md) voor alle zombies en hun stats
 
 ## De Uitdaging
 

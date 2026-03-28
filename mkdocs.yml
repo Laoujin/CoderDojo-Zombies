@@ -60,7 +60,6 @@ nav:
     - Level 4 - Functies: levels/level-4/uitleg.md
     - Level 4.5 - Pygame Zero: levels/level-4.5/uitleg.md
     - Level 5 - Zombie Spel: levels/level-5/uitleg.md
-    - Level 6 - Bouw Je Eigen Spel: levels/level-6/uitleg.md
   - Uitdagingen:
     - Level 1: uitdagingen/level-1.md
     - Level 2: uitdagingen/level-2.md
@@ -68,8 +67,10 @@ nav:
     - Level 4: uitdagingen/level-4.md
     - Level 4.5: uitdagingen/level-4.5.md
     - Level 5: uitdagingen/level-5.md
-  - Brainstorm: brainstorm.md
-  - Zombiepedia: zombiepedia.md
+  - Bouw Je Eigen Spel:
+    - Brainstorm: brainstorm.md
+    - Starters: levels/level-6/uitleg.md
+    - Zombiepedia: zombiepedia.md
   - Cheatsheets:
     - Python: cheatsheet.md
     - Pygame Zero: cheatsheet-pygame.md

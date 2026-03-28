@@ -133,15 +133,7 @@ zonder de Python code te veranderen.
 
 ## En nu?
 
-Kies een starter en bouw je eigen spel! Hier zijn wat ideeën:
+Kies een starter en bouw je eigen spel!
 
-- **Combineer starters**: Enum + locaties + JSON data
-- **Voeg knoppen toe**: vechten, rennen, zoeken
-- **Zombie stats**: laat de stats bepalen hoe moeilijk een zombie is
-- **Inventory**: verzamel items die je helpen
-- **Meer locaties**: er zijn veel meer locatie plaatjes beschikbaar!
-- **Geluiden**: voeg geluidseffecten toe
-- **Score en highscores**: houd bij hoe goed je het doet
-
-Kijk in de `images/` map in de hoofdmap van het project voor alle
-beschikbare plaatjes van zombies, locaties, items en wapens.
+- Bekijk de [Brainstorm](../../brainstorm.md) voor de uitdaging en ideeën
+- Bekijk de [Zombiepedia](../../zombiepedia.md) voor alle zombies en hun stats
