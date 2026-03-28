@@ -1,0 +1,130 @@
+{
+  "locaties": [
+    {
+      "naam": "Huis",
+      "afbeelding": "house1",
+      "beschrijving": "Je eigen huis. Vertrouwd maar niet meer veilig.",
+      "zombies": ["Oma Zombie", "Baby Zombie"],
+      "items": ["zaklamp", "honkbalknuppel"]
+    },
+    {
+      "naam": "School",
+      "afbeelding": "school1",
+      "beschrijving": "De school is verlaten... of toch niet?",
+      "zombies": ["Leraar Zombie", "Gamer Zombie"],
+      "items": ["boek", "potlood", "rugzak"]
+    },
+    {
+      "naam": "Speeltuin",
+      "afbeelding": "playground1",
+      "beschrijving": "De schommels kraken in de wind. Niemand speelt hier meer.",
+      "zombies": ["Baby Zombie", "Skater Zombie"],
+      "items": ["touw", "bal"]
+    },
+    {
+      "naam": "Supermarkt",
+      "afbeelding": "supermarket1",
+      "beschrijving": "Voedsel genoeg, maar je bent niet de enige die honger heeft.",
+      "zombies": ["Chef Zombie", "Boer Zombie"],
+      "items": ["blikje eten", "energie bar", "winkelwagen"]
+    },
+    {
+      "naam": "Ziekenhuis",
+      "afbeelding": "hospital1",
+      "beschrijving": "Medische spullen... en medische zombies.",
+      "zombies": ["Tandarts Zombie", "Wetenschapper Zombie"],
+      "items": ["medkit", "verband", "spuit"]
+    },
+    {
+      "naam": "Politiebureau",
+      "afbeelding": "police1",
+      "beschrijving": "De wet geldt niet meer. Maar de wapens liggen er nog.",
+      "zombies": ["Tank Zombie", "Worstelaar Zombie"],
+      "items": ["helm", "vest", "radio"]
+    },
+    {
+      "naam": "Park",
+      "afbeelding": "park1",
+      "beschrijving": "Mooi groen... met groene zombies ertussen.",
+      "zombies": ["Langzame Zombie", "Yoga Zombie"],
+      "items": ["stok", "steen", "blikje eten"]
+    },
+    {
+      "naam": "Tankstation",
+      "afbeelding": "gas-station1",
+      "beschrijving": "Benzine is op, maar er liggen nog nuttige spullen.",
+      "zombies": ["Snelle Zombie", "Postbode Zombie"],
+      "items": ["aansteker", "jerrycan", "doek"]
+    },
+    {
+      "naam": "Winkelcentrum",
+      "afbeelding": "mall1",
+      "beschrijving": "Winkelen was nog nooit zo gevaarlijk.",
+      "zombies": ["Disco Zombie", "Golf Zombie"],
+      "items": ["zwaard", "schild", "rugzak"]
+    },
+    {
+      "naam": "Dak",
+      "afbeelding": "rooftop1",
+      "beschrijving": "Hoog boven de stad. Veilig? Misschien niet.",
+      "zombies": ["Ninja Zombie", "Astronaut Zombie"],
+      "items": ["verrekijker", "touw"]
+    },
+    {
+      "naam": "Riool",
+      "afbeelding": "sewer1",
+      "beschrijving": "Donker, vies, en vol verrassingen.",
+      "zombies": ["Langzame Zombie", "Mummie Zombie"],
+      "items": ["zaklamp", "spijkers", "laarzen"]
+    },
+    {
+      "naam": "Bibliotheek",
+      "afbeelding": "libary1",
+      "beschrijving": "Sssst! De zombies slapen... of toch niet?",
+      "zombies": ["Wetenschapper Zombie", "Leraar Zombie"],
+      "items": ["boek", "kaart", "bril"]
+    },
+    {
+      "naam": "Sportschool",
+      "afbeelding": "gym1",
+      "beschrijving": "Hier trainden mensen ooit. Nu trainen zombies.",
+      "zombies": ["Worstelaar Zombie", "Tank Zombie"],
+      "items": ["honkbalknuppel", "halter", "handdoek"]
+    },
+    {
+      "naam": "Restaurant",
+      "afbeelding": "restaurant1",
+      "beschrijving": "Het menu van vandaag: jou!",
+      "zombies": ["Chef Zombie", "Oma Zombie"],
+      "items": ["koekenpan", "blikje eten", "mes"]
+    },
+    {
+      "naam": "Parkeergarage",
+      "afbeelding": "parking1",
+      "beschrijving": "Echo's van voetstappen. Zijn dat de jouwe?",
+      "zombies": ["Snelle Zombie", "Skater Zombie"],
+      "items": ["moersleutel", "jerrycan"]
+    },
+    {
+      "naam": "Boomhut",
+      "afbeelding": "treehouse1",
+      "beschrijving": "Een veilige plek hoog in de boom. Toch?",
+      "zombies": ["Baby Zombie", "Ninja Zombie"],
+      "items": ["touw", "verrekijker", "steen"]
+    },
+    {
+      "naam": "Bus",
+      "afbeelding": "bus1",
+      "beschrijving": "De bus rijdt niet meer. Maar er zit nog iemand in...",
+      "zombies": ["Postbode Zombie", "Disco Zombie"],
+      "items": ["kaart", "paraplu"]
+    },
+    {
+      "naam": "Kelder",
+      "afbeelding": "basement1",
+      "beschrijving": "Donker, koud, en je hoort iets bewegen.",
+      "zombies": ["Tovenaar Zombie", "Mummie Zombie"],
+      "items": ["zaklamp", "spijkers", "hamer"]
+    }
+  ]
+}

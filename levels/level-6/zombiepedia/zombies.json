@@ -1,0 +1,395 @@
+{
+  "zombies": [
+    {
+      "naam": "Baby Zombie",
+      "type": "Makkelijk",
+      "afbeelding": "baby1",
+      "beschrijving": "Wil alleen maar spelen... en je hersenen eten.",
+      "zwakte": "Afgeleid door speelgoed",
+      "stats": {
+        "snelheid": 2,
+        "slimheid": 1,
+        "kracht": 1
+      },
+      "tactieken": {
+        "vechten": "goed",
+        "rennen": "goed",
+        "verstoppen": "goed"
+      }
+    },
+    {
+      "naam": "Langzame Zombie",
+      "type": "Makkelijk",
+      "afbeelding": "slow1",
+      "beschrijving": "Schuifelt langzaam maar zeker je richting op. Geen haast.",
+      "zwakte": "Wandelen is al te snel",
+      "stats": {
+        "snelheid": 1,
+        "slimheid": 1,
+        "kracht": 2
+      },
+      "tactieken": {
+        "vechten": "goed",
+        "rennen": "goed",
+        "verstoppen": "goed"
+      }
+    },
+    {
+      "naam": "Oma Zombie",
+      "type": "Makkelijk",
+      "afbeelding": "grandma1",
+      "beschrijving": "Wil je een koekje geven... een HERSENEN koekje!",
+      "zwakte": "Kan haar bril niet vinden",
+      "stats": {
+        "snelheid": 1,
+        "slimheid": 2,
+        "kracht": 1
+      },
+      "tactieken": {
+        "vechten": "goed",
+        "rennen": "goed",
+        "verstoppen": "goed"
+      }
+    },
+    {
+      "naam": "Gamer Zombie",
+      "type": "Makkelijk",
+      "afbeelding": "gamer1",
+      "beschrijving": "Nog één potje... nog één potje... HERSENEN!",
+      "zwakte": "Zit vastgeplakt aan z'n stoel",
+      "stats": {
+        "snelheid": 1,
+        "slimheid": 3,
+        "kracht": 1
+      },
+      "tactieken": {
+        "vechten": "goed",
+        "rennen": "goed",
+        "verstoppen": "ok"
+      }
+    },
+    {
+      "naam": "Snelle Zombie",
+      "type": "Gemiddeld",
+      "afbeelding": "fast1",
+      "beschrijving": "ZOOM! Was dat een zombie of een raket?!",
+      "zwakte": "Rent tegen muren aan",
+      "stats": {
+        "snelheid": 4,
+        "slimheid": 2,
+        "kracht": 2
+      },
+      "tactieken": {
+        "vechten": "ok",
+        "rennen": "slecht",
+        "verstoppen": "goed"
+      }
+    },
+    {
+      "naam": "Chef Zombie",
+      "type": "Gemiddeld",
+      "afbeelding": "chef1",
+      "beschrijving": "Vandaag op het menu: verse hersenen à la carte!",
+      "zwakte": "Perfectionist - moet alles perfect bereiden",
+      "stats": {
+        "snelheid": 2,
+        "slimheid": 3,
+        "kracht": 2
+      },
+      "tactieken": {
+        "vechten": "ok",
+        "rennen": "ok",
+        "verstoppen": "ok"
+      }
+    },
+    {
+      "naam": "Disco Zombie",
+      "type": "Gemiddeld",
+      "afbeelding": "disco1",
+      "beschrijving": "Stayin' alive! Stayin' alive! Oh wacht... te laat.",
+      "zwakte": "Kan niet stoppen met dansen",
+      "stats": {
+        "snelheid": 3,
+        "slimheid": 2,
+        "kracht": 2
+      },
+      "tactieken": {
+        "vechten": "ok",
+        "rennen": "ok",
+        "verstoppen": "goed"
+      }
+    },
+    {
+      "naam": "Skater Zombie",
+      "type": "Gemiddeld",
+      "afbeelding": "skater1",
+      "beschrijving": "Sick kickflip bro! Nu sick bite bro!",
+      "zwakte": "Valt bij elke stoeprand",
+      "stats": {
+        "snelheid": 4,
+        "slimheid": 2,
+        "kracht": 2
+      },
+      "tactieken": {
+        "vechten": "ok",
+        "rennen": "slecht",
+        "verstoppen": "goed"
+      }
+    },
+    {
+      "naam": "Boer Zombie",
+      "type": "Gemiddeld",
+      "afbeelding": "farmer1",
+      "beschrijving": "Tijd om te oogsten... HERSENEN te oogsten!",
+      "zwakte": "Hooivork zit vast in de grond",
+      "stats": {
+        "snelheid": 2,
+        "slimheid": 2,
+        "kracht": 3
+      },
+      "tactieken": {
+        "vechten": "ok",
+        "rennen": "ok",
+        "verstoppen": "ok"
+      }
+    },
+    {
+      "naam": "Postbode Zombie",
+      "type": "Gemiddeld",
+      "afbeelding": "post1",
+      "beschrijving": "Pakketje voor u! Het is... UW ONDERGANG!",
+      "zwakte": "Moet elke brievenbus checken",
+      "stats": {
+        "snelheid": 3,
+        "slimheid": 3,
+        "kracht": 2
+      },
+      "tactieken": {
+        "vechten": "ok",
+        "rennen": "ok",
+        "verstoppen": "ok"
+      }
+    },
+    {
+      "naam": "Yoga Zombie",
+      "type": "Gemiddeld",
+      "afbeelding": "yoga1",
+      "beschrijving": "Namaste... nu ga ik je OPETEN-ste!",
+      "zwakte": "Moet eerst stretchen",
+      "stats": {
+        "snelheid": 2,
+        "slimheid": 3,
+        "kracht": 2
+      },
+      "tactieken": {
+        "vechten": "ok",
+        "rennen": "goed",
+        "verstoppen": "ok"
+      }
+    },
+    {
+      "naam": "Golf Zombie",
+      "type": "Gemiddeld",
+      "afbeelding": "golf1",
+      "beschrijving": "FORE! Oh sorry, ik bedoel: HERSENEN!",
+      "zwakte": "Moet eerst z'n handicap berekenen",
+      "stats": {
+        "snelheid": 2,
+        "slimheid": 3,
+        "kracht": 3
+      },
+      "tactieken": {
+        "vechten": "slecht",
+        "rennen": "ok",
+        "verstoppen": "ok"
+      }
+    },
+    {
+      "naam": "Tank Zombie",
+      "type": "Moeilijk",
+      "afbeelding": "tank1",
+      "beschrijving": "HULK SMASH! Maar dan met meer kwijl.",
+      "zwakte": "Past niet door deuren",
+      "stats": {
+        "snelheid": 1,
+        "slimheid": 1,
+        "kracht": 5
+      },
+      "tactieken": {
+        "vechten": "slecht",
+        "rennen": "goed",
+        "verstoppen": "goed"
+      }
+    },
+    {
+      "naam": "Ninja Zombie",
+      "type": "Moeilijk",
+      "afbeelding": "ninja1",
+      "beschrijving": "Je ziet me niet, je ziet me niet, je ziet me- BOE!",
+      "zwakte": "Zaklamp verblindt hem",
+      "stats": {
+        "snelheid": 5,
+        "slimheid": 4,
+        "kracht": 3
+      },
+      "tactieken": {
+        "vechten": "ok",
+        "rennen": "slecht",
+        "verstoppen": "slecht"
+      }
+    },
+    {
+      "naam": "Wetenschapper Zombie",
+      "type": "Moeilijk",
+      "afbeelding": "scientist1",
+      "beschrijving": "Interessant... je hersenen zijn 1.4kg. Dat weet ik ZEKER straks.",
+      "zwakte": "Moet eerst een hypothese opstellen",
+      "stats": {
+        "snelheid": 2,
+        "slimheid": 5,
+        "kracht": 2
+      },
+      "tactieken": {
+        "vechten": "ok",
+        "rennen": "goed",
+        "verstoppen": "slecht"
+      }
+    },
+    {
+      "naam": "Leraar Zombie",
+      "type": "Moeilijk",
+      "afbeelding": "teacher1",
+      "beschrijving": "Pop quiz: hoeveel hersenen heb jij? ANTWOORD: NIET LANG MEER!",
+      "zwakte": "Moet alles drie keer uitleggen",
+      "stats": {
+        "snelheid": 2,
+        "slimheid": 4,
+        "kracht": 2
+      },
+      "tactieken": {
+        "vechten": "ok",
+        "rennen": "goed",
+        "verstoppen": "slecht"
+      }
+    },
+    {
+      "naam": "Piraat Zombie",
+      "type": "Moeilijk",
+      "afbeelding": "pirate1",
+      "beschrijving": "ARRR! Waar is me schat? Oh ja: JOUW HERSENEN!",
+      "zwakte": "Kan niet goed zien met één oog",
+      "stats": {
+        "snelheid": 3,
+        "slimheid": 3,
+        "kracht": 4
+      },
+      "tactieken": {
+        "vechten": "slecht",
+        "rennen": "ok",
+        "verstoppen": "ok"
+      }
+    },
+    {
+      "naam": "Worstelaar Zombie",
+      "type": "Moeilijk",
+      "afbeelding": "wrestler1",
+      "beschrijving": "AND HIS NAME IS JOHN ZOMBIE! *toetertje*",
+      "zwakte": "Moet eerst z'n entrance doen",
+      "stats": {
+        "snelheid": 3,
+        "slimheid": 2,
+        "kracht": 5
+      },
+      "tactieken": {
+        "vechten": "slecht",
+        "rennen": "ok",
+        "verstoppen": "goed"
+      }
+    },
+    {
+      "naam": "Viking Zombie",
+      "type": "Moeilijk",
+      "afbeelding": "viking1",
+      "beschrijving": "VALHALLA! Maar eerst: jouw hersenen als ontbijt!",
+      "zwakte": "Helm zit over z'n ogen",
+      "stats": {
+        "snelheid": 3,
+        "slimheid": 2,
+        "kracht": 5
+      },
+      "tactieken": {
+        "vechten": "slecht",
+        "rennen": "ok",
+        "verstoppen": "goed"
+      }
+    },
+    {
+      "naam": "Tovenaar Zombie",
+      "type": "Boss",
+      "afbeelding": "wizard1",
+      "beschrijving": "Abracadabra... je bent nu DOOD-cadaver!",
+      "zwakte": "Spreuk duurt 3 seconden",
+      "stats": {
+        "snelheid": 3,
+        "slimheid": 5,
+        "kracht": 4
+      },
+      "tactieken": {
+        "vechten": "slecht",
+        "rennen": "ok",
+        "verstoppen": "slecht"
+      }
+    },
+    {
+      "naam": "Mummie Zombie",
+      "type": "Boss",
+      "afbeelding": "mummy1",
+      "beschrijving": "3000 jaar gewacht... nu heb ik HONGER!",
+      "zwakte": "Bandages raken los",
+      "stats": {
+        "snelheid": 2,
+        "slimheid": 4,
+        "kracht": 5
+      },
+      "tactieken": {
+        "vechten": "slecht",
+        "rennen": "goed",
+        "verstoppen": "slecht"
+      }
+    },
+    {
+      "naam": "Astronaut Zombie",
+      "type": "Boss",
+      "afbeelding": "astronaut1",
+      "beschrijving": "Houston, we hebben een probleem: IK HEB HONGER!",
+      "zwakte": "Pak is zwaar en log",
+      "stats": {
+        "snelheid": 2,
+        "slimheid": 5,
+        "kracht": 4
+      },
+      "tactieken": {
+        "vechten": "slecht",
+        "rennen": "goed",
+        "verstoppen": "slecht"
+      }
+    },
+    {
+      "naam": "Tandarts Zombie",
+      "type": "Boss",
+      "afbeelding": "dentist1",
+      "beschrijving": "Open je mond wijd... WIJDER... perfectie!",
+      "zwakte": "Boor maakt irritant geluid",
+      "stats": {
+        "snelheid": 3,
+        "slimheid": 5,
+        "kracht": 3
+      },
+      "tactieken": {
+        "vechten": "ok",
+        "rennen": "ok",
+        "verstoppen": "slecht"
+      }
+    }
+  ]
+}

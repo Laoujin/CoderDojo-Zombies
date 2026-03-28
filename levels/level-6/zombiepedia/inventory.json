@@ -1,0 +1,151 @@
+{
+  "wapens": [
+    {
+      "naam": "honkbalknuppel",
+      "type": "wapen",
+      "beschrijving": "Een stevige knuppel. Beter dan niks!",
+      "bonus": 1,
+      "locaties": ["Huis", "Sportschool"]
+    },
+    {
+      "naam": "zwaard",
+      "type": "wapen",
+      "beschrijving": "Scherp en dodelijk. Waar lag dit?!",
+      "bonus": 2,
+      "locaties": ["Winkelcentrum"]
+    },
+    {
+      "naam": "koekenpan",
+      "type": "wapen",
+      "beschrijving": "BONK! Verrassend effectief.",
+      "bonus": 1,
+      "locaties": ["Restaurant"]
+    },
+    {
+      "naam": "spijkerknuppel",
+      "type": "wapen",
+      "beschrijving": "Honkbalknuppel + spijkers = AUW.",
+      "bonus": 3,
+      "crafting": ["honkbalknuppel", "spijkers"]
+    },
+    {
+      "naam": "molotov",
+      "type": "wapen",
+      "beschrijving": "Vuur! Zombies houden niet van vuur!",
+      "bonus": 4,
+      "crafting": ["fles", "doek", "aansteker"]
+    }
+  ],
+  "bescherming": [
+    {
+      "naam": "helm",
+      "type": "bescherming",
+      "beschrijving": "Beschermt je hoofd. Handig!",
+      "effect": "Vermindert schade met 1",
+      "locaties": ["Politiebureau"]
+    },
+    {
+      "naam": "vest",
+      "type": "bescherming",
+      "beschrijving": "Stevig vest. 50% kans om schade te negeren.",
+      "effect": "50% kans schade negeren",
+      "locaties": ["Politiebureau"]
+    },
+    {
+      "naam": "schild",
+      "type": "bescherming",
+      "beschrijving": "Blokt één aanval volledig. Breekt daarna.",
+      "effect": "Blokt 1 aanval, breekt daarna",
+      "locaties": ["Winkelcentrum"]
+    }
+  ],
+  "medisch": [
+    {
+      "naam": "medkit",
+      "type": "medisch",
+      "beschrijving": "Herstelt 3 levens. Levensreddend!",
+      "effect": "+3 levens",
+      "locaties": ["Ziekenhuis"]
+    },
+    {
+      "naam": "verband",
+      "type": "medisch",
+      "beschrijving": "Herstelt 1 leven. Beter dan niks.",
+      "effect": "+1 leven",
+      "locaties": ["Ziekenhuis", "Bibliotheek"]
+    },
+    {
+      "naam": "energie bar",
+      "type": "medisch",
+      "beschrijving": "Geeft je energie! Herstelt 1 leven.",
+      "effect": "+1 leven",
+      "locaties": ["Supermarkt"]
+    },
+    {
+      "naam": "blikje eten",
+      "type": "medisch",
+      "beschrijving": "Eten uit blik. Herstelt 1 leven en stamina.",
+      "effect": "+1 leven, +1 stamina",
+      "locaties": ["Supermarkt", "Park", "Restaurant"]
+    }
+  ],
+  "gereedschap": [
+    {
+      "naam": "zaklamp",
+      "type": "gereedschap",
+      "beschrijving": "Verlicht donkere plekken. Verblindt Ninja Zombie!",
+      "effect": "Onthult verborgen items, bonus tegen Ninja Zombie",
+      "locaties": ["Huis", "Riool", "Kelder"]
+    },
+    {
+      "naam": "touw",
+      "type": "gereedschap",
+      "beschrijving": "Handig voor vallen en klimmen.",
+      "effect": "Kan als val gebruikt worden",
+      "locaties": ["Speeltuin", "Dak", "Boomhut"]
+    },
+    {
+      "naam": "spijkers",
+      "type": "gereedschap",
+      "beschrijving": "Scherpe spijkers. Goed voor crafting!",
+      "effect": "Crafting ingrediënt",
+      "locaties": ["Riool", "Kelder"]
+    },
+    {
+      "naam": "kaart",
+      "type": "gereedschap",
+      "beschrijving": "Een plattegrond van de stad. Onthult nieuwe locaties!",
+      "effect": "Onthult 1 verborgen locatie",
+      "locaties": ["Bibliotheek", "Bus"]
+    },
+    {
+      "naam": "aansteker",
+      "type": "gereedschap",
+      "beschrijving": "Vuur maken! Handig voor crafting.",
+      "effect": "Crafting ingrediënt",
+      "locaties": ["Tankstation"]
+    }
+  ],
+  "crafting": [
+    {
+      "ingrediënten": ["honkbalknuppel", "spijkers"],
+      "resultaat": "spijkerknuppel",
+      "beschrijving": "Sla spijkers in de knuppel voor extra schade!"
+    },
+    {
+      "ingrediënten": ["fles", "doek", "aansteker"],
+      "resultaat": "molotov",
+      "beschrijving": "Maak een brandende fles. BOEM!"
+    },
+    {
+      "ingrediënten": ["verband", "alcohol"],
+      "resultaat": "medkit",
+      "beschrijving": "Maak je eigen EHBO kit."
+    },
+    {
+      "ingrediënten": ["zaklamp", "spijkers"],
+      "resultaat": "alarm systeem",
+      "beschrijving": "Waarschuwt je als zombies dichtbij komen."
+    }
+  ]
+}
