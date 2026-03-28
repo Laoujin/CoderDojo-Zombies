@@ -42,24 +42,16 @@ with open("data.json") as bestand:
 
 zombies = data["zombies"]
 
-
-# =============================================================================
-# GAME VARIABELEN
-# =============================================================================
-# We kiezen een willekeurige zombie uit de JSON data
+# Willekeurige zombie uit de JSON data
 huidige_zombie = random.choice(zombies)
 
 
 def draw():
     screen.fill((30, 30, 40))
 
-    # Titel
     teken_tekst("Zombie Dex", center=(400, 40), fontsize=44)
-
-    # Teken de zombie
     teken_zombie(huidige_zombie)
 
-    # Instructie
     teken_tekst("Klik voor een andere zombie",
                 center=(400, HEIGHT - 40), fontsize=20, kleur="gray")
 
@@ -73,21 +65,14 @@ def teken_zombie(zombie):
     # Dit is dezelfde naam als het bestand in images/: zombie_chef.png
     #
     # getattr(images, naam) laadt het plaatje met die naam
+    # transform.scale past de grootte van het plaatje aan
     # ==========================================================================
-    try:
-        img = getattr(images, zombie["afbeelding"])
-        # Maak de zombie 200x200 pixels
-        geschaald = pygame.transform.scale(img, (200, 200))
-        # Centreer horizontaal, boven de stats
-        screen.surface.blit(geschaald, (300, 80))
-    except Exception:
-        # Als het plaatje niet gevonden wordt
-        screen.draw.filled_rect(Rect(300, 80, 200, 200), (60, 60, 80))
-        teken_tekst("?", center=(400, 180), fontsize=80)
+    img = getattr(images, zombie["afbeelding"])
+    geschaald = pygame.transform.scale(img, (210, 140))
+    screen.surface.blit(geschaald, (295, 100))
 
-    # Zombie naam en type
+    # Zombie naam
     teken_tekst(zombie["naam"], center=(400, 310), fontsize=36)
-    teken_tekst(zombie["type"], center=(400, 345), fontsize=20, kleur="gray")
 
     # ==========================================================================
     # STATS TEKENEN

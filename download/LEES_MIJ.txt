@@ -35,6 +35,7 @@ level-3/  ->  Lijsten: items en inventory
 level-4/  ->  Functies: code opdelen
 level-4.5/ -> Pygame Zero: graphics!
 level-5/  ->  Het complete zombie spel
+level-6/  ->  Bouw je eigen spel! (starter kits)
 
 
 UITDAGINGEN
