@@ -3,7 +3,8 @@
     {
       "naam": "Baby Zombie",
       "type": "Makkelijk",
-      "afbeelding": "baby1",
+      "afbeelding": "zombie_baby",
+      "afbeelding_actor": "sprites/zombie_baby",
       "beschrijving": "Wil alleen maar spelen... en je hersenen eten.",
       "zwakte": "Afgeleid door speelgoed",
       "stats": {
@@ -20,7 +21,7 @@
     {
       "naam": "Langzame Zombie",
       "type": "Makkelijk",
-      "afbeelding": "slow1",
+      "afbeelding": "zombie_slow",
       "beschrijving": "Schuifelt langzaam maar zeker je richting op. Geen haast.",
       "zwakte": "Wandelen is al te snel",
       "stats": {
@@ -37,7 +38,8 @@
     {
       "naam": "Oma Zombie",
       "type": "Makkelijk",
-      "afbeelding": "grandma1",
+      "afbeelding": "zombie_grandma",
+      "afbeelding_actor": "sprites/zombie_grandma",
       "beschrijving": "Wil je een koekje geven... een HERSENEN koekje!",
       "zwakte": "Kan haar bril niet vinden",
       "stats": {
@@ -54,7 +56,7 @@
     {
       "naam": "Gamer Zombie",
       "type": "Makkelijk",
-      "afbeelding": "gamer1",
+      "afbeelding": "zombie_gamer",
       "beschrijving": "Nog één potje... nog één potje... HERSENEN!",
       "zwakte": "Zit vastgeplakt aan z'n stoel",
       "stats": {
@@ -71,7 +73,8 @@
     {
       "naam": "Snelle Zombie",
       "type": "Gemiddeld",
-      "afbeelding": "fast1",
+      "afbeelding": "zombie_fast",
+      "afbeelding_actor": "sprites/zombie_fast",
       "beschrijving": "ZOOM! Was dat een zombie of een raket?!",
       "zwakte": "Rent tegen muren aan",
       "stats": {
@@ -88,7 +91,8 @@
     {
       "naam": "Chef Zombie",
       "type": "Gemiddeld",
-      "afbeelding": "chef1",
+      "afbeelding": "zombie_chef",
+      "afbeelding_actor": "sprites/zombie_chef",
       "beschrijving": "Vandaag op het menu: verse hersenen à la carte!",
       "zwakte": "Perfectionist - moet alles perfect bereiden",
       "stats": {
@@ -105,7 +109,7 @@
     {
       "naam": "Disco Zombie",
       "type": "Gemiddeld",
-      "afbeelding": "disco1",
+      "afbeelding": "zombie_disco",
       "beschrijving": "Stayin' alive! Stayin' alive! Oh wacht... te laat.",
       "zwakte": "Kan niet stoppen met dansen",
       "stats": {
@@ -122,7 +126,7 @@
     {
       "naam": "Skater Zombie",
       "type": "Gemiddeld",
-      "afbeelding": "skater1",
+      "afbeelding": "zombie_skater",
       "beschrijving": "Sick kickflip bro! Nu sick bite bro!",
       "zwakte": "Valt bij elke stoeprand",
       "stats": {
@@ -139,7 +143,7 @@
     {
       "naam": "Boer Zombie",
       "type": "Gemiddeld",
-      "afbeelding": "farmer1",
+      "afbeelding": "zombie_farmer",
       "beschrijving": "Tijd om te oogsten... HERSENEN te oogsten!",
       "zwakte": "Hooivork zit vast in de grond",
       "stats": {
@@ -156,7 +160,7 @@
     {
       "naam": "Postbode Zombie",
       "type": "Gemiddeld",
-      "afbeelding": "post1",
+      "afbeelding": "zombie_post",
       "beschrijving": "Pakketje voor u! Het is... UW ONDERGANG!",
       "zwakte": "Moet elke brievenbus checken",
       "stats": {
@@ -173,7 +177,8 @@
     {
       "naam": "Yoga Zombie",
       "type": "Gemiddeld",
-      "afbeelding": "yoga1",
+      "afbeelding": "zombie_yoga",
+      "afbeelding_actor": "sprites/zombie_yoga",
       "beschrijving": "Namaste... nu ga ik je OPETEN-ste!",
       "zwakte": "Moet eerst stretchen",
       "stats": {
@@ -190,7 +195,7 @@
     {
       "naam": "Golf Zombie",
       "type": "Gemiddeld",
-      "afbeelding": "golf1",
+      "afbeelding": "zombie_golf",
       "beschrijving": "FORE! Oh sorry, ik bedoel: HERSENEN!",
       "zwakte": "Moet eerst z'n handicap berekenen",
       "stats": {
@@ -207,7 +212,8 @@
     {
       "naam": "Tank Zombie",
       "type": "Moeilijk",
-      "afbeelding": "tank1",
+      "afbeelding": "zombie_strong",
+      "afbeelding_actor": "sprites/zombie_strong",
       "beschrijving": "HULK SMASH! Maar dan met meer kwijl.",
       "zwakte": "Past niet door deuren",
       "stats": {
@@ -224,7 +230,7 @@
     {
       "naam": "Ninja Zombie",
       "type": "Moeilijk",
-      "afbeelding": "ninja1",
+      "afbeelding": "zombie_ninja",
       "beschrijving": "Je ziet me niet, je ziet me niet, je ziet me- BOE!",
       "zwakte": "Zaklamp verblindt hem",
       "stats": {
@@ -241,7 +247,8 @@
     {
       "naam": "Wetenschapper Zombie",
       "type": "Moeilijk",
-      "afbeelding": "scientist1",
+      "afbeelding": "zombie_scientist",
+      "afbeelding_actor": "sprites/zombie_scientist",
       "beschrijving": "Interessant... je hersenen zijn 1.4kg. Dat weet ik ZEKER straks.",
       "zwakte": "Moet eerst een hypothese opstellen",
       "stats": {
@@ -258,7 +265,8 @@
     {
       "naam": "Leraar Zombie",
       "type": "Moeilijk",
-      "afbeelding": "teacher1",
+      "afbeelding": "zombie_teacher",
+      "afbeelding_actor": "sprites/zombie_teacher",
       "beschrijving": "Pop quiz: hoeveel hersenen heb jij? ANTWOORD: NIET LANG MEER!",
       "zwakte": "Moet alles drie keer uitleggen",
       "stats": {
@@ -275,7 +283,8 @@
     {
       "naam": "Piraat Zombie",
       "type": "Moeilijk",
-      "afbeelding": "pirate1",
+      "afbeelding": "zombie_pirate",
+      "afbeelding_actor": "sprites/zombie_pirate",
       "beschrijving": "ARRR! Waar is me schat? Oh ja: JOUW HERSENEN!",
       "zwakte": "Kan niet goed zien met één oog",
       "stats": {
@@ -292,7 +301,8 @@
     {
       "naam": "Worstelaar Zombie",
       "type": "Moeilijk",
-      "afbeelding": "wrestler1",
+      "afbeelding": "zombie_wrestler",
+      "afbeelding_actor": "sprites/zombie_wrestler",
       "beschrijving": "AND HIS NAME IS JOHN ZOMBIE! *toetertje*",
       "zwakte": "Moet eerst z'n entrance doen",
       "stats": {
@@ -309,7 +319,8 @@
     {
       "naam": "Viking Zombie",
       "type": "Moeilijk",
-      "afbeelding": "viking1",
+      "afbeelding": "zombie_viking",
+      "afbeelding_actor": "sprites/zombie_viking",
       "beschrijving": "VALHALLA! Maar eerst: jouw hersenen als ontbijt!",
       "zwakte": "Helm zit over z'n ogen",
       "stats": {
@@ -326,7 +337,7 @@
     {
       "naam": "Tovenaar Zombie",
       "type": "Boss",
-      "afbeelding": "wizard1",
+      "afbeelding": "zombie_wizard",
       "beschrijving": "Abracadabra... je bent nu DOOD-cadaver!",
       "zwakte": "Spreuk duurt 3 seconden",
       "stats": {
@@ -343,7 +354,7 @@
     {
       "naam": "Mummie Zombie",
       "type": "Boss",
-      "afbeelding": "mummy1",
+      "afbeelding": "zombie_mummy",
       "beschrijving": "3000 jaar gewacht... nu heb ik HONGER!",
       "zwakte": "Bandages raken los",
       "stats": {
@@ -360,7 +371,7 @@
     {
       "naam": "Astronaut Zombie",
       "type": "Boss",
-      "afbeelding": "astronaut1",
+      "afbeelding": "zombie_astronaut",
       "beschrijving": "Houston, we hebben een probleem: IK HEB HONGER!",
       "zwakte": "Pak is zwaar en log",
       "stats": {
@@ -377,7 +388,7 @@
     {
       "naam": "Tandarts Zombie",
       "type": "Boss",
-      "afbeelding": "dentist1",
+      "afbeelding": "zombie_dentist",
       "beschrijving": "Open je mond wijd... WIJDER... perfectie!",
       "zwakte": "Boor maakt irritant geluid",
       "stats": {
