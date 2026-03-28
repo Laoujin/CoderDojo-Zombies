@@ -6,7 +6,7 @@
     --8<-- "level-4.5/zombie.py"
     ```
 
-!!! info "Dit level is optioneel"
+!!! info "Dit level is een aparte minigame"
     Dit is een **apart mini-spelletje** om Pygame Zero te leren kennen. Als je al bekend bent met grafische games, kun je direct door naar [Level 5](../level-5/uitleg.md) om het echte Zombie spel te bouwen!
 
 ## Wat leer je?
