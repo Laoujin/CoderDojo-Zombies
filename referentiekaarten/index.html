@@ -1,0 +1,1870 @@
+
+<!doctype html>
+<html lang="nl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Leer Python programmeren met een zombie spel!">
+      
+      
+      
+        <link rel="canonical" href="https://laoujin.github.io/CoderDojo-Zombies/referentiekaarten/">
+      
+      
+        <link rel="prev" href="../pygame-recepten/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Referentiekaarten - Zombie Apocalypse</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/zombie-theme.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#referentiekaarten" class="md-skip">
+          Ga naar inhoud
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Zombie Apocalypse" class="md-header__button md-logo" aria-label="Zombie Apocalypse" data-md-component="logo">
+      
+  <img src="../favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Zombie Apocalypse
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Referentiekaarten
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Zoeken" placeholder="Zoeken" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Zoeken">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Leegmaken" aria-label="Leegmaken" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Zoeken initialiseren
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigatie" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Zombie Apocalypse" class="md-nav__button md-logo" aria-label="Zombie Apocalypse" data-md-component="logo">
+      
+  <img src="../favicon.png" alt="logo">
+
+    </a>
+    Zombie Apocalypse
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aan-de-slag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aan de Slag
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coaches/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Voor Coaches
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Levels
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Levels
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../levels/level-1/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 - Keuzes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../levels/level-2/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 - Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../levels/level-3/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 - Lijsten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../levels/level-4/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 - Functies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../levels/level-4.5/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4.5 - Pygame Zero
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../levels/level-5/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 5 - Zombie Spel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uitdagingen
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uitdagingen
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uitdagingen/level-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uitdagingen/level-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uitdagingen/level-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uitdagingen/level-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uitdagingen/level-4.5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4.5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uitdagingen/level-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bouw Je Eigen Spel
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bouw Je Eigen Spel
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../brainstorm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../levels/level-6/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Starters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zombiepedia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zombiepedia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheatsheets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cheatsheets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheatsheet-pygame/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pygame Zero
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pygame-recepten/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pygame Recepten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referentiekaarten
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referentiekaarten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhoudsopgave
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#foutmeldingen-ken-je-vijand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foutmeldingen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Foutmeldingen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntaxerror-de-verminkte-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SyntaxError
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nameerror-de-onzichtbare-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NameError
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indentationerror-de-dronken-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IndentationError
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typeerror-de-verwarde-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TypeError
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexerror-de-gulzige-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IndexError
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filenotfounderror-de-verdwaalde-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FileNotFoundError
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overlevingskaarten-wat-heb-je-geleerd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overlevingskaarten
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overlevingskaarten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#level-1-eerste-hulp-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-2-overlevingsgids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-3-wapenarsenaal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-4-commandocentrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-45-eerste-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4.5
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-5-volledige-aanval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 5
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhoudsopgave
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#foutmeldingen-ken-je-vijand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foutmeldingen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Foutmeldingen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntaxerror-de-verminkte-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SyntaxError
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nameerror-de-onzichtbare-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NameError
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indentationerror-de-dronken-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IndentationError
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typeerror-de-verwarde-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TypeError
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexerror-de-gulzige-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IndexError
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filenotfounderror-de-verdwaalde-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FileNotFoundError
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overlevingskaarten-wat-heb-je-geleerd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overlevingskaarten
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overlevingskaarten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#level-1-eerste-hulp-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-2-overlevingsgids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-3-wapenarsenaal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-4-commandocentrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-45-eerste-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4.5
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-5-volledige-aanval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 5
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="referentiekaarten">☣ Referentiekaarten</h1>
+<p>Handige kaarten om naast je laptop te leggen terwijl je programmeert!</p>
+<p><strong>Print ze uit</strong> of bekijk ze op je scherm.</p>
+<hr />
+<h2 id="foutmeldingen-ken-je-vijand">Foutmeldingen — Ken Je Vijand!</h2>
+<p>Elke foutmelding is een zombie die je moet leren verslaan.
+Hoe beter je ze kent, hoe sneller je ze uitschakelt!</p>
+<div class="zombie-grid" style="grid-template-columns: 1fr;">
+<div class="zombie-card tier-hard">
+<div class="zombie-card-img">
+<p><img alt="De Verminkte Zombie" src="../cards/syntax/syntax-error.png" /></p>
+</div>
+<h4 id="syntaxerror-de-verminkte-zombie">☣ SyntaxError — De Verminkte Zombie</h4>
+<p>Python snapt je code niet! Er mist een <code>:</code> na if/while/def, aanhalingstekens <code>""</code> niet gesloten, of haakjes <code>()</code> vergeten.</p>
+<p><strong>Versla hem:</strong> Kijk naar het <strong>einde van de regel</strong> die Python aanwijst. Mis je een <code>:</code> of <code>"</code>? Check ook de regel <strong>erboven</strong>!</p>
+</div>
+<div class="zombie-card tier-hard">
+<div class="zombie-card-img">
+<p><img alt="De Onzichtbare Zombie" src="../cards/syntax/name-error.png" /></p>
+</div>
+<h4 id="nameerror-de-onzichtbare-zombie">☣ NameError — De Onzichtbare Zombie</h4>
+<p>Python kent deze naam niet! Een variabele die niet bestaat, een typfout in de naam, of je bent vergeten hem aan te maken.</p>
+<p><strong>Versla hem:</strong> Check de <strong>spelling</strong> — <code>levens</code> is niet <code>Levens</code>. Is de variabele al aangemaakt <strong>boven</strong> deze regel?</p>
+</div>
+<div class="zombie-card tier-medium">
+<div class="zombie-card-img">
+<p><img alt="De Dronken Zombie" src="../cards/syntax/indentation-error.png" /></p>
+</div>
+<h4 id="indentationerror-de-dronken-zombie">☣ IndentationError — De Dronken Zombie</h4>
+<p>Je code staat niet recht! Na <code>if</code>, <code>while</code>, of <code>def</code> moet de volgende regel inspringen met spaties.</p>
+<p><strong>Versla hem:</strong> Gebruik <strong>4 spaties</strong> (of Tab) na elke <code>:</code>. Meng nooit tabs en spaties! Kijk of alles <strong>netjes onder elkaar</strong> staat.</p>
+</div>
+<div class="zombie-card tier-medium">
+<div class="zombie-card-img">
+<p><img alt="De Verwarde Zombie" src="../cards/syntax/type-error.png" /></p>
+</div>
+<h4 id="typeerror-de-verwarde-zombie">☣ TypeError — De Verwarde Zombie</h4>
+<p>Je mixt dingen die niet samen kunnen! Tekst en getallen optellen, of een functie verkeerd aanroepen.</p>
+<p><strong>Versla hem:</strong> Gebruik <code>str()</code> om een getal naar tekst om te zetten, of <code>int()</code> voor tekst naar getal. Check: <code>"Score: " + str(score)</code></p>
+</div>
+<div class="zombie-card tier-medium">
+<div class="zombie-card-img">
+<p><img alt="De Gulzige Zombie" src="../cards/syntax/index-error.png" /></p>
+</div>
+<h4 id="indexerror-de-gulzige-zombie">☣ IndexError — De Gulzige Zombie</h4>
+<p>Je grijpt naar iets dat er niet is! De lijst heeft minder items dan je denkt. Lijsten beginnen bij <code>0</code>, niet bij <code>1</code>!</p>
+<p><strong>Versla hem:</strong> Een lijst met 3 items heeft index <code>0</code>, <code>1</code>, <code>2</code>. Gebruik <code>len(lijst)</code> om te checken hoeveel items er zijn.</p>
+</div>
+<div class="zombie-card tier-easy">
+<div class="zombie-card-img">
+<p><img alt="De Verdwaalde Zombie" src="../cards/syntax/file-not-found-error.png" /></p>
+</div>
+<h4 id="filenotfounderror-de-verdwaalde-zombie">☣ FileNotFoundError — De Verdwaalde Zombie</h4>
+<p>Python kan het bestand niet vinden! Verkeerd pad, verkeerde naam, of het bestand bestaat nog niet.</p>
+<p><strong>Versla hem:</strong> Check de <strong>bestandsnaam</strong> en het <strong>pad</strong>. Staat het bestand in dezelfde map als je script? Tip: <code>open("scores.txt", "w")</code> maakt een nieuw bestand.</p>
+</div>
+</div>
+<hr />
+<h2 id="overlevingskaarten-wat-heb-je-geleerd">Overlevingskaarten — Wat Heb Je Geleerd?</h2>
+<p>Elke level geeft je nieuwe krachten. Hier is je arsenaal!</p>
+<div class="zombie-grid" style="grid-template-columns: 1fr;">
+<div class="zombie-card tier-easy">
+<div class="zombie-card-img">
+<p><img alt="Level 1" src="../cards/syntax/level-1-recap.png" /></p>
+</div>
+<h4 id="level-1-eerste-hulp-kit">Level 1 — Eerste Hulp Kit</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Code</th>
+<th>Wat doet het?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🖨️</td>
+<td><code>print("tekst")</code></td>
+<td>Tekst op het scherm zetten</td>
+</tr>
+<tr>
+<td>🎤</td>
+<td><code>actie = input("...")</code></td>
+<td>De speler iets laten typen en opslaan</td>
+</tr>
+<tr>
+<td>🔀</td>
+<td><code>if / elif / else</code></td>
+<td>Verschillende keuzes maken</td>
+</tr>
+<tr>
+<td>🎲</td>
+<td><code>random.randint(1, 2)</code></td>
+<td>Willekeurig getal kiezen (zoals een dobbelsteen)</td>
+</tr>
+<tr>
+<td>⏳</td>
+<td><code>time.sleep(1)</code></td>
+<td>1 seconde wachten (voor de spanning!)</td>
+</tr>
+<tr>
+<td>⚠️</td>
+<td><code>=</code> opslaan, <code>==</code> vergelijken</td>
+<td><code>actie = "rennen"</code> vs <code>actie == "rennen"</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="zombie-card tier-easy">
+<div class="zombie-card-img">
+<p><img alt="Level 2" src="../cards/syntax/level-2-recap.png" /></p>
+</div>
+<h4 id="level-2-overlevingsgids">Level 2 — Overlevingsgids</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Code</th>
+<th>Wat doet het?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔄</td>
+<td><code>while levens &gt; 0:</code></td>
+<td>Herhaal zolang de voorwaarde waar is</td>
+</tr>
+<tr>
+<td>💔</td>
+<td><code>levens = levens - 1</code></td>
+<td>Een variabele veranderen (1 afhalen)</td>
+</tr>
+<tr>
+<td>⚖️</td>
+<td><code>&gt; &lt; == != &gt;= &lt;=</code></td>
+<td>Getallen vergelijken (groter, kleiner, gelijk)</td>
+</tr>
+<tr>
+<td>🪆</td>
+<td><code>while:</code> ↳ <code>if:</code></td>
+<td>Code in code: de spaties moeten exact uitgelijnd zijn!</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="zombie-card tier-medium">
+<div class="zombie-card-img">
+<p><img alt="Level 3" src="../cards/syntax/level-3-recap.png" /></p>
+</div>
+<h4 id="level-3-wapenarsenaal">Level 3 — Wapenarsenaal</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Code</th>
+<th>Wat doet het?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📋</td>
+<td><code>lijst = [a, b, c]</code></td>
+<td>Meerdere dingen bewaren in een lijst</td>
+</tr>
+<tr>
+<td>➕</td>
+<td><code>lijst.append(x)</code></td>
+<td>Een item achteraan toevoegen</td>
+</tr>
+<tr>
+<td>➖</td>
+<td><code>lijst.remove(x)</code></td>
+<td>Een item verwijderen uit de lijst</td>
+</tr>
+<tr>
+<td>🔍</td>
+<td><code>if x in lijst:</code></td>
+<td>Checken of iets in de lijst zit</td>
+</tr>
+<tr>
+<td>🎯</td>
+<td><code>random.choice(lijst)</code></td>
+<td>Willekeurig een item kiezen uit de lijst</td>
+</tr>
+<tr>
+<td>✨</td>
+<td><code>f"Score: {score}"</code></td>
+<td>Variabelen in tekst zetten met f-strings</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="zombie-card tier-hard">
+<div class="zombie-card-img">
+<p><img alt="Level 4" src="../cards/syntax/level-4-recap.png" /></p>
+</div>
+<h4 id="level-4-commandocentrum">Level 4 — Commandocentrum</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Code</th>
+<th>Wat doet het?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⚙️</td>
+<td><code>def functie(x):</code></td>
+<td>Code een naam geven en hergebruiken</td>
+</tr>
+<tr>
+<td>🔢</td>
+<td><code>return waarde</code></td>
+<td>Een waarde teruggeven aan wie de functie aanriep</td>
+</tr>
+<tr>
+<td>📖</td>
+<td><code>{"naam": "waarde"}</code></td>
+<td>Gegevens opslaan als sleutel-waarde paren</td>
+</tr>
+<tr>
+<td>🔑</td>
+<td><code>zombie["naam"]</code></td>
+<td>Een waarde opvragen met de sleutel</td>
+</tr>
+<tr>
+<td>🧹</td>
+<td><code>.lower()</code> <code>.strip()</code></td>
+<td>Tekst omzetten naar kleine letters en spaties weghalen</td>
+</tr>
+<tr>
+<td>🚫</td>
+<td><code>None</code></td>
+<td>Betekent "niks" — als er geen resultaat is</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="zombie-card tier-hard">
+<div class="zombie-card-img">
+<p><img alt="Level 4.5" src="../cards/syntax/level-4.5-recap.png" /></p>
+</div>
+<h4 id="level-45-eerste-contact">Level 4.5 — Eerste Contact</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Code</th>
+<th>Wat doet het?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🎮</td>
+<td><code>actor = Actor("zombie")</code></td>
+<td>Sprite uit <code>images/</code> map op het scherm</td>
+</tr>
+<tr>
+<td>💥</td>
+<td><code>actor.collidepoint(pos)</code></td>
+<td>Checken of een klik de actor raakt</td>
+</tr>
+<tr>
+<td>🖱️</td>
+<td><code>on_mouse_down(pos)</code></td>
+<td><code>pos</code> is (x, y) muislocatie</td>
+</tr>
+<tr>
+<td>🖌️</td>
+<td><code>def draw():</code></td>
+<td>Tekenen op het scherm (60x per seconde!)</td>
+</tr>
+<tr>
+<td>🎨</td>
+<td><code>screen.fill("kleur")</code></td>
+<td>Het hele scherm vullen met een kleur</td>
+</tr>
+<tr>
+<td>🔊</td>
+<td><code>sounds.whack.play()</code></td>
+<td>Geluid uit <code>sounds/</code> map afspelen</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="zombie-card tier-boss">
+<div class="zombie-card-img">
+<p><img alt="Level 5" src="../cards/syntax/level-5-recap.png" /></p>
+</div>
+<h4 id="level-5-volledige-aanval">Level 5 — Volledige Aanval</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Code</th>
+<th>Wat doet het?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔲</td>
+<td><code>Rect(x, y, b, h)</code></td>
+<td>Een rechthoek maken (voor knoppen!)</td>
+</tr>
+<tr>
+<td>🔄</td>
+<td><code>def update(dt):</code></td>
+<td>Elk frame updaten (voor animaties)</td>
+</tr>
+<tr>
+<td>📺</td>
+<td><code>toestand = "spel"</code></td>
+<td>Game states: schakelen tussen schermen</td>
+</tr>
+<tr>
+<td>⏰</td>
+<td><code>clock.schedule(f, 2.5)</code></td>
+<td>Functie f na 2.5 seconden uitvoeren</td>
+</tr>
+<tr>
+<td>🖼️</td>
+<td><code>screen.blit("img", pos)</code></td>
+<td>Een plaatje tekenen op een positie</td>
+</tr>
+<tr>
+<td>🌐</td>
+<td><code>global variabele</code></td>
+<td>Variabele aanpassen binnen een functie</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.annotate", "navigation.sections", "navigation.expand"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Gekopieerd naar klembord", "clipboard.copy": "Kopi\u00ebren naar klembord", "search.result.more.one": "1 extra overeenkomst op deze pagina", "search.result.more.other": "# extra overeenkomsten op deze pagina", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.term.missing": "Ontbreekt", "select.version": "Selecteer versie"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

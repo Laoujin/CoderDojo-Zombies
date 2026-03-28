@@ -1,0 +1,1649 @@
+
+<!doctype html>
+<html lang="nl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Leer Python programmeren met een zombie spel!">
+      
+      
+      
+        <link rel="canonical" href="https://laoujin.github.io/CoderDojo-Zombies/uitdagingen/level-5/">
+      
+      
+        <link rel="prev" href="../level-4.5/">
+      
+      
+        <link rel="next" href="../../brainstorm/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Level 5 - Zombie Apocalypse</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/zombie-theme.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#level-5-uitdagingen" class="md-skip">
+          Ga naar inhoud
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Zombie Apocalypse" class="md-header__button md-logo" aria-label="Zombie Apocalypse" data-md-component="logo">
+      
+  <img src="../../favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Zombie Apocalypse
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Level 5
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Zoeken" placeholder="Zoeken" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Zoeken">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Leegmaken" aria-label="Leegmaken" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Zoeken initialiseren
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigatie" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Zombie Apocalypse" class="md-nav__button md-logo" aria-label="Zombie Apocalypse" data-md-component="logo">
+      
+  <img src="../../favicon.png" alt="logo">
+
+    </a>
+    Zombie Apocalypse
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aan-de-slag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aan de Slag
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../coaches/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Voor Coaches
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Levels
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Levels
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../levels/level-1/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 - Keuzes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../levels/level-2/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 - Loops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../levels/level-3/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 - Lijsten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../levels/level-4/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 - Functies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../levels/level-4.5/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4.5 - Pygame Zero
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../levels/level-5/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 5 - Zombie Spel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uitdagingen
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uitdagingen
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4.5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4.5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 5
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhoudsopgave
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opwarmer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opwarmer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Opwarmer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#score-teller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Score Teller
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verstoppen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verstoppen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pittig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pittig
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pittig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inventory-systeem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventory Systeem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zombie-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zombie Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Boss
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boss">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#meerdere-locaties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meerdere Locaties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zoeken-na-gevecht" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zoeken na Gevecht
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bouw Je Eigen Spel
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bouw Je Eigen Spel
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../brainstorm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../levels/level-6/uitleg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Starters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zombiepedia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zombiepedia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheatsheets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cheatsheets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheet-pygame/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pygame Zero
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pygame-recepten/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pygame Recepten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referentiekaarten/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referentiekaarten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhoudsopgave
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opwarmer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opwarmer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Opwarmer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#score-teller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Score Teller
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verstoppen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verstoppen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pittig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pittig
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pittig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inventory-systeem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventory Systeem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zombie-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zombie Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Boss
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boss">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#meerdere-locaties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meerdere Locaties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zoeken-na-gevecht" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zoeken na Gevecht
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="level-5-uitdagingen">Level 5 Uitdagingen</h1>
+<h2 id="opwarmer">Opwarmer</h2>
+<h3 id="score-teller">Score Teller</h3>
+<p>Voeg een score teller toe die omhoog gaat bij elke succesvolle actie.</p>
+<p><img alt="Score Teller" src="../../cards/level-5/score-teller.png" /></p>
+<ul>
+<li>+10 punten voor een gewonnen gevecht</li>
+<li>+5 punten voor een succesvolle ontsnapping</li>
+<li>Score reset bij game over</li>
+<li>Toon de score in <code>score.png</code></li>
+</ul>
+<p><strong>Hint:</strong> Maak een <code>score</code> variabele en teken het met <code>screen.draw.text()</code></p>
+<details class="note">
+<summary>Spieken</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Bij succes:</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">if</span> <span class="n">resultaat_goed</span><span class="p">:</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="k">if</span> <span class="n">laatste_actie</span> <span class="o">==</span> <span class="s2">&quot;vechten&quot;</span><span class="p">:</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="n">score</span> <span class="o">+=</span> <span class="mi">10</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="n">score</span> <span class="o">+=</span> <span class="mi">5</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># In draw():</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Score: </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">topright</span><span class="o">=</span><span class="p">(</span><span class="mi">780</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<hr />
+<h3 id="verstoppen">Verstoppen</h3>
+<p>Voeg een derde knop "Verstoppen" toe als extra actie.</p>
+<p><img alt="Verstoppen" src="../../cards/level-5/verstoppen.png" /></p>
+<ul>
+<li>Nieuwe knop in het midden van het scherm</li>
+<li>50/50 kans op succes/faal</li>
+<li>Succes: "De zombie ziet je niet!"</li>
+<li>Faal: "De zombie vindt je!"</li>
+</ul>
+<p><strong>Hint:</strong> Kopieer de rennen logica en pas de tekst aan</p>
+<details class="note">
+<summary>Spieken</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">KNOP_VERSTOPPEN</span> <span class="o">=</span> <span class="n">Rect</span><span class="p">(</span><span class="mi">325</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># In draw():</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">teken_knop_met_pulse</span><span class="p">(</span><span class="s2">&quot;knop_verstoppen&quot;</span><span class="p">,</span> <span class="n">KNOP_VERSTOPPEN</span><span class="p">)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1"># In on_mouse_down():</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">elif</span> <span class="n">KNOP_VERSTOPPEN</span><span class="o">.</span><span class="n">collidepoint</span><span class="p">(</span><span class="n">pos</span><span class="p">):</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">laatste_actie</span> <span class="o">=</span> <span class="s2">&quot;verstoppen&quot;</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        <span class="n">resultaat_tekst</span> <span class="o">=</span> <span class="s2">&quot;De zombie ziet je niet!&quot;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="n">resultaat_goed</span> <span class="o">=</span> <span class="kc">True</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        <span class="n">resultaat_tekst</span> <span class="o">=</span> <span class="s2">&quot;De zombie vindt je!&quot;</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>        <span class="n">resultaat_goed</span> <span class="o">=</span> <span class="kc">False</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>        <span class="n">levens</span> <span class="o">-=</span> <span class="mi">1</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="n">toestand</span> <span class="o">=</span> <span class="s2">&quot;resultaat&quot;</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="n">clock</span><span class="o">.</span><span class="n">schedule</span><span class="p">(</span><span class="n">ga_naar_volgende</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<p><strong>Benodigde plaatjes:</strong> <code>knop_verstoppen.png</code>, <code>verstoppen_succes.png</code>, <code>verstoppen_faal.png</code></p>
+<hr />
+<h2 id="pittig">Pittig</h2>
+<h3 id="inventory-systeem">Inventory Systeem</h3>
+<p>Voeg een inventory toe die items opslaat en het spel beinvloedt.</p>
+<p><img alt="Inventory Systeem" src="../../cards/level-5/inventory-systeem.png" /></p>
+<ul>
+<li>Wapens (honkbalknuppel, mes): verhoog winkans van 50% naar 66%</li>
+<li>Healing (medkit, energie bar): medkit +2 levens, energie bar +1 leven</li>
+<li>Toon inventory op het scherm</li>
+<li>Er zijn verschillende plaatjes beschikbaar, ze beginnen met <code>inv_</code></li>
+</ul>
+<p><strong>Hint:</strong> Gebruik een lijst voor items en check met <code>in</code></p>
+<details class="note">
+<summary>Spieken</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">inventory</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># Toon inventory in draw():</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">inventory</span><span class="p">):</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">topleft</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">80</span> <span class="o">+</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">25</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Aangepaste vecht logica:</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="k">if</span> <span class="s2">&quot;honkbalknuppel&quot;</span> <span class="ow">in</span> <span class="n">inventory</span> <span class="ow">or</span> <span class="s2">&quot;mes&quot;</span> <span class="ow">in</span> <span class="n">inventory</span><span class="p">:</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="n">win</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">2</span>  <span class="c1"># 66% kans</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="n">win</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>  <span class="c1"># 50% kans</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1"># Gebruik medkit:</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="k">if</span> <span class="s2">&quot;medkit&quot;</span> <span class="ow">in</span> <span class="n">inventory</span> <span class="ow">and</span> <span class="n">levens</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="n">inventory</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;medkit&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="n">levens</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">levens</span> <span class="o">+</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<hr />
+<h3 id="zombie-types">Zombie Types</h3>
+<p>Verschillende zombies verschijnen met verschillende winkansen.</p>
+<p><img alt="Zombie Types" src="../../cards/level-5/zombie-types.png" /></p>
+<ul>
+<li>Baby zombie: 66% winkans (makkelijk)</li>
+<li>Langzame zombie: 50% winkans</li>
+<li>Snelle zombie: 40% winkans</li>
+<li>Sterke zombie: 33% winkans (moeilijk)</li>
+<li>Er zijn verschillende plaatjes beschikbaar, ze beginnen met <code>zombie_</code></li>
+</ul>
+<p><strong>Hint:</strong> Gebruik een dictionary met kansen per zombie type</p>
+<details class="note">
+<summary>Spieken</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">zombie_kansen</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="s2">&quot;Baby zombie&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>      <span class="c1"># win op 1-2 van 3</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="s2">&quot;Langzame zombie&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>  <span class="c1"># win op 1 van 2</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="s2">&quot;Snelle zombie&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>    <span class="c1"># win op 1-2 van 5</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="s2">&quot;Sterke zombie&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>    <span class="c1"># win op 1 van 3</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">}</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">huidige_zombie</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">zombie_kansen</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1"># Bij vechten:</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="n">kans</span> <span class="o">=</span> <span class="n">zombie_kansen</span><span class="p">[</span><span class="n">huidige_zombie</span><span class="p">]</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="n">win</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">kans</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">&lt;=</span> <span class="n">kans</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="c1"># Toon zombie type in draw():</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">huidige_zombie</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">550</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;yellow&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<hr />
+<h2 id="boss">Boss</h2>
+<h3 id="meerdere-locaties">Meerdere Locaties</h3>
+<p>Ga door 5 locaties heen om het spel te winnen.</p>
+<p><img alt="Meerdere Locaties" src="../../cards/level-5/meerdere-locaties.png" /></p>
+<ul>
+<li>Locaties: Suburb → Library → School → Hospital → Mall</li>
+<li>Elke succesvolle actie brengt je naar de volgende locatie</li>
+<li>Falen kost een leven maar je gaat ook door</li>
+<li>Overleef alle 5 locaties = gewonnen!</li>
+<li>Er zijn verschillende locaties beschikbaar, de plaatjes beginnen met <code>loc_</code></li>
+</ul>
+<p><strong>Hint:</strong> Gebruik een lijst met locaties en een index</p>
+<details class="note">
+<summary>Spieken</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">locaties</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;home&quot;</span><span class="p">,</span> <span class="s2">&quot;library&quot;</span><span class="p">,</span> <span class="s2">&quot;school&quot;</span><span class="p">,</span> <span class="s2">&quot;hospital&quot;</span><span class="p">,</span> <span class="s2">&quot;mall&quot;</span><span class="p">]</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">locatie_index</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">ga_naar_volgende</span><span class="p">():</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="k">global</span> <span class="n">toestand</span><span class="p">,</span> <span class="n">locatie_index</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="k">if</span> <span class="n">levens</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="n">toestand</span> <span class="o">=</span> <span class="s2">&quot;game_over&quot;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="k">elif</span> <span class="n">locatie_index</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">locaties</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>        <span class="n">toestand</span> <span class="o">=</span> <span class="s2">&quot;gewonnen&quot;</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>        <span class="n">locatie_index</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>        <span class="n">toestand</span> <span class="o">=</span> <span class="s2">&quot;spel&quot;</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="c1"># In draw() bij &quot;spel&quot;:</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="n">achtergrond</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;loc_</span><span class="si">{</span><span class="n">locaties</span><span class="p">[</span><span class="n">locatie_index</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">achtergrond</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">locaties</span><span class="p">[</span><span class="n">locatie_index</span><span class="p">]</span><span class="o">.</span><span class="n">title</span><span class="p">(),</span> <span class="n">center</span><span class="o">=</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">28</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="c1"># In draw() bij &quot;gewonnen&quot;:</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="k">elif</span> <span class="n">toestand</span> <span class="o">==</span> <span class="s2">&quot;gewonnen&quot;</span><span class="p">:</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>    <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="s2">&quot;win&quot;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;JE HEBT GEWONNEN!&quot;</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">48</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gold&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<p><strong>Benodigde plaatjes:</strong> <code>loc_home.png</code>, <code>loc_library.png</code>, <code>loc_school.png</code>, <code>loc_hospital.png</code>, <code>loc_mall.png</code>, <code>win.png</code></p>
+<hr />
+<h3 id="zoeken-na-gevecht">Zoeken na Gevecht</h3>
+<p>Win een gevecht om het gebied te doorzoeken voor items.</p>
+<p><img alt="Zoeken na Gevecht" src="../../cards/level-5/zoeken-na-gevecht.png" /></p>
+<ul>
+<li>Na een gewonnen gevecht verschijnt een "Zoeken" knop</li>
+<li>50% kans om een item te vinden (medkit, wapen, etc.)</li>
+<li>Rennen of verliezen = geen zoeken, direct door naar volgende locatie</li>
+<li>Combineert met Inventory Systeem en Meerdere Locaties</li>
+</ul>
+<p><strong>Hint:</strong> Voeg een nieuwe toestand "zoeken" toe</p>
+<details class="note">
+<summary>Spieken</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">KNOP_ZOEKEN</span> <span class="o">=</span> <span class="n">Rect</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">KNOP_DOORGAAN</span> <span class="o">=</span> <span class="n">Rect</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Na gewonnen gevecht in on_mouse_down():</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">if</span> <span class="n">laatste_actie</span> <span class="o">==</span> <span class="s2">&quot;vechten&quot;</span> <span class="ow">and</span> <span class="n">resultaat_goed</span><span class="p">:</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">toestand</span> <span class="o">=</span> <span class="s2">&quot;zoeken&quot;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="n">toestand</span> <span class="o">=</span> <span class="s2">&quot;resultaat&quot;</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="n">clock</span><span class="o">.</span><span class="n">schedule</span><span class="p">(</span><span class="n">ga_naar_volgende</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1"># Nieuwe elif in on_mouse_down():</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="k">elif</span> <span class="n">toestand</span> <span class="o">==</span> <span class="s2">&quot;zoeken&quot;</span><span class="p">:</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    <span class="k">if</span> <span class="n">KNOP_ZOEKEN</span><span class="o">.</span><span class="n">collidepoint</span><span class="p">(</span><span class="n">pos</span><span class="p">):</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>        <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>            <span class="n">item</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;medkit&quot;</span><span class="p">,</span> <span class="s2">&quot;honkbalknuppel&quot;</span><span class="p">,</span> <span class="s2">&quot;energie bar&quot;</span><span class="p">,</span> <span class="s2">&quot;mes&quot;</span><span class="p">])</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>            <span class="n">inventory</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>            <span class="n">resultaat_tekst</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Je vindt een </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">!&quot;</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>            <span class="n">resultaat_tekst</span> <span class="o">=</span> <span class="s2">&quot;Je vindt niks...&quot;</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>        <span class="n">toestand</span> <span class="o">=</span> <span class="s2">&quot;resultaat&quot;</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>        <span class="n">clock</span><span class="o">.</span><span class="n">schedule</span><span class="p">(</span><span class="n">ga_naar_volgende</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">)</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>    <span class="k">elif</span> <span class="n">KNOP_DOORGAAN</span><span class="o">.</span><span class="n">collidepoint</span><span class="p">(</span><span class="n">pos</span><span class="p">):</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>        <span class="n">ga_naar_volgende</span><span class="p">()</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="c1"># In draw() bij &quot;zoeken&quot;:</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="k">elif</span> <span class="n">toestand</span> <span class="o">==</span> <span class="s2">&quot;zoeken&quot;</span><span class="p">:</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>    <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="s2">&quot;vechten_succes&quot;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;Wil je het gebied doorzoeken?&quot;</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">80</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">28</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>    <span class="n">teken_knop_met_pulse</span><span class="p">(</span><span class="s2">&quot;knop_zoeken&quot;</span><span class="p">,</span> <span class="n">KNOP_ZOEKEN</span><span class="p">)</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>    <span class="n">teken_knop_met_pulse</span><span class="p">(</span><span class="s2">&quot;knop_doorgaan&quot;</span><span class="p">,</span> <span class="n">KNOP_DOORGAAN</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<p><strong>Benodigde plaatjes:</strong> <code>knop_zoeken.png</code>, <code>knop_doorgaan.png</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.annotate", "navigation.sections", "navigation.expand"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Gekopieerd naar klembord", "clipboard.copy": "Kopi\u00ebren naar klembord", "search.result.more.one": "1 extra overeenkomst op deze pagina", "search.result.more.other": "# extra overeenkomsten op deze pagina", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.term.missing": "Ontbreekt", "select.version": "Selecteer versie"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
