@@ -158,9 +158,9 @@ RECAP_CARDS = [
         theme="Pygame Zero Kaart",
         powers=[
             ("🎮", 'actor = Actor("zombie")', "Sprite uit images/ map"),
-            ("🖌️", "def draw():", "Tekenen (60× per seconde)"),
-            ("🖱️", "on_mouse_down(pos)", "pos is (x, y) van de klik"),
             ("💥", "actor.collidepoint(pos)", "Raak ik het?"),
+            ("🖱️", "on_mouse_down(pos)", "pos is (x, y) muislocatie"),
+            ("🖌️", "def draw():", "Tekenen (60× per seconde)"),
             ("🎨", 'screen.fill("kleur")', "Achtergrond kleur"),
             ("🔊", "sounds.whack.play()", "Geluid uit sounds/ map"),
         ],

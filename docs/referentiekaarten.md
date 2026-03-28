@@ -171,9 +171,9 @@ Elke level geeft je nieuwe krachten. Hier is je arsenaal!
 | | Code | Wat doet het? |
 |---|---|---|
 | 🎮 | `actor = Actor("zombie")` | Sprite uit `images/` map op het scherm |
-| 🖌️ | `def draw():` | Tekenen op het scherm (60x per seconde!) |
-| 🖱️ | `on_mouse_down(pos)` | `pos` is (x, y) van de klik |
 | 💥 | `actor.collidepoint(pos)` | Checken of een klik de actor raakt |
+| 🖱️ | `on_mouse_down(pos)` | `pos` is (x, y) muislocatie |
+| 🖌️ | `def draw():` | Tekenen op het scherm (60x per seconde!) |
 | 🎨 | `screen.fill("kleur")` | Het hele scherm vullen met een kleur |
 | 🔊 | `sounds.whack.play()` | Geluid uit `sounds/` map afspelen |
 </div>
